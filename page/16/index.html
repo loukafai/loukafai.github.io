@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="website"><meta property="og:url" content="https://loukafai.github.io/page/16/"><meta property="og:locale" content="en"><meta name="description" content="Loukafai - faifai site">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/page/16/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    "url": "https://loukafai.github.io",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io"
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "Loukafai - faifai site"
+}
+</script>
+
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABhUlEQVR42u3ayw7CMAxE0f7/T8OKTRV7JgGlE3S7QYgSn4XlOI/rFfBcIECAOAJxNc/n9/u7o++j/3XjgshGDJPmhqiClEknxgWRj1hJyHug0f/bcUEciVAJ2AUH8Z+IUeGxChGI4xEzA1bFrIN/NYuC2I5wGt2Vz5932yC2IOSitUjAcmAx2S2tykFsRVSFqFroOBCn2IHIRzhNbPX+JZ7lWRTEI4hu8qkCdI1wFXQIAhGLUIO6E5fCtokJIgbhJJgT2ClmsqkBEYFwAqnNd7doycUPiBiEM3H9YlEE4gxE23SIgtVtjjlJDiIXoQ5bVhK0O5ABkY2YOYRTh2zuwQuIbIRqbrsDuJlEXO62QWxHqAs5M5NaFxzEWQjV4K5stqtNVRDZCOcgThUyp6B9fTgLYgvCObCfvSzsXPwAkY1wElItglVigjgP4VwUVkmoGh0Q/4GYCeQshJdvK4OIRjhFzlkEgchGOJuk7oLZKWogshHORWGVlGoDFsQ5iCcfECBARCPeR14pGEVrrOAAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <div class="post-stream-container">
+                <!-- # Post List # -->
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2016/04/05/hotel-icon-bangkok/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-VeQmXPeezHY/XDrIVuMusRI/AAAAAAAAd-0/X2Oi5WwySMEpXiQX6NgTe_Pz91VHigLAQCLcBGAs/s72-c/1_25641730353_2bfbaa5fdb_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2016/04/05/hotel-icon-bangkok/" rel="bookmark">[旅行] 泰國／曼谷。曼谷標誌飯店 (Hotel Icon Bangkok)~~市區中的便宜之選</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ [旅行] 泰國／曼谷。曼谷標誌飯店 (Hotel Icon Bangkok)~~市區中的便宜之選  飯店是 2014 年新開幕的，設施都頗新，喜歡住新飯店但又預算不多的朋友可以考慮  位置靠近 BTS NaNa 站 google map 
+    <a href="/2016/04/05/hotel-icon-bangkok/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2016-04-05</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2016/04/04/EscapeHuaHinHotel/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-5rNQdvHK7Sg/XDrKdbgrMQI/AAAAAAAAeBk/ml8IZrcyv_IyOmVU5GhEgGQF0HOxXKPlQCLcBGAs/s72-c/1_25760600600_84fbba6f8f_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2016/04/04/EscapeHuaHinHotel/" rel="bookmark">[旅行] 泰國／華欣。世外桃源酒店（Escape Hua Hin Hotel）~~寧靜又靠近海灘的小飯店</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ [旅行] 泰國／華欣。世外桃源酒店（Escape Hua Hin Hotel）~~寧靜又靠近海灘的小飯店   華欣，距曼谷市內 2 個小時車程，是泰國皇室的避暑渡假勝地，境內擁有數個美麗海灘、國家公園，歷史遺跡公園和皇室遺址。>>>維基百科 要來華欣玩，首先要做的事一定是選一家渡假飯店  這次在農曆新年的 2 月份來到華欣，選了這家很有渡假氣氛的
+    <a href="/2016/04/04/EscapeHuaHinHotel/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2016-04-04</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2016/03/13/blog-post/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-pXLzohk5U9U/XDrN06hHC6I/AAAAAAAAeGM/Xt5GcPBxLNYC8CoW7WRxp5tBGoM_IHrCgCLcBGAs/s72-c/1_25105502933_657a0c93ca_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2016/03/13/blog-post/" rel="bookmark">[旅行] 跨年宜蘭遊</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ [旅行] 跨年宜蘭遊 今年的跨年假期（2015-2016）去了一趟台灣，當作是旅行之餘亦順便參加了一位朋友的訂婚 這篇是幾天的拍照加記錄.....純粹是個人的分享   ▲ 剛下飛機就吃個蚵仔麵線當作早餐，阿姨賣的古早味很受在地居民的歡迎，阿姨說：都賣幾十年了，年中無休，不開店做做事還有點不習慣 
+    <a href="/2016/03/13/blog-post/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2016-03-13</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2016/03/02/qi-hua-zhen-ju-homestay/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-ZP33S1e9XcA/XDrRyYtY6BI/AAAAAAAAeME/y7YH6E0LGtY9eoFnDlnIFE5aaJ74gPyIQCLcBGAs/s72-c/1_24565866983_65fe6dfe05_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2016/03/02/qi-hua-zhen-ju-homestay/" rel="bookmark">[旅行] 宜蘭 - 騏驊珍琚賞鯨民宿 （Qi Hua Zhen Ju Homestay）</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ [旅行] 宜蘭 - 騏驊珍琚賞鯨民宿 （Qi Hua Zhen Ju Homestay） 2016 跨年期間去了台灣一趟，出遊地點依然是我們最喜愛的宜蘭，第 2 天來到頭城  會選這家「騏驊珍琚賞鯨民宿」就是因為在 Agoda 上的評分好高（9.2 分），而且價錢也不貴，所以就訂來試試 要說這家民宿的...
+    <a href="/2016/03/02/qi-hua-zhen-ju-homestay/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2016-03-02</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2016/02/25/kavalan-hotel/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-_filR4yIS5U/XDrUAYbAYyI/AAAAAAAAeN4/hLXRxmjysiwLlu0ts2g0lwm6FDBZoQ7lQCLcBGAs/s72-c/1_25099416771_0873af0c71_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2016/02/25/kavalan-hotel/" rel="bookmark">[旅行] 宜蘭 - 宜泰大飯店（Kavalan Hotel）</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ [旅行] 宜蘭 - 宜泰大飯店 (Kavalan Hotel) ~~ 簡單方便近夜市 2016 跨年期間去了台灣一趟，出遊地點依然是我們最喜愛的宜蘭  沒想到跨年夜要回宜蘭的人那麼多，下午 3 點到板橋只買到 5 點半到礁溪的客運，還要向售票阿姨展現型男的魅力用求的 還好一直都很順的通過雪隧沒塞車，7 點半就到達礁溪，再轉火車到羅東 位置 
+    <a href="/2016/02/25/kavalan-hotel/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2016-02-25</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column col-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2016/01/29/qy12/" rel="bookmark">[生活] 健身挑戰。九點火鍋。QY12 藍牙耳機</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ #鳴昊體育會  挑戰成功  去年底看到有一個做運動送火鍋的挑戰活動，於是找了朋友跟我一起去，整體難度不大，就是那個跑十公里和引體上升有點難度。 「吾X吾知身體好 吾賭吾知時運高」所以說明目前這個身體養得還說可以。快要 30 歲的男人真的要注意保養。 覺得這家#鳴昊體育會 的設施還不錯，雖然場地不大但是設備齊全，只是一個月的月會費要 1000 元，個人還是不太想花這個錢，不過這家是 24 小時營業的話其實也蠻合理的。到哪天想練成大隻佬的話再去吧。   ▲ 九點火鍋 挑戰成功之後，就馬上約了三五好友去嚐嚐這家最近(很貴)很熱門的...
+    <a href="/2016/01/29/qy12/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2016-01-29</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2015/12/31/taichung-3day-part4/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-Qk9LlYO3ims/XDrc-cA3WFI/AAAAAAAAePk/PKh-GTtjNuINW_K9W3E6K31LHgrxjK8wACLcBGAs/s72-c/1_22704248550_ba52ac77d6_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2015/12/31/taichung-3day-part4/" rel="bookmark">[旅行] 台中三天遊（4 之 4）～～在杉林溪用力吸芬多精</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+  [旅行] 台中三天遊（4 之 4）～～在杉林溪用力吸芬多精 在溪頭的「夏緹飯店」待了一個晚上，隔天同樣是走森林路線，吸收芬多精 今天的行程是逛「杉林溪」，然後就下山坐高鐵回家     起床囉   ▲ 起床在窗外看到的風景 
+    <a href="/2015/12/31/taichung-3day-part4/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2015-12-31</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2015/12/31/taichung-3day-part3/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-pDfyWb5tRYU/XDs-_XNXC6I/AAAAAAAAeVQ/y0vZz5tfYdI_xVZgX0_lVrLU7HWGtzoNACLcBGAs/s72-c/1_22474087217_274dbdf02c_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2015/12/31/taichung-3day-part3/" rel="bookmark">[旅行] 台中三天遊（3 之 4）～～妖怪村的我屌很大</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+  [旅行] 台中三天遊（3 之 4）～～妖怪村的我屌很大 在台中待了一晚以後，就出發搭「台灣好行」往溪頭去   「台灣好行」好方便   ▲ 在台中火車站坐「台灣好行」上車，一個多小時車程就開到山上來了 參考：
+    <a href="/2015/12/31/taichung-3day-part3/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2015-12-31</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2015/12/30/taichung-3day-part2/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-u_9NwtbWLqU/XDtC7XniybI/AAAAAAAAebM/dOW7DpXGj4U-cTvlEXsi1_Z883oGtiY2wCLcBGAs/s72-c/1_22879041432_89b61ac3ec_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2015/12/30/taichung-3day-part2/" rel="bookmark">[旅行] 台中三天遊（2 之 4）～～好逛好吃在台中</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+  [旅行] 台中三天遊（2 之 4）～～好逛好吃在台中 第二天早上，在中央大學逛逛，回味一下，然後假裝成年輕的大學生去後門吃個早餐，再出發去台中   中央大學   ▲ 在圖書館門口裝個文青 
+    <a href="/2015/12/30/taichung-3day-part2/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2015-12-30</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2015/12/30/taichung-3day-part1/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-6qzyTAkdLIA/XDtF29VpwHI/AAAAAAAAed8/ramXPTn-Ia8hletxbQEZgUO8-kxFT0lmQCLcBGAs/s72-c/1_22474162307_65d635ff41_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2015/12/30/taichung-3day-part1/" rel="bookmark">[旅行] 台中三天遊（1 之 4）～～零晨虎航賺一天</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+  [旅行] 台中三天遊（1 之 4）～～零晨虎航賺一天 分享一下 10 月去了台中 3 天，那幾天看過、吃過、拍過的東西 首圖是用一碗「七十二牛肉麵」的紅燒牛肉麵來代表，台灣的牛肉麵在我心中一直都佔有很重要的位置   啟程   ▲ 又是虎航 12 點出發的航班 好處是多賺一天遊玩的時間 而壞處是.......
+    <a href="/2015/12/30/taichung-3day-part1/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2015-12-30</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+        <li class="page-item page-prev">
+            <a href="/page/15/" rel="prev">
+                <span class="page-item-subtitle"><i class="icon icon-back" aria-hidden="true"></i></span>
+                <span class="page-item-title">Previous</span>
+            </a>
+        </li>
+    
+    
+        <li class="page-item page-next">
+            <a href="/page/17/" rel="next">
+                <span class="page-item-title">Next</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

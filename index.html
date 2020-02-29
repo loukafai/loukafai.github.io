@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="website"><meta property="og:url" content="https://loukafai.github.io/"><meta property="og:locale" content="en"><meta name="description" content="Loukafai - faifai site">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    "url": "https://loukafai.github.io",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io"
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "Loukafai - faifai site"
+}
+</script>
+
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABn0lEQVR42u3ay46DMBBEUf7/p5NtRNrVhSGmiC6bSYiwz0iW+2G2V8C1gQAB4hGITVxfD33c3/++f8YZF0Quolw0xWQK2CGr+UBkI/YTjAYZDlgs1G5cEM9F7O+NJq+eB/F/iCr4qED1k4UJ4haE2ohGg1Xfj4wLIhehEtIzfy/LtkEsRViFq7EhuYnQdFUOYhmiW2DVYlMFzyjhLTdAELEINYizIalAJxNjEJEIZ4NykxwFnApgIG5DuAnqKOlRAc7arEBEIdxCVgUzp9le3gcRiVANdbdJdlkAAxGJmGmAqOAmxwERiVCJbbcYjzbR2goMRAxiFJRUIus03trkF0Qkwkl0ncSmC2Dy0AVEFOLIQnQO4FTS0wYwEBEIp1HuHMC5z7ZVOYjbEV3R0wU4tcDVi2EgchFuU9UpiJ2mytThLIilCOtg3SyIu+QWxHMQ7Qs4xueuYXL67SIQyxFuAexOOh1FQcQj1IJ0GmbqnwHxTIRMSoyXei7drEAsRcw2y5xmqnVgDyIKcaQ53iU4HeL028ogfo648wIBAkQ04g3QfMh4noN3tQAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <div class="post-stream-container">
+                <!-- # Post List # -->
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2020/02/27/qcy-t5/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-cHqcU0of8Zc/XlcAmrgwIQI/AAAAAAAAuXw/bFNVN0zxWkkLZPYcqqXnOhljYC0s8AHTgCLcBGAsYHQ/s72-c/qcy%2Bt5.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/02/27/qcy-t5/" rel="bookmark">[敗家] QCY T5真無線藍牙耳機 ~~ 百元耳機你還想怎樣</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ( 圖片取自：QCY T5 天貓商城 )因為之前一直用的 QCY T1 耳機在使用了約一年之後出現左邊耳機聲音異常，剛好一年過保不能修，就去 QCY 商城找找看有沒有新產品，就很 &quot;剛好&quot; 的找到這支 
+    <a href="/2020/02/27/qcy-t5/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2020-02-27</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2020/02/23/movie-2020-01/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-3F78J3SmPyg/XkTO5qhHpbI/AAAAAAAAuVA/JdArlnONw0oXyg2S1p9yFK14Ftba15cmwCLcBGAsYHQ/s72-c/movie-01.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/02/23/movie-2020-01/" rel="bookmark">[電影] 2020 年 1 月電影清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ 2020 年 1 月影視清單，個人觀影後的排名如下：特工科恩 The Spy (2019)黑鏡 第一季 Black Mirror Season 1 (2011)極速車王 Ford v Ferrari (2019)1917 (2019)喪屍樂園2 Zombieland: Double Tap (2019)東京大飯店 グランメゾン東京 (2019)終結者：黑暗命運 Terminator: Dark Fate (2019)西雅圖未眠夜 Sleepless in Seattle (1993)招魂2 The Conjuring 2 (2016)半澤直樹年紀念 第0章～被瞄准的半澤直樹的密碼 (2020)鬼影特攻：以暴制暴 6 Underground (2019)...
+    <a href="/2020/02/23/movie-2020-01/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2020-02-23</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2020/02/13/mi-vacuum-cleaner/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-otkQDQEDXlA/XkRJjuJ2k1I/AAAAAAAAuUw/oLI0216UdGMsl_IX1UMfNoXPHcTUOhISACLcBGAsYHQ/s72-c/%25E5%25B0%258F%25E7%25B1%25B3%25E5%2590%25B8%25E5%25A1%25B5%25E5%2599%25A8.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/02/13/mi-vacuum-cleaner/" rel="bookmark">[敗家] 小米無線吸塵器 ~~ 即使買不起 dyson 也要打掃</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+這隻小米無線吸塵器大概用了快一年了，個人對於它的使用上是頗滿意，可以記錄一下。ps. 話說之後再推出的 小米米家手持无线吸尘器1C   更便宜，又送充电收納二合一支架，只能說是早買早享受囉 Orz這支雖然說是小米的產品，其實它沒有與手機連線的功能。其實這支
+    <a href="/2020/02/13/mi-vacuum-cleaner/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2020-02-13</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2020/02/12/movie-2019-12/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-RBPNBjd9B8M/XkL61fMcxzI/AAAAAAAAuUg/b4uMWcVhD9MSOM2cQeHR1mUI9IqDCbYKACLcBGAsYHQ/s72-c/movie.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/02/12/movie-2019-12/" rel="bookmark">[電影] 2019 年 12 月電影清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2019 年 12 月影視清單，個人觀影後的排名如下：星球大戰9：天行者崛起 Star Wars: The Rise of Skywalker (2019)花椒之味 (2019)星際探索 Ad Astra (2019)我的事說來話長 俺の話は長い (2019)王者天下 キングダム (2019)第一滴血5：最後的血 Rambo: Last Blood (2019)犯罪現場 犯罪現場 (2019)勇敢者游戲：決戰叢林 Jumanji: Welcome to the Jungle (2017)勇敢者游戲：決戰叢林 Jumanji: Welcome to the Jungle (2017)
+    <a href="/2020/02/12/movie-2019-12/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2020-02-12</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2020/02/11/cheers-pub/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-ncP9XGPiVmk/XkEY8LZrrwI/AAAAAAAAuTU/Ew99GGvw0VcVK1ZGgH-zk5cWaCYxAYpJACLcBGAsYHQ/s72-c/IMG_20191006_204433.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/02/11/cheers-pub/" rel="bookmark">[美食] 澳門。關閘台山。Cheers Pub</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+朋友約吃飯，說在他家附近有一家很有特色的餐廳，每天都要排隊，還說沒有提前一個星期打電話根本沒有位置。講得那麼誇張，當然要來見識一下。心得：價位有點高，但是味道不錯；氣氛好，適合男女朋友約會聊天。Cheers Pub電話： +853 2823 5399澳門菜園涌邊街73號FB : https://www.facebook.com/cheerspubmacau/Google map：
+    <a href="/2020/02/11/cheers-pub/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2020-02-11</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2020/02/10/2019/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-X0bJkV_FpYI/XkEUMqEgeII/AAAAAAAAuSA/dKZBTnUHnk4Hwn_921dYUdArTGllBHvWQCLcBGAsYHQ/s72-c/IMG_20191109_173901.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/02/10/2019/" rel="bookmark">[生活] 2019 塔石賽車展</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ 忘記了從什麼時侯開始，每年一度的「澳門格蘭披治大賽車」之前的一個週末都會在塔車廣場弄個車展，給大家拍拍照，目的是將賽車與居民的距離拉近，增加大家對賽車的親切感，而不是只有長達半個月的塞車 Orz對於喜愛賽車的朋友，能夠近距離看到賽車當然興奮；而對於攝友，有漂亮的 Model 給大家拍拍照，也是十分棒的。
+    <a href="/2020/02/10/2019/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2020-02-10</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2020/01/30/movie-2019-11/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-Faf1iYTdQw0/Xive4ROXTaI/AAAAAAAAuP4/SC7BCIqlitES1_0bEQJJXlFC1niwhoK6ACLcBGAsYHQ/s72-c/movie-11.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/01/30/movie-2019-11/" rel="bookmark">[電影] 2019 年 11 月電影清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2019 年 11 月影視清單，個人觀影後的排名如下：小丑 Joker (2019)天使陷落 Angel Has Fallen (2019)古墓麗影：源起之戰 Tomb Raider (2018)真實羅曼史 True Romance (1993)小丑 Joker (2019)via 
+    <a href="/2020/01/30/movie-2019-11/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2020-01-30</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2020/01/25/mate-20/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-7Yh082vAXHg/Xin6W0Ta3sI/AAAAAAAAuPg/U8m7XLxeFfAGEQHMukpSeb2VcAZ3Y3GVgCLcBGAsYHQ/s72-c/800_800_1539230426520mp.png)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2020/01/25/mate-20/" rel="bookmark">[敗家] 華為 Mate 20 ~~ 給男人最放心的手機</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ 在換 Mate 20 之前是用小米8，使用上一直都還算滿意（心得在這篇），然後因為 2019 年 4 月時要去埃及蜜月旅行，那麼難的機會能夠衝出亞洲，當然要換一台好一點的手機去拍照，於是就......用了那麼久，因為最近又有想要升級的衝動，所以先來寫篇心得好了。 缺點沒有無...
+    <a href="/2020/01/25/mate-20/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2020-01-25</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2019/12/24/movie-2019-10/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-5x0vDAJzOCI/Xf43NUlu7DI/AAAAAAAAtUY/a0uhJpXAISosTZi9GCVh4gvYF93biEZ7wCLcBGAsYHQ/s72-c/movie-2019-10.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2019/12/24/movie-2019-10/" rel="bookmark">[電影] 2019 年 10 月電影清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2019 年 10 月影視清單，個人觀影後的排名如下：續命之徒：絕命毒師電影 El Camino: A Breaking Bad Movie (2019)安娜 Anna (2019)極限逃生 엑시트 (2019)速度與激情：特別行動 Fast &amp; Furious Presents: Hobbs &amp; Shaw (2019)獅子王 The Lion King (2019)寂靜之地 A Quiet Place (2018)沉睡魔咒 Maleficent (2014)交友網戰 App War (2018)掠食城市 Mortal Engines (2018)  極限逃生 엑시트 (2019)
+    <a href="/2019/12/24/movie-2019-10/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2019-12-24</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2019/11/18/skechers/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-bXzMVYzuxS8/XdDvu3clz-I/AAAAAAAAsv8/JhonyXZyXecCAQ9rNjEyYXoSepck9zV2QCLcBGAsYHQ/s72-c/unnamed.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2019/11/18/skechers/" rel="bookmark">[敗家] Skechers 舒適鞋子兩雙</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+之前去台灣過中秋節的時候，跑去了華泰名城 GLORIA OUTLETS 逛街，那邊的東西感覺有比較便宜之餘，重點是滿二千台幣就可以退稅，其實沒有省很多，當作省個便當錢啦。Skechers 這個牌子已經看過很久，最後是被正妹勸敗了，因為去店裡試過，覺得這種軟軟的鞋子穿起來真的很輕很適舒，鞋底很軟，而且重點是有些鞋款不用綁鞋帶，但是又留在鞋帶的外觀，蠻可愛。結果兩個人各自挑了一雙，合共 2,585 TWD，可以退稅 100 元左右，還不錯。話說在機場退稅的時候，看到明明可以直接退到信用卡，但是一堆人都去退現金，有點不理解，後來被服務人員告知，退外幣信用還要收手續費，難怪。EOF
+    <a href="/2019/11/18/skechers/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2019-11-18</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+    
+        <li class="page-item page-next">
+            <a href="/page/2/" rel="next">
+                <span class="page-item-title">Next</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

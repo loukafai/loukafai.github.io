@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="website"><meta property="og:url" content="https://loukafai.github.io/page/6/"><meta property="og:locale" content="en"><meta name="description" content="Loukafai - faifai site">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/page/6/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    "url": "https://loukafai.github.io",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io"
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "Loukafai - faifai site"
+}
+</script>
+
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABfklEQVR42u3awRLCIAxF0f7/T+vWqSR5QYuPervRBcJxhklC6PEweA4QIEBsgTiSZ3aM/BsQtojhpjktUE38OkaeF4Q1IpusGjNaXPoNiK0RUXAafQfxH4jz9yx4gbgHIko00WaMklIrMYKwRXSKlM7n16ptEEsR5aF1ULhki19yKgexFJFtpAqiBLbRfCC8EVHhGhUx3YbIefE0WIGwRnSbZ1kgkyMmCBtEdrhVmqhq0fs2FsQWiG6DTE1wZQIDYYXICttogtEiHycwEBaIKghlAGWTytU2CGtEVtwoSDnZgbBEVBssa6aqgUnOoiAsEBVgFqNc5IPwRlSLVkVMdw4Q/gipMBWLGPWwDGIPRBaM1MuYKFiVLwCCsECoF3Gdw7Ec2EBYImZeAlaa8tIBCoQtQtmQyqJKUJt+uwjEcoR0WEkOvGoCa1VWIKwR3XFSIw3ELRBVIGtdwICwRnQv5MJL+CRIgdgHUTVBlQa68kemq20QSxG/fECAAGGNeAI/WxoZ4h77kwAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <div class="post-stream-container">
+                <!-- # Post List # -->
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2019/03/03/jia-shi-zhou-dang/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-s4k93dVJOqg/XHtPSFKYQbI/AAAAAAAAixA/aKkN01wzoHkjNiYRiynTTi7iQ33q9M9uwCLcBGAs/s72-c/IMG_20190111_202641.edit.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2019/03/03/jia-shi-zhou-dang/" rel="bookmark">[美食] 珠海 佳食粥檔~~熱騰騰的路邊風味</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+那天 Happy Friday 去珠海找 A 君吃好料，雖然 A 君已經可以是吃偏整個拱北的老司機，但是竟然想不到要吃什麼，就突然說想起一個在前山的老字號粥店，說是便宜又好吃，很有名！問我要不要去？前山有多遠？不遠也不近，半小時，然後兩個傻 B 就騎著摩拜去吃粥 Orz ......那麼遠的前山美食，A 君為什麼會知道？原來，A 君說因為看了這個 Youtuber 的介紹知道了這間【佳食粥档】在前山很有名。
+    <a href="/2019/03/03/jia-shi-zhou-dang/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2019-03-03</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2019/02/28/movie-2019-01/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-VbKktUnNaxM/XHf0dBtRy1I/AAAAAAAAivY/lukQcPps9K8kvUR_kjsdGvrAWuLVpSzPACLcBGAs/s72-c/movie-01.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2019/02/28/movie-2019-01/" rel="bookmark">[電影] 2019 年 1 月電影清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2019 年 1 月影視清單，個人觀影後的排名如下：毒梟 第二季 Narcos Season 2 (2016)憨豆特工3 Johnny English Strikes Again (2018)毒梟 第二季 Narcos Season 2 (2016)via 毒梟 第二季 (豆瓣)...
+    <a href="/2019/02/28/movie-2019-01/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2019-02-28</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2019/02/24/mi-bt-sound-carry/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-NBl-qq7gmLA/XHFChcOJnlI/AAAAAAAAiiQ/y7tKKIfZnFgAXaWOlYHWj6fn8_EEpz42wCLcBGAs/s72-c/%25E5%25B0%258F%25E7%25B1%25B3%25E5%25B0%258F%25E7%2588%25B1%25E8%2593%259D%25E7%2589%2599%25E9%259F%25B3%25E7%25AE%25B1.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2019/02/24/mi-bt-sound-carry/" rel="bookmark">[敗家] 小米小愛藍牙音箱 隨身版</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+（圖片來自：小米官網）那天經過珠海的【揚名廣場】，作為半個米粉的我當然要進去【小米之家】繞個圈。結果不小心就手滑了這個小玩兒......小米小愛藍牙音箱（隨身版）。49 元人民幣的小東西其實沒有什麼好介紹 XD 只是用過之後覺得音質還不錯，可以推介一下。這個小小的音箱，官網顯示是有 4 小時續航能力，不過個人都當作電腦音箱來使用，長期插在 usb ...
+    <a href="/2019/02/24/mi-bt-sound-carry/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2019-02-24</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2019/02/05/movie-2018-12/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-4aRC2Tn0tmI/XFZP5ZyrwwI/AAAAAAAAibc/AZnDoKOLP2ow7t0cTcYi27HLgOTvXeNQQCLcBGAs/s72-c/movie12.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2019/02/05/movie-2018-12/" rel="bookmark">[電影] 2018 年 12 月電影清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2018 年 12 月影視清單，個人觀影後的排名如下：毒梟 第一季 Narcos Season 1 (2015)小心幫忙 A Simple Favor (2018)我的超豪男友 Crazy Rich Asians (2018)不能成為野獸的我們 獣になれない私たち (2018)S風暴 (2016)L風暴 (2018)攝影機不要停！ カメラを止めるな！ (2017)毒液：致命守護者 Venom (2018)鐵血戰士 The Predator (2018)紅海行動 (2018)月光光心慌慌 Halloween (2018)  我的超豪男友 Crazy Rich Asians (2018)
+    <a href="/2019/02/05/movie-2018-12/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2019-02-05</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/12/29/2018-kinmen-03/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-5s_K7OO6ws8/XCMCdg-vqlI/AAAAAAAAXU0/UdMyVjFkPG4fAcFTas4Sk0fESakd3pUngCKgBGAs/s72-c/IMG_20181113_144925.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/29/2018-kinmen-03/" rel="bookmark">[旅行] 台灣金門三天遊~~Day03</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+金門之旅第三天。今天逛到有特色的【北山播音牆】，還有講解很精彩的【莒光樓】，最後更買了很有金門特色的蚵嗲和燒餅回家。可以不誇張的說，金門是個人認為台灣最好玩的地方，因為每處景點都充滿了歷史的痕跡，在參觀的同時會認識到過去曾經有數百萬人為了和平付出了相當多的努力，透過講解人員的口中，會了解到更多金門的故事。所以說，金門值得一來。第三天行程 退房：金門縣三元民宿 (San Yuan Guest House)      →    
+    <a href="/2018/12/29/2018-kinmen-03/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-12-29</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/12/27/2018-kinmen-02/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-OfbE3qALwMA/XCJWjZlgQjI/AAAAAAAAXQs/eIr36LdSQQwPdgJh3ugIE6IpW5QW_exvQCKgBGAs/s72-c/IMG_20181112_091823.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/27/2018-kinmen-02/" rel="bookmark">[旅行] 台灣金門三天遊~~Day02</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ 金門之旅第二天。金門的景點很多，我們本來計劃只是想到每個景點去逛逛拍照，但是在【得月樓】由介紹人員聽到精彩生動的講解之後，就去找之後每個景點的講解時間去參觀。這些景點經過【金門國家公園】人員的介紹之後真的學到很多景色以外的東西。如果問我金門有什麼好玩，我會說來古蹟景點聽講解是最好玩的部份。第二天行程 早餐：永春廣東粥     →    
+    <a href="/2018/12/27/2018-kinmen-02/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-12-27</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/12/26/2018-kinmen-01/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-3wMNQBqLbnQ/XCIDHMn-qPI/AAAAAAAAXLc/6e0ArBa-iuci9TILDUDzzO0uGB-24EGfgCKgBGAs/s72-c/IMG_20181111_091537.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/26/2018-kinmen-01/" rel="bookmark">[旅行] 台灣金門三天遊~~Day01</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2018 年 11 月份去了台灣金門來個三天兩夜小旅行。旅程心得是，覺得金門是個很充滿歷史和回憶的地方，很適合長者來這裡懷緬過去、也適合年青人來學習戰爭的殘忍，認識世界和平真的很重要。再說，金門也有很多美食例如蚵仔麵線、蚵仔煎、牛肉麵都跟台灣本島吃到的風格不同，尤其是蚵嗲更是值得來嚐嚐。第一天行程 松山機場     →     金門  ...
+    <a href="/2018/12/26/2018-kinmen-01/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-12-26</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/12/25/movie-2018-11/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-MylXIZri9j4/XCBlKTiJ4CI/AAAAAAAAW0w/_Qvvh62TMHgdoFo8sIJXrHkz7r1AciP9gCLcBGAs/s72-c/movie-11.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/25/movie-2018-11/" rel="bookmark">[影視] 2018 年 11 月影視清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2018 年 11 月影視清單，個人觀影後的排名如下：小熊維尼真人版 Christopher Robin (2018)伸冤人2 The Equalizer 2 (2018)進擊的巨人 第三季 進撃の巨人 Season 3 (2018)伸冤人2 The Equalizer 2 (2018)via 
+    <a href="/2018/12/25/movie-2018-11/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-12-25</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/12/10/900-degree-bbq/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-bT9UhyKlt6E/XA3qbX41qNI/AAAAAAAAWxE/j9BDIKJF1dEQZlqcgOmk1fRtuL87XB3hgCLcBGAs/s72-c/20181208_173654_0001.png)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/10/900-degree-bbq/" rel="bookmark">[美食] 珠海 夏灣 900 度燒烤工場 - 夏灣店~~吹水喝啤好地方</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+近年出去珠海找美食，不外乎就是燒烤、火鍋、烤魚，因為如果類近的東西要在澳門吃的話，價錢貴不說，品質和感受也是截然不同。這次吃的【900 度燒烤工場】是近年珠三角地區冒起的燒烤連鎖店，很適合三五好友在週末晚上約出來一起聊天吃東西的地方。害我都邊寫邊流口水呢 Orz▲ 說起烤肉，事緣是之前有天找食家朋友 A 君到這家夏灣的【哈爾濱烤烤】食飯，這家價錢雖然便宜，但是 A 君卻說【900 度燒烤工場】的味道和氣氛更好，所以我就默默將【900 度燒烤工場】列入下次的目標
+    <a href="/2018/12/10/900-degree-bbq/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-12-10</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/12/08/chromecast/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-9DEifvD2pR0/W0-oAeqHyMI/AAAAAAAAULg/N481ZU_ztnQsvwu8evJBmZ4uWft1ADNSgCLcBGAs/s72-c/InkedIMG_20180224_162743_LI.edit.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/12/08/chromecast/" rel="bookmark">[敗家]  Google Chromecast V3 媒體串流播放器使用心得</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+入手這個 Chromecast 已經好一陣子了，因為在使用上還算滿意，所以可以寫一下使用心得。敗家原因會敗這支 Chromecast 的因為主要是因為想在家裡客廳的電視看影片，就是那麼簡單。原本是在「小米盒子」跟 Chromecast 之間做選擇，因為盒子也有內建了類似的「投影」功能，但是覺得反正自己也不會經常看盒子的內容，就單純想把手機的內容投射到電視上，加上 Chromecast 比較便宜，就先選擇 Chromecast。記得這支 Chromecast 是二月份的時候在台灣買的，當時問了 Nova 裡好幾家都沒有，結果反而是在路邊的原價屋剛好問到有一支，只要約一千台幣，比自己上網去買還便宜。Android 手機 App先說明一下背景，個人主要是利用 PC 在網路上「收集」影片，然後透過 SMB （W...
+    <a href="/2018/12/08/chromecast/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-12-08</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+        <li class="page-item page-prev">
+            <a href="/page/5/" rel="prev">
+                <span class="page-item-subtitle"><i class="icon icon-back" aria-hidden="true"></i></span>
+                <span class="page-item-title">Previous</span>
+            </a>
+        </li>
+    
+    
+        <li class="page-item page-next">
+            <a href="/page/7/" rel="next">
+                <span class="page-item-title">Next</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

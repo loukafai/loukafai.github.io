@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="website"><meta property="og:url" content="https://loukafai.github.io/page/29/"><meta property="og:locale" content="en"><meta name="description" content="Loukafai - faifai site">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/page/29/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    "url": "https://loukafai.github.io",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io"
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "Loukafai - faifai site"
+}
+</script>
+
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABiElEQVR42u3aXQvCMAyF4f3/P623U5acEzfaRN7dCFLqMwjNRz1eDZ4DBAgQIxBH8lyt+djk9N33GmtfEG0Rl0GT/ODV2vOPu/uC6I24CqxsU7VO7QtiNiI6bJzABPG/CLXWeQkQsxBRoomKGydYH8uiIJYjso3vfD5WbYNYipBNqyh4VWH7SFcOYinCKV7UYeQebCBmISoHUVToOslNZlEQ2xEOwB2cVQ8wEL0RahASNTxOgRsOWkC0REQbO4dNVuQ4g1gQPRFqwwz4eAID0QJRGYapIZkqdkvVNohtCGfQFQVr1kQ7TRSI3ojocr56QGVFkT2pAbEV4V7MZ8HoJLDSpQuINgi3iMn+8OMkNhAzEL82t1lyk40TiNYIJ4G5w/ZsqFI6MUFsQbgXcWp44rwUiBmIyh8zKoHnoEH0RaiAVBcy1eEriBkIq1kxC1r3kgbEXISTsFTRY1VWIMYh1IW989wOTBDLEKqhcQ6w7PKm1BCD2I5QQ1A1YK28CIj+iJ0PCBAgWiPecK1Y6IPo6DoAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <div class="post-stream-container">
+                <!-- # Post List # -->
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/28/zone-pro-site/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh4.googleusercontent.com/-1jn3BkVHItE/UuZ8QoEYrqI/AAAAAAAABvc/HLa4oBc0vHM/s72-w419-c-h600-no/p1993590815.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/28/zone-pro-site/" rel="bookmark">[電影] 總舖師 Zone Pro Site～～古早好味</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 總舖師 Zone Pro Site～～古早好味  超推薦的台灣電影，講的是廚師的故事，還有台灣辦桌文化的歷史。本片有台語、有佳餚、古早味、人情味，很多台灣特色的文化都可以在本片裡看到。 釜底抽薪 最困難的時候往往就是人最有行動力的時候，小婉（夏于喬 飾）在背債跑回老家時遇到如海（楊祐寧 飾），小婉作為總舖師的女兒偏偏就不喜歡做菜，但是為了比賽，為了還債卻不得不想盡辦法去做出古早味的菜色，同時亦為了一圓老伯伯的辦桌夢，整部戲就是以這兩件事為主軸。 可愛好笑 愛鳳（林美秀 飾）和小婉都是非常可愛的角色，林美秀的演出不搶戲但又足以讓人抱腹大笑，我們都希望有這樣可愛的老媽；夏于喬的表現雖然有點造作，但她成功把單純樂天的小女生演出來，個人認為相當討喜。戲中的其它角色如「召喚獸三人組」和「鬼頭師」的加入都讓本片...
+    <a href="/2014/01/28/zone-pro-site/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-28</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/27/bangkok2013-day6/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-pDAjOM_GPY0/XEXonZaht6I/AAAAAAAAhmU/sb9CGNGxOWoqoQC1K1Wo3tqb6OesCosBACLcBGAs/s72-c/1_11722829313_f8845e2e24_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/27/bangkok2013-day6/" rel="bookmark">[生活] 2013 曼谷遊（6/6）～～購物逛街</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 2013 曼谷遊（6/6）～～購物逛街 這是我在 2013 年 12 月聖誕節去曼谷的遊記，共分為 6 篇，這是第 6 篇。 》點這裡看所有的遊記《 曼谷 shopping 好玩以前已經聽過不少，這次來到曼谷也排了不少購物的行程，可以說是觀光行程一不少，哈哈！ 總結所有購物的地點，最喜歡的是「恰圖恰週末市集」，然後是 Siam Paragon 百貨公司。泰國吃...
+    <a href="/2014/01/27/bangkok2013-day6/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-27</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/24/bangkok2013-day5/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-yOGiImSPAmE/XEkMFDcMsrI/AAAAAAAAhpM/1o7IyNeIpYcZDGcRTalQSDKYvqrRQbnyACLcBGAs/s72-c/1_11722826763_a4685afded_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/24/bangkok2013-day5/" rel="bookmark">[生活] 2013 曼谷遊（5/6）～～酸辣美味</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 2013 曼谷遊（5/6）～～酸辣美味 這是我在 2013 年 12 月聖誕節去曼谷的遊記，共分為 6 篇，這是第 5 篇。 》點這裡看所有的遊記《 酸酸辣辣的泰國菜一直都是我的最愛，來到曼谷終於可以嘗試一下道地的泰國美食，那幾天有吃到便宜的也有貴價的，還有被坑的 Orz，下次出門要注意！ 曼谷很多的百貨公司都有 food court，客人要先到服務櫃台買卡，...
+    <a href="/2014/01/24/bangkok2013-day5/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-24</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/23/bangkok2013-day4/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-SC0i3zue1Q4/XEkOH96ORDI/AAAAAAAAhq4/Y7G56ziWG0A75NnDM5Uccs9fOW2vqw3hACLcBGAs/s72-c/1_11722823943_6d13d2f614_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/23/bangkok2013-day4/" rel="bookmark">[生活] 2013 曼谷遊（4/6）～～按摩、夜景</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 2013 曼谷遊（4/6）～～按摩、夜景 這是我在 2013 年 12 月聖誕節去曼谷的遊記，共分為 6 篇，這是第 4 篇。 》點這裡看所有的遊記《 來曼谷當然免不了嘗試一下按摩，於是在網路上找了 2 家評價都不錯的按摩店。除了按摩之外，還跑去了 55 樓的高空室外酒吧喝啤酒看夜景，浪漫的哦！ 此篇包含： 
+    <a href="/2014/01/23/bangkok2013-day4/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-23</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/22/bangkok2013-day3/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-jyuDq7jhjiw/XEplNNgjyHI/AAAAAAAAhsk/CM4ROGXODV4rcz5GEX96jBnsYe_TdBihgCLcBGAs/s72-c/1_11722942884_e37363d3af_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/22/bangkok2013-day3/" rel="bookmark">[生活] 2013 曼谷遊（3/6）～～歷史名勝</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 2013 曼谷遊（3/6）～～歷史名勝 這是我在 2013 年 12 月聖誕節去曼谷的遊記，共分為 6 篇，這是第 3 篇。 》點這裡看所有的遊記《 講到曼谷，當然大家一定先想起的是 SPA、購物、美食，但是曼谷的名勝古跡也不少，作為第 1 次來曼谷的我，當然要先去看看這些古跡，不然怎麼叫作來過曼谷。 這次來曼谷到過以下這些名勝
+    <a href="/2014/01/22/bangkok2013-day3/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-22</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/21/bangkok2013-day2/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-Ahj1fpWZRfk/XEq2rRcUUEI/AAAAAAAAhwg/hZAUawqrV6YG0jwegB067KtbQpw8v2lLACLcBGAs/s72-c/1_11722846353_f7d59ca3db_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/21/bangkok2013-day2/" rel="bookmark">[生活] 2013 曼谷遊（2/6）～～住宿</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 2013 曼谷遊 (2/6)～～住宿 這是我在 2013 年 12 月聖誕節去曼谷的遊記，共分為 6 篇，這是第 2 篇。 》點這裡看所有的遊記《 這次旅程一共住了 2 家飯店，中間還換了 1 家，過程蠻有趣的，但總整來說很滿意他們的服務，泰國的飯店真的便宜，水準又高。 過境旅館：
+    <a href="/2014/01/21/bangkok2013-day2/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-21</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/20/bangkok2013-day1/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-7pj6VjC1WUI/XEq32efzPiI/AAAAAAAAhx4/yDeVkPn3C3w0YEa54u2SWZJk80WXRL6rACLcBGAs/s72-c/1_12037064305_175ef83007_c.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/20/bangkok2013-day1/" rel="bookmark">[生活] 2013 曼谷遊（1/6）～～交通、手機上網</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 2013 曼谷遊（1/6）～～交通、手機上網 這是我在 2013 年 12 月聖誕節去曼谷的遊記，共分為 6 篇，這是第 1 篇。 》點這裡看所有的遊記《 5 天的行程： Day 1：Air Asia → 廊曼國際機場 → 素萬那普國際機場 → Thong Ta Resort &amp; Spa 過境旅館Day 2：素萬那普國際機場 → Centre Point Hotel Chidlom → 恰圖恰週末市集 → TERMINAL 21 百貨公司 → 禪 LAVANA  Day 3：臥佛寺 → 大皇宮 → 鄭王廟 → 考...
+    <a href="/2014/01/20/bangkok2013-day1/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-20</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/08/blog-post/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh5.googleusercontent.com/-JPmd2IRx76E/Usk0iXo6jJI/AAAAAAAABuU/lIC4r8uAhss/s72-c-no/db52e1525f4511e39f2a12f24732dee8_8.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/08/blog-post/" rel="bookmark">[生活] 小米盒。換機油。冰糖葫蘆</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 小米盒子  去年大熱的小米盒子，亦可能是因為公天事件而在澳門大受歡迎。而我本身對這個盒子沒什麼興趣，這台是我老哥買了之後，越獄過又玩弄過了一大輪就丟給我。 使用感想不多，因為平常都是在客廳吃便當時才會打開來看看，雖然家裡是用 100 妹上網，不過在繁忙時段看電視需要的緩衝時間還是有點久；節目方面，在打開盒子後的首頁已經有一大堆東西可以看，電影啊、綜藝節目等等，這個小米盒子確實是無聊解悶時的好東西。 
+    <a href="/2014/01/08/blog-post/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-08</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/01/04/will-you-still-love-me-tomorrow/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh3.googleusercontent.com/-amWAgF1aY3Q/UsXC4BHFRyI/AAAAAAAABuE/BX6wB5xmzXk/s72-w643-c-h918-no/p2045374609.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/01/04/will-you-still-love-me-tomorrow/" rel="bookmark">[電影] 明天記得愛上我 Will You Still Love Me Tomorrow?～～最愛自己</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ 明天記得愛上我 Will You Still Love Me Tomorrow?～～最愛自己  喜歡《一頁台北》這類型的小品嗎？那這部戲必定是你的首選。 簡單又帶點浪漫 先說我不太喜歡這部的結局，我想偉中應該要為了阿鳳和兒子阿丸而改變，但實際上同性戀是不可能改變的事實，男觀眾們看偉中有那麼漂亮賢慧的老婆都一定會很羨慕，怎麼還捨得去當 gay 呢？ 最喜歡這部電影的情懷，從電影的角色交流中看到人情...
+    <a href="/2014/01/04/will-you-still-love-me-tomorrow/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-01-04</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2013/12/30/django-unchained/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh6.googleusercontent.com/-aCNUTrS_7LI/UsB_w-arMDI/AAAAAAAABtU/mYp9WJHZDGY/s72-w450-c-h667-no/8398248401_65c75676c4_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2013/12/30/django-unchained/" rel="bookmark">[電影] 黑殺令 Django Unchained～～暴力救美</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via IMDb ▲ 黑殺令 Django Unchained～～暴力救美  賞金獵人永遠是拍電影很適合的題材，故事鋪陳再在適時重放一些回憶便不難拍成，但是要拍得好看的話就是多加入一些特色。 而這部《黑殺令》的特色就是：解放黑奴＋暴力血腥。 解放黑奴是主軸，賞金獵人醫生雖然是一位白人，但是他識英雄重英雄，不只救了黑人搭當，還幫忙一起去救他老婆，實在感人。種族歧視是一個很難解決的問題，但能夠放低偏見就需要有更大的胸懷，當然被救的人也不能太混...
+    <a href="/2013/12/30/django-unchained/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2013-12-30</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+        <li class="page-item page-prev">
+            <a href="/page/28/" rel="prev">
+                <span class="page-item-subtitle"><i class="icon icon-back" aria-hidden="true"></i></span>
+                <span class="page-item-title">Previous</span>
+            </a>
+        </li>
+    
+    
+        <li class="page-item page-next">
+            <a href="/page/30/" rel="next">
+                <span class="page-item-title">Next</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

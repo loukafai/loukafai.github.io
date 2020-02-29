@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>[享] CISCO CCNA 上課和考照心得 | faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="[享] CISCO CCNA 上課和考照心得 | faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="article"><meta property="og:url" content="https://loukafai.github.io/2011/07/31/cisco-ccna/"><meta property="og:locale" content="en"><meta name="description" content="成績單考完就馬上取得  寫一篇去 台北 資策會 學 CCNA 的上課 去 恆逸 考照 的 心得 ▲想在畢業之前考個證照，這樣也許回家找工作比較方便。其實網路也算是自己的興趣，也是未來世界的趨勢。     ▲於是報名了台北資策會的一個CCNA課程。共120小時，29000元，這價錢，有比外面的(奇科、聯成、恆逸)便宜，當然，等級也不一樣。 許多人會問干麻跑那麼遠去台北學？中壢不就有嗎？我就有一個比喻 - Loukafai - faifai site"><meta name="keywords" content="share, 享, learn, cisco, ccna"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/CjFedelucgrCnJvjBtzlGzFArfcHzFyCrvIjGwkxBGIxcqebjDfnCfzltyJb/media_httpgyazocoma9f_kbkCF.png.scaled500.png"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/giHDogwIiHAwvmuhmheEcEBxFzAfFeEwgBIeCFhAuElmnyfpFsfjdfeADlGC/media_httpgyazocomf7f_hqecl.png.scaled500.png"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/yyrpEIkBqJGiwssxtBhcHoHhjmJhkrpebfazsBDmmtbvdBnjvDFeatsbqziA/media_httpfarm4static_ivgjC.jpg.scaled500.jpg"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/pdAJitazJAfJcuqjpkwjAvBhbCgpGEIFEHFefauwqckmCkAzwAtFuuvHxwxv/media_httpfarm4static_gldnB.jpg.scaled500.jpg"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/EHmwykdCzkazsIdjhvFkcFtAjosipuuezoGytrowtuBJttfHDckCHlGFCDJl/media_httpfarm3static_tirEq.jpg.scaled500.jpg"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/auwGtanruqFsBImlfpjbwIwBzFEpycyszFyigJlbgwcwHayGJyBCegDxooit/media_httpgyazocombfa_iHfbm.png.scaled500.png"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/ctlpCCloECpBbsxnaztHhHbmCxtyxoIfkgJicJBfgsobruewfqmAwaBIgtFw/media_httpgyazocom8a9_pHxDc.png.scaled500.png"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/kjBzBIvcHErbrjnjqjfzAHcHHnhrBwyjxCGvJriifzAotGerCxzFzlBGtzGH/media_httpfarm7static_CExyg.jpg.scaled500.jpg"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/dzvEihEycqbBCkJhxhpzdflEmAhhiyFtDcoHABjkEHcIhdGzbrvzyGHbdojj/media_httpfarm7static_GkCqD.jpg.scaled500.jpg"><meta property="og:image" content="http://posterous.com/getfile/files.posterous.com/loukafai/oGejiBdAclfsogDecoCfJzjouqIvhIduDekjodCmvvwbFywbIrnAvipbdIan/media_httpgyazocom2af_pHgta.png.scaled500.png"><meta property="article:published_time" content="2011-07-31T15:24:00.001Z"><meta property="article:modified_time" content="2020-02-27T07:23:15.840Z"><meta property="og:updated_time" content="2020-02-27T07:23:15.840Z"><meta property="article:author" content="Loukafai"><meta property="article:tag" content="share, 享, learn, cisco, ccna"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/2011/07/31/cisco-ccna/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://loukafai.github.io/2011/07/31/cisco-ccna/",
+    "@type": "BlogPosting",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io/2011/07/31/cisco-ccna/"
+    },
+    "headline": "[享] CISCO CCNA 上課和考照心得 | faifai site",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2011-07-31T15:24:00.001Z",
+    "dateModified": "2020-02-27T07:23:15.840Z",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "share, 享, learn, cisco, ccna",
+    "description": "成績單考完就馬上取得  寫一篇去 台北 資策會 學 CCNA 的上課 去 恆逸 考照 的 心得 ▲想在畢業之前考個證照，這樣也許回家找工作比較方便。其實網路也算是自己的興趣，也是未來世界的趨勢。     ▲於是報名了台北資策會的一個CCNA課程。共120小時，29000元，這價錢，有比外面的(奇科、聯成、恆逸)便宜，當然，等級也不一樣。 許多人會問干麻跑那麼遠去台北學？中壢不就有嗎？我就有一個比喻 - Loukafai - faifai site"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=[享] CISCO CCNA 上課和考照心得" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=[享] CISCO CCNA 上課和考照心得&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=[享] CISCO CCNA 上課和考照心得" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB20lEQVR42u3bwXLDIAyEYb//S7fX1gO7K4YDyL8vaaYJ/g4gJJk8PwdeDyhQoEANUI+43p/5N8Dr/Xus92ei+4BqgxpOuslNZ+9n41TuA6oXajZJZzceTf7R/0av08UA6pOoFAkKlEKpv0cBVS0SUN9BzTZKNbnl5hokhaD6olRCv/N1WzUD6miUbTqESBVQt3ddQB2NUhOxmtwpoBofVD+Um5wuuXOBV41hIzqo61BpYqcGrARL9R1QPVAzSKVJ64JkUsSC6odKmmBpg0MtCNnABdUCVWmoumRPLR61gYPqh7IfXpjMLrgOxwXVFlV5mKgWi4KUMk9QV6KSQZKGxcoiANUL5QrLtOmVbNjLXRdQV6PUYYdKUHTopUYsqCtQSYPLLYCkAaKaH6B6otIvJsWBO8AzTRRBtUClBySSxG/pIBeolihXCNjkLNyMXeAF1QvlNtsEZDfcx/xACFQrVNIcS4Kka+6WnmKBuhJVPdyQLIKkSTYcB1QLVBL00kIgbeiWui6grkRVJ3h64MY1bEtZAqjrUK4gTRtk27MEUC1RlYI1KUCmgRfUZ1DpgQh3mEJtxqD6oZKHRenhLRVQtyR5oI5HqU0zeZCUFqi2YQuqBeqkCxQoUKD+XL8fzBCv6rrlQwAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">[享] CISCO CCNA 上課和考照心得</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <span>2011-07-31</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=[享] CISCO CCNA 上課和考照心得&url=https://loukafai.github.io/2011/07/31/cisco-ccna/&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=[享] CISCO CCNA 上課和考照心得&url=https://loukafai.github.io/2011/07/31/cisco-ccna/&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io/2011/07/31/cisco-ccna/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=https://loukafai.github.io/2011/07/31/cisco-ccna/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io/2011/07/31/cisco-ccna/&title=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=faifai site&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io/2011/07/31/cisco-ccna/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=https://loukafai.github.io/2011/07/31/cisco-ccna/&text=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB20lEQVR42u3bwXLDIAyEYb//S7fX1gO7K4YDyL8vaaYJ/g4gJJk8PwdeDyhQoEANUI+43p/5N8Dr/Xus92ei+4BqgxpOuslNZ+9n41TuA6oXajZJZzceTf7R/0av08UA6pOoFAkKlEKpv0cBVS0SUN9BzTZKNbnl5hokhaD6olRCv/N1WzUD6miUbTqESBVQt3ddQB2NUhOxmtwpoBofVD+Um5wuuXOBV41hIzqo61BpYqcGrARL9R1QPVAzSKVJ64JkUsSC6odKmmBpg0MtCNnABdUCVWmoumRPLR61gYPqh7IfXpjMLrgOxwXVFlV5mKgWi4KUMk9QV6KSQZKGxcoiANUL5QrLtOmVbNjLXRdQV6PUYYdKUHTopUYsqCtQSYPLLYCkAaKaH6B6otIvJsWBO8AzTRRBtUClBySSxG/pIBeolihXCNjkLNyMXeAF1QvlNtsEZDfcx/xACFQrVNIcS4Kka+6WnmKBuhJVPdyQLIKkSTYcB1QLVBL00kIgbeiWui6grkRVJ3h64MY1bEtZAqjrUK4gTRtk27MEUC1RlYI1KUCmgRfUZ1DpgQh3mEJtxqD6oZKHRenhLRVQtyR5oI5HqU0zeZCUFqi2YQuqBeqkCxQoUKD+XL8fzBCv6rrlQwAAAABJRU5ErkJggg==" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        
+<div class='posterous_autopost'><div class="posterous_bookmarklet_entry"> <div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/CjFedelucgrCnJvjBtzlGzFArfcHzFyCrvIjGwkxBGIxcqebjDfnCfzltyJb/media_httpgyazocoma9f_kbkCF.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocoma9f_kbkcf" height="598" src="http://posterous.com/getfile/files.posterous.com/loukafai/CjFedelucgrCnJvjBtzlGzFArfcHzFyCrvIjGwkxBGIxcqebjDfnCfzltyJb/media_httpgyazocoma9f_kbkCF.png.scaled500.png" width="500" /></a> </div> <div class="posterous_quote_citation"> 成績單考完就馬上取得 <a href="http://gyazo.com/a9f7e0aab223494b30f6671e925ded4d.png" target="_blank" rel="noopener"></a></div> <p>寫一篇去 台北 資策會 學 CCNA 的上課 去 恆逸 考照 的 心得 </p><p>▲想在畢業之前考個證照，這樣也許回家找工作比較方便。其實網路也算是自己的興趣，也是未來世界的趨勢。 </p><p><a name='more'></a> </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/giHDogwIiHAwvmuhmheEcEBxFzAfFeEwgBIeCFhAuElmnyfpFsfjdfeADlGC/media_httpgyazocomf7f_hqecl.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocomf7f_hqecl" height="671" src="http://posterous.com/getfile/files.posterous.com/loukafai/giHDogwIiHAwvmuhmheEcEBxFzAfFeEwgBIeCFhAuElmnyfpFsfjdfeADlGC/media_httpgyazocomf7f_hqecl.png.scaled500.png" width="500" /></a> </div> <br />▲於是報名了台北資策會的一個CCNA課程。共120小時，29000元，這價錢，有比外面的(奇科、聯成、恆逸)便宜，當然，等級也不一樣。 </p><p>許多人會問干麻跑那麼遠去台北學？中壢不就有嗎？我就有一個比喻：假如可以選的話，台大和中央會選那一所？有得選當然會選好一點，這些電腦教育中心也是一樣的道理。 </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/yyrpEIkBqJGiwssxtBhcHoHhjmJhkrpebfazsBDmmtbvdBnjvDFeatsbqziA/media_httpfarm4static_ivgjC.jpg.scaled1000.jpg" target="_blank" rel="noopener"><img alt="Media_httpfarm4static_ivgjc" height="667" src="http://posterous.com/getfile/files.posterous.com/loukafai/yyrpEIkBqJGiwssxtBhcHoHhjmJhkrpebfazsBDmmtbvdBnjvDFeatsbqziA/media_httpfarm4static_ivgjC.jpg.scaled500.jpg" width="500" /></a> </div> <br />▲每個六、日都要早早爬起床(有時候還沒睡)，坐上第一班公車，然後轉火車去台北，這樣大概要花一個多小時，想不到快要到畢業的日子才來當個通勤族。 </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/pdAJitazJAfJcuqjpkwjAvBhbCgpGEIFEHFefauwqckmCkAzwAtFuuvHxwxv/media_httpfarm4static_gldnB.jpg.scaled1000.jpg" target="_blank" rel="noopener"><img alt="Media_httpfarm4static_gldnb" height="667" src="http://posterous.com/getfile/files.posterous.com/loukafai/pdAJitazJAfJcuqjpkwjAvBhbCgpGEIFEHFefauwqckmCkAzwAtFuuvHxwxv/media_httpfarm4static_gldnB.jpg.scaled500.jpg" width="500" /></a> </div> <br />▲上課時候每個人在櫃台簽到，得到一顆個人專屬的硬碟，操作系統和應用程式都灌在裡面了。這樣的好處是上課不需坐在指定的坐置和電腦的管理更具彈性。 </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/EHmwykdCzkazsIdjhvFkcFtAjosipuuezoGytrowtuBJttfHDckCHlGFCDJl/media_httpfarm3static_tirEq.jpg.scaled1000.jpg" target="_blank" rel="noopener"><img alt="Media_httpfarm3static_tireq" height="667" src="http://posterous.com/getfile/files.posterous.com/loukafai/EHmwykdCzkazsIdjhvFkcFtAjosipuuezoGytrowtuBJttfHDckCHlGFCDJl/media_httpfarm3static_tirEq.jpg.scaled500.jpg" width="500" /></a> </div> <br />▲到台北整個感覺都不一樣(廢話)，我個人是喜歡台北多於中壢，喜歡整齊的街道(雖然一直修路)、喜歡看台北的人(雖然不認識)、喜歡有效率的交通系統(雖然週末都人塞人)。 </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/auwGtanruqFsBImlfpjbwIwBzFEpycyszFyigJlbgwcwHayGJyBCegDxooit/media_httpgyazocombfa_iHfbm.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocombfa_ihfbm" height="376" src="http://posterous.com/getfile/files.posterous.com/loukafai/auwGtanruqFsBImlfpjbwIwBzFEpycyszFyigJlbgwcwHayGJyBCegDxooit/media_httpgyazocombfa_iHfbm.png.scaled500.png" width="500" /></a> </div> <br />▲CCNA基本上就是（1）TCP/IP理論＋（2）Cisco設備簡單指令操作，所以主要以 Cisco Packet Tracer 這款模擬器就足以應付。 </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/ctlpCCloECpBbsxnaztHhHbmCxtyxoIfkgJicJBfgsobruewfqmAwaBIgtFw/media_httpgyazocom8a9_pHxDc.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom8a9_phxdc" height="215" src="http://posterous.com/getfile/files.posterous.com/loukafai/ctlpCCloECpBbsxnaztHhHbmCxtyxoIfkgJicJBfgsobruewfqmAwaBIgtFw/media_httpgyazocom8a9_pHxDc.png.scaled500.png" width="500" /></a> </div> <br /><p>▲考一次CCNA要花250元美金，不過也是有辦法便宜一點。</p> 資策會上課會使用Cisco的網路學院，課程會分4部分，每部分的結束會需要小測驗，而在最後一個部分的小測驗只要拿到75分以上就可以得到半價，而我最後也得到半價，這個當然需要一些技巧。 </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/kjBzBIvcHErbrjnjqjfzAHcHHnhrBwyjxCGvJriifzAotGerCxzFzlBGtzGH/media_httpfarm7static_CExyg.jpg.scaled1000.jpg" target="_blank" rel="noopener"><img alt="Media_httpfarm7static_cexyg" height="375" src="http://posterous.com/getfile/files.posterous.com/loukafai/kjBzBIvcHErbrjnjqjfzAHcHHnhrBwyjxCGvJriifzAotGerCxzFzlBGtzGH/media_httpfarm7static_CExyg.jpg.scaled500.jpg" width="500" /></a> </div> <br /><p>▲考試前1小時先去星巴克衝一杯，順便再複習一下。沒辦法下要用win，因為題庫要用win才能跑 </p>準備了半個月之後就要考試了，我準備的方式也跟別人差不多－邊複習邊背考古題。課程結束那天老師會把考古題（480題）和題庫模擬器發給大家。背題庫有用嗎？想考過的人自己衡量一下。 </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/dzvEihEycqbBCkJhxhpzdflEmAhhiyFtDcoHABjkEHcIhdGzbrvzyGHbdojj/media_httpfarm7static_GkCqD.jpg.scaled1000.jpg" target="_blank" rel="noopener"><img alt="Media_httpfarm7static_gkcqd" height="375" src="http://posterous.com/getfile/files.posterous.com/loukafai/dzvEihEycqbBCkJhxhpzdflEmAhhiyFtDcoHABjkEHcIhdGzbrvzyGHbdojj/media_httpfarm7static_GkCqD.jpg.scaled500.jpg" width="500" /></a> </div> <br />▲恆逸就是不一樣，有可以免費喝到飽的飲料。 <p>考試地點我選了台北的恆逸，是業界裡相當一個有名氣的地方。雖然沒有在這裡上課（太貴了）但還是想在考試時來朝勝一下。 </p><p><div class='p_embed p_image_embed'> <a href="http://posterous.com/getfile/files.posterous.com/loukafai/oGejiBdAclfsogDecoCfJzjouqIvhIduDekjodCmvvwbFywbIrnAvipbdIan/media_httpgyazocom2af_pHgta.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom2af_phgta" height="267" src="http://posterous.com/getfile/files.posterous.com/loukafai/oGejiBdAclfsogDecoCfJzjouqIvhIduDekjodCmvvwbFywbIrnAvipbdIan/media_httpgyazocom2af_pHgta.png.scaled500.png" width="500" /></a> </div> <br />▲考完CCNA就結束了嗎？不是的。因為CCNA有效期為3年，如果要延期就要在3年內重考或再繼續考 Cisco 的一些證照，考 CCNP 也是一個選擇。 </p><p>本篇同步張貼至 <a href="http://loukafai.blogspot.com" target="_blank" rel="noopener"> >輝>行部落 loukafai.blogspot.com </a></p></div>      <p style="font-size: 10px;">      <a href="http://posterous.com" target="_blank" rel="noopener">Posted via email</a>       from <a href="http://loukafai.posterous.com/-cisco-ccna" target="_blank" rel="noopener">小輝俠's Posterous</a>      </p>      </div>
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-02-27");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2011-07-31T15:24:00.001Z" itemprop="datePublished">2011-07-31</time>
+
+    , Updated at&nbsp;<time datetime="2020-02-27T07:23:15.840Z" itemprop="dateModified">2020-02-27</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/share/" rel="tag">#&nbsp;share</a>
+
+<a class="post-tags-list-item" href="/tags/%E4%BA%AB/" rel="tag">#&nbsp;享</a>
+
+<a class="post-tags-list-item" href="/tags/learn/" rel="tag">#&nbsp;learn</a>
+
+<a class="post-tags-list-item" href="/tags/cisco/" rel="tag">#&nbsp;cisco</a>
+
+<a class="post-tags-list-item" href="/tags/ccna/" rel="tag">#&nbsp;ccna</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2011/08/01/blog-post/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[電影] 決戰時刻～～為愛而戰</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2011/07/29/day21/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[生活] 畢業典禮之旅～day2～太魯閣1日遊</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

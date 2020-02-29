@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="website"><meta property="og:url" content="https://loukafai.github.io/page/9/"><meta property="og:locale" content="en"><meta name="description" content="Loukafai - faifai site">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/page/9/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    "url": "https://loukafai.github.io",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io"
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "Loukafai - faifai site"
+}
+</script>
+
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABhUlEQVR42u3ayw6DMAxEUf7/p9tti/wYUxQm1WWDVAU4i9SOnRwvg+sAAQLEFoijuL4e+PgtGnP+TXkvCF9EOGlOH4hA0cvP9/K9IKwR1cuyD0TQ7PnwGRBbI7LgpEBB/B+iCmJK0AKxJyJLNNlkzGCjxAjCFjFZpEzut622QSxFtEVrkbSUhe0tVTmIpYhqImVjJoEtK7BB+CO6ZsjVhki5KAJhj1CbZ1WimwQwEN4ItfBVmmpKMAPhj4genE7ECjFKYCAeRSiDlYL4pwQGwg7RJSt1TJcQy4kJwhahJKRuEndFFAhvRJacqqJY+aBUSIOwRyiL365Anmzkg/BFTA7uKE02pUgC4Y9QNtu7YqdNWEpBDMIO0QUnpSCWgxwIS4SyEVcthLuN+ts2Z0EsQ1xpbnRJTQl4ILwR3cGebvN1kuwuny4CsRwxPQQ+3agPgSC2RVw9UN420kBsi1ATlnL9/O8AsQzRLVjlIrcIUiD2QahN0GmSGzXOQNggnrxAgABhjXgD/UY5+VeUfigAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <div class="post-stream-container">
+                <!-- # Post List # -->
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/05/21/movie-2018-04/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-5-HDtJgyZzY/WunmUgoWY5I/AAAAAAAAOJA/CXsiUDIFQ14dOyl5FKRc_R0MjIx16Af8ACLcBGAs/s72-c/20180503.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/05/21/movie-2018-04/" rel="bookmark">[影視] 2018 年 4 月影視清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2018 年 4 月影視清單，個人觀影後的排名如下：行屍走肉 第八季 The Walking Dead Season 8 (2017)逃出絕命鎮 Get Out (2017)通勤營救 The Commuter (2018)殺破狼‧貪狼 Paradox (2017)  殺破狼‧貪狼 Paradox (2017)via 
+    <a href="/2018/05/21/movie-2018-04/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-05-21</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/05/05/2018-tokyo-spring-05/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-AvcxIPC6dYQ/XDNkmhXaIyI/AAAAAAAAZAc/xPFaujfXNVcoxmfbch95FWXkKLZAuu1aQCLcBGAs/s72-c/1_ep05.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/05/05/2018-tokyo-spring-05/" rel="bookmark">[旅行] 2018 東京六天遊 (5之5) 三鷹之森吉卜力美術館加吉祥寺足夠玩一天</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+今天回家的飛機是在晚上九點，所以還有一整個白天可以逛。今天行程主要是此行中的第三個重點：三鷹之森吉卜力美術館。（此行的三個重點：1 苗場滑雪、2 東京迪士尼樂園、3 三鷹之森吉卜力美術館）第六天行程 三鷹市     →     三鷹之森吉卜力美術館     →    
+    <a href="/2018/05/05/2018-tokyo-spring-05/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-05-05</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/05/04/2018-tokyo-spring-04/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-GG69fShcZr0/XDNm6WdrU5I/AAAAAAAAZEM/DvrhVX3UpB4dMhDhoQWihPsYYJlE-x5cACLcBGAs/s72-c/1_ep04.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/05/04/2018-tokyo-spring-04/" rel="bookmark">[旅行] 2018 東京六天遊 (5之4) 苗場滑雪初體驗，單板由頭摔到尾</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+我們入住【苗場王子飯店 Naeba Prince Hotel】兩天，也是說可以滑雪的時間是兩個白天。最後一天退房之後也不用怕行李的問題，因為可以利用【SEIBU PRINCE CLUB emi 會員】的優惠延後到下午 3 點退房，非常好用，所以記得一定！一定！一定！要申請。第四天行程 早餐：苗場王子飯店 Naeba Prince Hotel     →...
+    <a href="/2018/05/04/2018-tokyo-spring-04/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-05-04</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/05/03/2018-tokyo-spring-03/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-hLkUmuQAr88/XDO1ShqGt9I/AAAAAAAAZPw/8q1o5m6mz30djlpQ3bnMwABLIrGotWZEgCLcBGAs/s72-c/1_ep03.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/05/03/2018-tokyo-spring-03/" rel="bookmark">[旅行] 2018 東京六天遊 (5之3) 明治神宮保平安，苗場王子飯店好大雪</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+今天上午是自由活動，下午才出發【苗場王子飯店 Naeba Prince Hotel】，同行夥伴要去【上野動物園】，我們則是選擇了一個來東京都必去的景點之一：【明治神宮】。第三天行程 早餐：麥當當     →     退房：APA 飯店 - 巢鴨站前 (APA Hotel Suga...
+    <a href="/2018/05/03/2018-tokyo-spring-03/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-05-03</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/05/02/2018-tokyo-spring-02/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-Wv9jmUytRM4/XDO6SZrS1PI/AAAAAAAAZbM/O3d6Bgbu7uQyTWaZlYKcCUD_7kASYPKtQCLcBGAs/s72-c/1_ep02.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/05/02/2018-tokyo-spring-02/" rel="bookmark">[旅行] 2018 東京六天遊 (5之2) 夢幻東京迪士尼，幸福快樂一整天</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+這次去東京迪士尼，從早到晚一共玩了八個遊樂設施怪獸電力公司「迷藏巡遊車」星際旅行：冒險續航小熊維尼獵蜜記巴斯光年星際歷險加勒比海盜米奇魔法交響樂叢林巡航：勇闖野生世界太空山看了六個秀安娜與艾莎的冰雪夢幻美妮 噢！美妮日間遊行「幸福在這裡」夜間遊行「東京迪士尼樂園電子大遊行～夢之光」城堡投影秀「冰雪奇綠：經典永恆」城堡煙火秀這篇可以分享一下玩完之後的心得第二天行程
+    <a href="/2018/05/02/2018-tokyo-spring-02/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-05-02</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/05/01/2018-tokyo-spring-01/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://3.bp.blogspot.com/-kqjMeXVvGKE/XDO-wE5EFMI/AAAAAAAAZps/f0VJ_koqDccSVLteuGvxD-GWLZQew1VEwCLcBGAs/s72-c/1_ep01.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/05/01/2018-tokyo-spring-01/" rel="bookmark">[旅行] 2018 東京六天遊 (5之1) 虎航轉機去成田，塩大福原來會更甜</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+今年（2018）農曆新年的時候去了日本東京六日，此行的三個重點：1 苗場滑雪、2 東京迪士尼樂園、3 三鷹之森吉卜力美術館農曆新年期間的日本竟然沒有想像中那麼人擠人，蠻不錯。這次除了正妹之外，同行還有另外四位朋友，我跟他們不算很熟，是第一次跟他們出門旅行，不過大家的默契都不錯。你知道的，一團人行動總會多了些限制，不像兩個人那麼自由，但是勝在人多的話就能夠取長補缺，大家互相照顧，最後整個行程玩下來都算順利，希望之後還有機會一起出來玩囉！第一天行程 桃園機場     →    
+    <a href="/2018/05/01/2018-tokyo-spring-01/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-05-01</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/04/09/2018-3/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-S25i2t3nlYA/WsF94nnQ4vI/AAAAAAAAOAQ/fI7nu_GDHeoDVKYFAizJ-jo10rMJO4L_wCLcBGAs/s72-c/BeFunky%2BCollage.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/04/09/2018-3/" rel="bookmark">[電影] 2018 年 3 月電影清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+2018 年 3 月影視清單，個人觀影後的排名如下：Unnatural 法醫女王 (2018)追龍 Chasing the Dragon (2017)與神同行 Along With God (2017)完美巨聲幫 3 Pitch Perfect 3 (2017)加勒比海盜：惡靈啟航 Pirates of the Caribbean: Dead Men Tell No Tales (2017)潘多拉：永恆的生命 パンドラ～永遠の命～ (2014)與神同行 Along With God (2017)
+    <a href="/2018/04/09/2018-3/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-04-09</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/04/01/blog-post/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-P_pvvB4PiiQ/XLqMpviaofI/AAAAAAAAjwM/Rwg5sbrULHwQMHmRPFbSLGMMvDM2-oBawCLcBGAs/s72-c/IMG_20190117_110433_LI.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/04/01/blog-post/" rel="bookmark">[分享] 珠海拱北免費代收淘寶的菜鳥驛站</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+前陣子分享了我是用中國電信的預付卡來淘寶，想起其實玩淘寶的話，有一好用的【菜鳥驛站】也可以分享一下。個人之前一直用的是拱北地下商場的【高清電器行】，這家的服務不錯，收費不貴，所以使用這家的客人好多，我個人也用了好久。只是.....有時候會不小心手滑買了多，如果每件快遞收個 1、2、3 塊，合計起來不是一個小數目，於是就有了【菜鳥驛站】，免費代收快遞的出現。當然，世間上沒有免費的午餐，使用【菜鳥驛站】的免費代收條件是要在收件後 4 天領取，超過的話 1 天收 1 元，3 元封頂；而且，【菜鳥驛站】的位置距離關口是有點距離，不過還好營業時...
+    <a href="/2018/04/01/blog-post/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-04-01</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/03/28/blog-post/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://1.bp.blogspot.com/-L-J7arznbmI/WruI9X4hM7I/AAAAAAAAN94/_aHx5rq-uD4jbsiq9SwZoHX0J4EosM1qgCLcBGAs/s72-c/IMG_20180326_161610-01_preview.jpeg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/03/28/blog-post/" rel="bookmark">[分享] 中國電信一卡二號預付卡升級大灣區卡</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+   在澳門，如果要玩淘寶的朋友一定都要養一張大陸電話卡方便去收短訊，還有要辨大陸銀行開戶，搞定支付寶。 而我在手機電話卡這方面就選擇了「中國電信」的【一卡二號預付卡】，花費是每半年充值一次 50 元就可以了，重點是預付卡不用收取月費...
+    <a href="/2018/03/28/blog-post/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-03-28</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2018/03/25/2018-2/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://2.bp.blogspot.com/-xGu-frPSBxE/Wqu8tgudb_I/AAAAAAAAN54/jSINZbjf3v0KFR0d7TtwXm24QV_yAMxgQCLcBGAs/s72-c/FotoJet.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2018/03/25/2018-2/" rel="bookmark">[影視] 2018 年 2 月影視清單</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+[影視] 2018 年 2 月影視清單   2018 年 2 月影視清單，個人觀影後的排名如下： 巴利薛爾: 飛常任務 American Made (2017) 正義聯盟 Justice League (2017) 戰狼2 (2017) 銀翼殺手2049 Blade Runner 2049 (2017)   巴利薛爾: 飛常任務 American Made (2017) 
+    <a href="/2018/03/25/2018-2/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2018-03-25</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+        <li class="page-item page-prev">
+            <a href="/page/8/" rel="prev">
+                <span class="page-item-subtitle"><i class="icon icon-back" aria-hidden="true"></i></span>
+                <span class="page-item-title">Previous</span>
+            </a>
+        </li>
+    
+    
+        <li class="page-item page-next">
+            <a href="/page/10/" rel="next">
+                <span class="page-item-title">Next</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

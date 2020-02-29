@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="website"><meta property="og:url" content="https://loukafai.github.io/page/22/"><meta property="og:locale" content="en"><meta name="description" content="Loukafai - faifai site">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/page/22/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    "url": "https://loukafai.github.io",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io"
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "Loukafai - faifai site"
+}
+</script>
+
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABfklEQVR42u3aQQ6DMAxEUe5/6XbVDYrtcahgjD6bqi3QV8lKxgnHx+A4QIAAMQJxJMfv+/O5q/er67L7gvBGLItmgTh/Hl2r3BeEPyIryOi81Tnn69NCBzEScR6comKLrgPxPoRStMuBCMR4RHcCypB/n0VB3I5Qgu7O69/TNohbEGXTGgSX8MZJ+N3uykHcilg1M1lxKgVXTWYg/BHdpicKum0cCEtEtODRXVDLBrfwN0BYIpQgo6IqrBx0QTyKqBZEqqJTQk04yIGwRKSDSVJ4ZdEpYBDWiGqB9Gr4BTEHURVV1hRlTbQykIHwReyEkwyc/QkQMxDqBKYUqrLxAsIb0QmmVwpRCrogLBBZE1Q9uNFZQAExC1ENSsogpBwg5iCU0Fo1z52NOxDeiM5CelSwUeCRgy4IO4T6AI+yIa+EZRAzEFcLUgk6IN6BUDfe1E3+7aeVQVgidhrmdGMPhDVCWQxRJ7gq6IDwR3SCbhVmlEYahDfiyQMECBDWiC9MJgk48nRw+gAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <div class="post-stream-container">
+                <!-- # Post List # -->
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2015/01/06/keelung/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh5.googleusercontent.com/-roQNVOYYv1k/VKgw-YUVOQI/AAAAAAAADEQ/zMV3T4Ar2JU/s72-w450-c-h600-no/p2214519604.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2015/01/06/keelung/" rel="bookmark">[電影] 基隆 Keelung～～浪漫一夜情</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 基隆 Keelung～～浪漫一夜情  打個分： 劇情對白 ★★☆☆☆演員發揮 ★★★☆☆畫面音效 ★★☆☆☆ 簡單的小故事，檳榔西施和大陸漁民“一夜之情”，的而且確是一個晚上裡面所發生的故事，表面上是普普的小品戲，但卻點出了點點的人情味。 大陸漁工的任性出走，充滿了小小冒險的感覺，獨自游走在一個盼望已久的城市中，基隆，我自己亦曾經去過一次的地方，而且一樣是廟口夜市，同樣的經過那個漁港，只是差在沒有遇到美艷的檳榔西施 XD 戲中一段是說有一個隱藏的角子機店，不知道是否真有其事。 說演員...
+    <a href="/2015/01/06/keelung/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2015-01-06</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/12/29/blog-post_29/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-sWnKG14CHrk/XD2f0vUlq9I/AAAAAAAAgYA/9lthkBiu6zkX_b3wZOuGwU6Vra6bge1PQCLcBGAs/s72-c/1_16117129542_f4147b8b3f_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/12/29/blog-post_29/" rel="bookmark">[美食] 灣仔海鮮街～～現買現吃海鮮大餐</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+  ▲ [美食] 灣仔海鮮街～～現買現吃海鮮大餐 今時今日在澳門想吃便宜的海鮮，很難，但其實只要動一動腳，在距離澳門不遠的灣仔，就會發現很多好吃又便宜的海鮮，還是現買現煮的哦！！十分有趣。  
+    <a href="/2014/12/29/blog-post_29/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-12-29</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/12/21/100-break-up-100/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh3.googleusercontent.com/-dm5JVB9iYr4/VJWoMXI1zRI/AAAAAAAADDA/t0DxkD3uAm0/s72-w900-c/p2199342691.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/12/21/100-break-up-100/" rel="bookmark">[電影] 分手 100 次 Break Up 100～～床頭打交床尾和</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 分手 100 次 Break Up 100～～床頭打交床尾和  打個分： 劇情對白 ★★★☆☆演員發揮 ★★☆☆☆畫面音效 ★☆☆☆☆ 晚上最適合輕鬆的看個片，而且看這種不用看字幕的港片就最棒不過了。 片名叫《分手 100 次》，但是內容還是講分手，就是說雖然提出分手很多次，但每一次都分不成，所以第 100 次的分手會成功嗎？ 感情這東西真的很難說，是講緣份，同時亦需要雙方的努力經營，就像分手咖啡館的第一份分手禮物，鄭伊健也寫了：以為買了戒指就可以憧憬到幸福的出現，但是愛情是需要雙方的維繫才可以長久...
+    <a href="/2014/12/21/100-break-up-100/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-12-21</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/12/13/first-class/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh3.googleusercontent.com/-JryYB8c7Zkk/VIjqqSYP0nI/AAAAAAAADBw/5TvQjIHzzlM/s72-w640-c/p2179012512.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/12/13/first-class/" rel="bookmark">[日劇] First Class 時尚惡魔～～美女心計</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [日劇] First Class 時尚惡魔～～美女心計  有點像電影《穿著Prada的惡魔》的情節，也就是講一個天真小女生進入雜誌社裡，跟前輩們勾心斗角、力爭上位的故事，只不過這回是拍成了日劇，外加換了一堆正妹女演員。 心地善良的女主角用一顆真心感動了週邊的同事，她做事認真、待人誠懇果然有好的結局，在實際生活中我們都希望有同...
+    <a href="/2014/12/13/first-class/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-12-13</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/12/06/cafewaitinglove/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh3.googleusercontent.com/-EDVAze_29QM/VIJ-MJZnksI/AAAAAAAADA4/Ja0XT0V7D2Q/s72-w900-c/p2212613996.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/12/06/cafewaitinglove/" rel="bookmark">[電影] 等一個人咖啡 Café·Waiting·Love～～愛要講出來</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 等一個人咖啡 Café·Waiting·Love～～愛要講出來   打個分： 劇情對白 ★★☆☆☆演員發揮 ★★★☆☆畫面音效 ★☆☆☆☆ 看這部《等》之前還以為跟《那些年》一同樣是九把刀執導的電影，原來是別的導演江金霖，其實兩部電影看起的拍攝風格有點類似，反而我認為這部《等》還比《那》好笑一點，鋪的梗也比較多，我尤其覺得大嫂的奶頭有毒的梗超好笑滴～～（笑點低） 角色方面，覺得女主角宋芸樺演得不錯，很清新自然的感覺不輸陳妍希，而男主角布魯斯也演得很棒，看着他穿泳兒踩自排輪的樣子超好笑！還有，女主角那個練鐵頭功的室...
+    <a href="/2014/12/06/cafewaitinglove/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-12-06</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/12/04/hobbit-desolation-of-smaug/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh3.googleusercontent.com/--KhSmaxgciA/VIBBFsHsDKI/AAAAAAAADAM/A9kqf1BvT1c/s72-w800-c/p2158227665.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/12/04/hobbit-desolation-of-smaug/" rel="bookmark">[電影] 哈比人：荒谷惡龍 The Hobbit: The Desolation of Smaug～～史詩大作</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 哈比人：荒谷惡龍 The Hobbit: The Desolation of Smaug～～史詩大作  打個分： 劇情對白 ★★☆☆☆演員發揮 ★★☆☆☆畫面音效 ★★★☆☆ 《魔戒》系列對比起相類似的《哈利波特》電影系列，說真的，我比較愛哈利，不過魔戒的背景設定是比較大，電影裡面山山水水的拍得很遼闊，很帶感，尤其是這集裡面好幾個場景：森林、精靈國、湖邊國、矮人國山洞的場景都設計得很棒，光是看看那些等效就值回票價了。 以前我有看過小說，明明記得哈比人前傳系列的小說只有一本，但還是拍出了三集電影，算是因為近年小說改...
+    <a href="/2014/12/04/hobbit-desolation-of-smaug/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-12-04</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/12/03/blog-post/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh5.googleusercontent.com/-UJs-bRYJDJU/VH4kTv0-OvI/AAAAAAAAC-0/WyAJyk3Ho-U/s72-w838-c-h503-no/P41202-214829.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/12/03/blog-post/" rel="bookmark">[美食] 筷子基新泰屋泰國餐</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ [美食] 筷子基新泰屋泰國餐  學中舊同學由全職的工程師改去當保險，很好奇他為什麼要這樣做，剛好他有邀約說要吃飯，就去八卦一下。因為我本身已經買了保險，所以是沒有壓力啦！！ 說約好的快炒店竟然沒有訂位，同學你也太不貼心了吧！就改去了附近的泰國餐，看到「新泰屋」門口有點冷清有點怕怕，不過有人說之前來吃過，就放心衝了進去。  ▲ 先來杯青檸梳打 
+    <a href="/2014/12/03/blog-post/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-12-03</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/11/30/girls/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh4.googleusercontent.com/-WyhKhM2T0oU/VHrkYFMFhWI/AAAAAAAAC8I/pinwB5WcDT0/s72-w900-c/p2192252880.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/11/30/girls/" rel="bookmark">[電影] 閨蜜 Girls～～三個女人一個墟</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 閨蜜 Girls～～三個女人一個墟  打個分： 劇情對白 ★★☆☆☆演員發揮 ★★☆☆☆畫面音效 ★☆☆☆☆ 衝着中港台合拍片和 Fiona 才看的戲，當然陳意涵亦是看點之一，不過她那場裸泳的戲看頭實在有點小。 本來講女生間交誼的故事不是什麼太的特色，但這種故事在一般電影中真的比少見到，通常都是演三、四角戀。我想電影裡面好幾個橋段都是女生比較有感受的，像是朋友失戀陪逗她開心、介紹猛男給朋友認識、私下偷偷的幫朋友約對像，女生看起來都是會比較有共鳴的。 講演員，陳意涵和 Fiona 都演得很討喜，楊子姍...
+    <a href="/2014/11/30/girls/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-11-30</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/11/28/dawn-of-planet-of-apes/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh5.googleusercontent.com/-YH9jJtlT4Co/VHAqaL-psSI/AAAAAAAAC3Y/aXXqlCeQKKM/s72-w900-c/p2186373810.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/11/28/dawn-of-planet-of-apes/" rel="bookmark">[電影] 猿人爭霸戰：猩凶崛起 Dawn of the Planet of the Apes～～獸品爆發</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 猿人爭霸戰：猩凶崛起 Dawn of the Planet of the Apes～～獸品爆發  打個分： 劇情對白 ★★☆☆☆演員發揮 ★★★☆☆畫面音效 ★★★☆☆ 繼上一部《猩球崛起》後的續集，講述地球上大部分人類已經死光，只剩下一群有免疫力的人類聚集在一起，人類竟然變成由地類的霸主變成了瀕臨絕種的生物，真是諷刺。 好看在.... ...
+    <a href="/2014/11/28/dawn-of-planet-of-apes/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-11-28</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/11/27/legal-high-2014-sp/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh4.googleusercontent.com/-j7c6VU05keQ/VHX9hnacZnI/AAAAAAAAC7E/mtjD8IowkcA/s72-w900-c/p2211867194.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/11/27/legal-high-2014-sp/" rel="bookmark">[日劇] Legal High 2014 SP～～偽白色巨塔</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [日劇] Legal High 2014 SP～～偽白色巨塔  很期待的日劇 Legal High 出了 SP，這集維持了之前一貫的搞笑特色，再嘗試在劇情中展述一些小道理也可能是歪理。 這集比較驚喜是開場時惡搞了《白色巨塔》，一部相當經經而且我很喜歡的日劇，當然，這集除了是案子在醫院發生之外，跟《白色巨塔》是沒有任何關係的 XD 總結這集並不算十分精彩，新垣結衣和堺雅人經過了兩季的合作已經十分有默契，笑點是有但不多，在 ...
+    <a href="/2014/11/27/legal-high-2014-sp/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-11-27</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+        <li class="page-item page-prev">
+            <a href="/page/21/" rel="prev">
+                <span class="page-item-subtitle"><i class="icon icon-back" aria-hidden="true"></i></span>
+                <span class="page-item-title">Previous</span>
+            </a>
+        </li>
+    
+    
+        <li class="page-item page-next">
+            <a href="/page/23/" rel="next">
+                <span class="page-item-title">Next</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

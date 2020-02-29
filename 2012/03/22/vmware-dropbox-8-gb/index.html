@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>[享] 用 VMware 幫 Dropbox 增加 8 GB | faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="[享] 用 VMware 幫 Dropbox 增加 8 GB | faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="article"><meta property="og:url" content="https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/"><meta property="og:locale" content="en"><meta name="description" content="簡單分享一下怎樣利用 VMware 把 Dropbox 的 8GB 宣傳禮物容量灌滿     好像只有經歷過硬碟慘死之痛的人才會發現備份的重要，所以我之後都要把最後的東西多作備份，而其中一個方式就是丟到雲端上去，我這次就用 Dropbox  ● 方法（小弟以 winxp 為例）   準備 VMware 或 VirtualBox，然後灌好 win 或 ubuntu 準備一堆假 Email    下載 - Loukafai - faifai site"><meta name="keywords" content="share, 享, software"><meta property="og:image" content="http://getfile6.posterous.com/getfile/files.posterous.com/loukafai/qFJzHIfDcIznEtsgtJoCydJFBfwhGDmburxnlqcmqjlAmuEodhelmFfnklty/media_httpgyazocom091_Ignhy.png.scaled500.png"><meta property="og:image" content="http://getfile0.posterous.com/getfile/files.posterous.com/loukafai/jEfxpfHvrBEIqqnhhjgJaaipIzEzubjdqpbEfDzgcxcohbudAevsiycqGCiJ/media_httpgyazocom67c_glEvu.png.scaled500.png"><meta property="og:image" content="http://getfile1.posterous.com/getfile/files.posterous.com/loukafai/hGIFgbbGjpBmmHrAyiADzrgCfCvhExmaxetfDlwrvrouEtcbcDznbhJaDptD/media_httpgyazocom63b_tzfJf.png.scaled500.png"><meta property="og:image" content="http://getfile5.posterous.com/getfile/files.posterous.com/loukafai/jDIIoIiosmwcGotukIgfyBCglrsJbfJgIdADFJFcGvtkJdspogtfCrruhthw/media_httpgyazocom6bc_mBbop.png.scaled500.png"><meta property="og:image" content="http://getfile7.posterous.com/getfile/files.posterous.com/loukafai/rBAkrnhzxyypwpmfcznGFfwoGtefJItyudsrvydIwhhtipjvIsmGwgBkElwr/media_httpgyazocom7b4_vBdDi.png.scaled500.png"><meta property="og:image" content="http://getfile2.posterous.com/getfile/files.posterous.com/loukafai/pquHueteplcdjqgxsxvDehfgwdIEkxGpEtGjrjoyFHxsjHptryGxbmHgtrsq/media_httpgyazocom92b_EAeIe.png.scaled500.png"><meta property="article:published_time" content="2012-03-22T02:09:00.001Z"><meta property="article:modified_time" content="2020-02-27T07:23:15.550Z"><meta property="og:updated_time" content="2020-02-27T07:23:15.550Z"><meta property="article:author" content="Loukafai"><meta property="article:tag" content="share, 享, software"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/",
+    "@type": "BlogPosting",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/"
+    },
+    "headline": "[享] 用 VMware 幫 Dropbox 增加 8 GB | faifai site",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2012-03-22T02:09:00.001Z",
+    "dateModified": "2020-02-27T07:23:15.550Z",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "share, 享, software",
+    "description": "簡單分享一下怎樣利用 VMware 把 Dropbox 的 8GB 宣傳禮物容量灌滿     好像只有經歷過硬碟慘死之痛的人才會發現備份的重要，所以我之後都要把最後的東西多作備份，而其中一個方式就是丟到雲端上去，我這次就用 Dropbox  ● 方法（小弟以 winxp 為例）   準備 VMware 或 VirtualBox，然後灌好 win 或 ubuntu 準備一堆假 Email    下載 - Loukafai - faifai site"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=[享] 用 VMware 幫 Dropbox 增加 8 GB" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=[享] 用 VMware 幫 Dropbox 增加 8 GB&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=[享] 用 VMware 幫 Dropbox 增加 8 GB" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB4UlEQVR42u3b226DMBCEYd7/pdurSjRiZ2aBSvb256ZqQuBD2vgwdo6vBY8DFChQoC5Qhzh+3v/1wdP/7pzPc9V9QM1CXRZd8/Xzjd3DlA8JahRKFfjn61efcV+A6D6g/gVK3dAVMyhQFUo1krIxFA8Jaj6qunjrokVj+vooAdTyqGTi8Mbf12czoJZE2dBBYNUgryr4V1IXUEujVDhRDfDcINDhy2uCGoFyg7QkLKsKWoUdl+eDGoOqPlQVcVXUyZdFDvhAjUMluCQA6UBAzUN1B2huUKcepnoN1HxU0oh2Ol0V9seFDmoblFtMVItEnQY3GeiBmod6MgF1nbErclBzUE8WG5MJRqcBBTUD1QnoK+yfBhygtkS54nUbAd0CtrseqHmoZPLQ7XDThyvDfVDbojobcO6ck3TwoGaiOptvkslrZ3MPqFmoTlimLtr+kUUScIDaGqVC+s7ENV2AijdLgNoO1Rn0pxOIpOhtiw5qW5RdbA4D17uBG6h5qM6GZrUB4k4YYldGQW2LcgWuQg8VaLjryA4Z1PYoV+DpjzE6G5ofhWagtkV14N2NX7eTPFDbo9KNNi4gs8EJqFGopENOCjgBvDrIA7UkKu00k7A+Kug0NAO1JWqlAxQoUKBOxzcuLl9uHtDR5AAAAABJRU5ErkJggg==" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">[享] 用 VMware 幫 Dropbox 增加 8 GB</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <span>2012-03-22</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=[享] 用 VMware 幫 Dropbox 增加 8 GB&url=https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=[享] 用 VMware 幫 Dropbox 增加 8 GB&url=https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/&title=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=faifai site&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=https://loukafai.github.io/2012/03/22/vmware-dropbox-8-gb/&text=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB4UlEQVR42u3b226DMBCEYd7/pdurSjRiZ2aBSvb256ZqQuBD2vgwdo6vBY8DFChQoC5Qhzh+3v/1wdP/7pzPc9V9QM1CXRZd8/Xzjd3DlA8JahRKFfjn61efcV+A6D6g/gVK3dAVMyhQFUo1krIxFA8Jaj6qunjrokVj+vooAdTyqGTi8Mbf12czoJZE2dBBYNUgryr4V1IXUEujVDhRDfDcINDhy2uCGoFyg7QkLKsKWoUdl+eDGoOqPlQVcVXUyZdFDvhAjUMluCQA6UBAzUN1B2huUKcepnoN1HxU0oh2Ol0V9seFDmoblFtMVItEnQY3GeiBmod6MgF1nbErclBzUE8WG5MJRqcBBTUD1QnoK+yfBhygtkS54nUbAd0CtrseqHmoZPLQ7XDThyvDfVDbojobcO6ck3TwoGaiOptvkslrZ3MPqFmoTlimLtr+kUUScIDaGqVC+s7ENV2AijdLgNoO1Rn0pxOIpOhtiw5qW5RdbA4D17uBG6h5qM6GZrUB4k4YYldGQW2LcgWuQg8VaLjryA4Z1PYoV+DpjzE6G5ofhWagtkV14N2NX7eTPFDbo9KNNi4gs8EJqFGopENOCjgBvDrIA7UkKu00k7A+Kug0NAO1JWqlAxQoUKBOxzcuLl9uHtDR5AAAAABJRU5ErkJggg==" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#null"><span class="post-toc-number">1.</span> <span class="post-toc-text">● 方法（小弟以 winxp 為例）</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        
+<div class='posterous_autopost'><p><div class='p_embed p_image_embed'> <a href="http://getfile0.posterous.com/getfile/files.posterous.com/loukafai/qFJzHIfDcIznEtsgtJoCydJFBfwhGDmburxnlqcmqjlAmuEodhelmFfnklty/media_httpgyazocom091_Ignhy.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom091_ignhy" height="217" src="http://getfile6.posterous.com/getfile/files.posterous.com/loukafai/qFJzHIfDcIznEtsgtJoCydJFBfwhGDmburxnlqcmqjlAmuEodhelmFfnklty/media_httpgyazocom091_Ignhy.png.scaled500.png" width="500" /></a> </div> </p>  <p>簡單分享一下怎樣利用 VMware 把 <a href="http://www.dropbox.com" target="_blank" rel="noopener">Dropbox</a> 的 8GB 宣傳禮物容量灌滿</p>  <a name='more'></a>   <p>好像只有經歷過硬碟慘死之痛的人才會發現備份的重要，所以我之後都要把最後的東西多作備份，而其中一個方式就是丟到雲端上去，我這次就用 <a href="http://www.dropbox.com" target="_blank" rel="noopener">Dropbox</a></p>  <h1>● 方法（小弟以 winxp 為例）</h1>  <ol> <li>準備 VMware 或 VirtualBox，然後灌好 win 或 ubuntu</li> <li>準備一堆假 Email<br /><div class='p_embed p_image_embed'> <a href="http://getfile7.posterous.com/getfile/files.posterous.com/loukafai/jEfxpfHvrBEIqqnhhjgJaaipIzEzubjdqpbEfDzgcxcohbudAevsiycqGCiJ/media_httpgyazocom67c_glEvu.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom67c_glevu" height="339" src="http://getfile0.posterous.com/getfile/files.posterous.com/loukafai/jEfxpfHvrBEIqqnhhjgJaaipIzEzubjdqpbEfDzgcxcohbudAevsiycqGCiJ/media_httpgyazocom67c_glEvu.png.scaled500.png" width="500" /></a> </div> </li> <li>下載 <a href="http://hhriver.com/wp-content/uploads/2011/11/MAC%E5%9C%B0%E5%9D%80%E4%BF%AE%E6%94%B9%E5%99%A8.rar" target="_blank" rel="noopener">MAC 地址修改器</a></li> <li>把自己的邀請連結放到桌面（方便快速打開），把 Dropbox 桌上版裝好<br /><div class='p_embed p_image_embed'> <img alt="Media_httpgyazocom63b_tzfjf" height="285" src="http://getfile1.posterous.com/getfile/files.posterous.com/loukafai/hGIFgbbGjpBmmHrAyiADzrgCfCvhExmaxetfDlwrvrouEtcbcDznbhJaDptD/media_httpgyazocom63b_tzfJf.png.scaled500.png" width="449" /> </div> </li> <li>先把網路卡停用，用 <a href="http://hhriver.com/wp-content/uploads/2011/11/MAC%E5%9C%B0%E5%9D%80%E4%BF%AE%E6%94%B9%E5%99%A8.rar" target="_blank" rel="noopener">MAC 地址修改器</a> 把 MAC 地址改掉（每次在最後一位數＋1 就可以了），再把網路卡啟用<br /><div class='p_embed p_image_embed'> <a href="http://getfile9.posterous.com/getfile/files.posterous.com/loukafai/jDIIoIiosmwcGotukIgfyBCglrsJbfJgIdADFJFcGvtkJdspogtfCrruhthw/media_httpgyazocom6bc_mBbop.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom6bc_mbbop" height="330" src="http://getfile5.posterous.com/getfile/files.posterous.com/loukafai/jDIIoIiosmwcGotukIgfyBCglrsJbfJgIdADFJFcGvtkJdspogtfCrruhthw/media_httpgyazocom6bc_mBbop.png.scaled500.png" width="500" /></a> </div> </li> <li>為了方便起見，我都把 MAC 地址和假 Email 編號一致，方便記認<br /> eg. <a href="mailto:「037sdsdflks.sd.sdffdfl.dfb@msn.com">「037sdsdflks.sd.sdffdfl.dfb@msn.com</a>」用 「00-0C-29-87-5E-37」</li> <li>用假 Email 注冊一個 Dropbox 帳號，再用 Dropbox 桌上版登入<br /><div class='p_embed p_image_embed'> <a href="http://getfile3.posterous.com/getfile/files.posterous.com/loukafai/rBAkrnhzxyypwpmfcznGFfwoGtefJItyudsrvydIwhhtipjvIsmGwgBkElwr/media_httpgyazocom7b4_vBdDi.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom7b4_vbddi" height="471" src="http://getfile7.posterous.com/getfile/files.posterous.com/loukafai/rBAkrnhzxyypwpmfcznGFfwoGtefJItyudsrvydIwhhtipjvIsmGwgBkElwr/media_httpgyazocom7b4_vBdDi.png.scaled500.png" width="500" /></a> </div> </li> <li>進入 Dropbox 帳號裡的 Referral status 可以看到 “Completed” 才代表成功哦！！<br /><div class='p_embed p_image_embed'> <a href="http://getfile5.posterous.com/getfile/files.posterous.com/loukafai/pquHueteplcdjqgxsxvDehfgwdIEkxGpEtGjrjoyFHxsjHptryGxbmHgtrsq/media_httpgyazocom92b_EAeIe.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom92b_eaeie" height="360" src="http://getfile2.posterous.com/getfile/files.posterous.com/loukafai/pquHueteplcdjqgxsxvDehfgwdIEkxGpEtGjrjoyFHxsjHptryGxbmHgtrsq/media_httpgyazocom92b_EAeIe.png.scaled500.png" width="500" /></a> </div> </li> <li>總結一下，整個方法就是不斷重複以下步驟直到拿完 8 GB 為止，專心做的話大概只要花 2 個小時左右<br /> 「斷掉網路卡 → 改 MAC 地址 → 啟動網路卡 → 用假 Email 透過邀請連結注冊 → 用假 Email 登入 Dropbox 桌面版 → 檢查是否成功」</li> </ol></div>
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-02-27");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2012-03-22T02:09:00.001Z" itemprop="datePublished">2012-03-22</time>
+
+    , Updated at&nbsp;<time datetime="2020-02-27T07:23:15.550Z" itemprop="dateModified">2020-02-27</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/share/" rel="tag">#&nbsp;share</a>
+
+<a class="post-tags-list-item" href="/tags/%E4%BA%AB/" rel="tag">#&nbsp;享</a>
+
+<a class="post-tags-list-item" href="/tags/software/" rel="tag">#&nbsp;software</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2012/03/25/espresso/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[生活] Espresso。拿鐵。白咖啡</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2012/03/18/blog-post_18/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[電影] 我的見鬼女友～～需要戀愛</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

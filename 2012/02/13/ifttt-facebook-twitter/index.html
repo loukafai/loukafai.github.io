@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>[享] ifttt 同步 facebook 與 twitter | faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="[享] ifttt 同步 facebook 與 twitter | faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="article"><meta property="og:url" content="https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/"><meta property="og:locale" content="en"><meta name="description" content="▲ 分享一個使用 ifttt 同步 facebook 與 twitter 的方法     最近正式開始用 twitter，想要用 twitter 的原因是它在於「純文字訊息」傳播和交流的方式比 facebook 較強，而且高手們都愛用 twitter。  雖然不喜歡 facebook 但是可惜偏偏不能完全放棄它，所以辦法就是讓 facebook 與 twitter 同步。其實類似的方法是用 pin - Loukafai - faifai site"><meta name="keywords" content="share, 享, twitter, facebook"><meta property="og:image" content="http://getfile1.posterous.com/getfile/files.posterous.com/loukafai/zbIIFCeupadzmBjxarzFyGEcvnghcFHhmcymAxzGamucyrgbhmfnvdnEmqGB/media_httpgyazocom6f6_FcbHF.png.scaled500.png"><meta property="og:image" content="http://getfile7.posterous.com/getfile/files.posterous.com/loukafai/ioxyplduvlJGlanfdfiHwgCifnnvGGmizcEngyqDzEvvBjgbEeyCqutFAuzk/media_httpgyazocomfe3_HnkDi.png.scaled500.png"><meta property="og:image" content="http://gyazo.com/ab53e93aa693f8fdb7dd31a8ac85b52a.png"><meta property="og:image" content="http://getfile5.posterous.com/getfile/files.posterous.com/loukafai/tsCophDsBsnquptuJGwaCmmzftAEczgrhDdpfHrnbbusJDfuFedoGiAjCDJf/media_httpgyazocom0bd_eEAlJ.png.scaled500.png"><meta property="og:image" content="http://gyazo.com/57d92f51d408aa4683fb68e33fd491f2.png"><meta property="og:image" content="http://getfile3.posterous.com/getfile/files.posterous.com/loukafai/mGsApHleoFrxeqpjtgtdwojmCbbhvgEbFbjbrihAeaByIaiwjjadbxGHstvo/media_httpgyazocom739_cgAsh.png.scaled500.png"><meta property="og:image" content="http://getfile8.posterous.com/getfile/files.posterous.com/loukafai/mekCedEhuaoDHpDdeccmvJzrIJyeFmpDDbedoCozjjryzpCwlgbqruswfBfg/media_httpgyazocoma86_bBJFj.png.scaled500.png"><meta property="og:image" content="http://getfile8.posterous.com/getfile/files.posterous.com/loukafai/bIADcpoHieBardAsiAhrHpuoDgwubInlnlmvtmqIGogmtdibgddbaCrrGlwA/media_httpgyazocom3f8_uyDlJ.png.scaled500.png"><meta property="article:published_time" content="2012-02-13T09:19:00.001Z"><meta property="article:modified_time" content="2020-02-29T02:15:22.591Z"><meta property="og:updated_time" content="2020-02-29T02:15:22.591Z"><meta property="article:author" content="Loukafai"><meta property="article:tag" content="share, 享, twitter, facebook"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/",
+    "@type": "BlogPosting",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/"
+    },
+    "headline": "[享] ifttt 同步 facebook 與 twitter | faifai site",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2012-02-13T09:19:00.001Z",
+    "dateModified": "2020-02-29T02:15:22.591Z",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "share, 享, twitter, facebook",
+    "description": "▲ 分享一個使用 ifttt 同步 facebook 與 twitter 的方法     最近正式開始用 twitter，想要用 twitter 的原因是它在於「純文字訊息」傳播和交流的方式比 facebook 較強，而且高手們都愛用 twitter。  雖然不喜歡 facebook 但是可惜偏偏不能完全放棄它，所以辦法就是讓 facebook 與 twitter 同步。其實類似的方法是用 pin - Loukafai - faifai site"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=[享] ifttt 同步 facebook 與 twitter" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=[享] ifttt 同步 facebook 與 twitter&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=[享] ifttt 同步 facebook 與 twitter" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB3UlEQVR42u3a22rEMAyE4bz/S7dXhXZraUaGgDP5cxPYzdrfguKD5OvrwOsCBQoUqAXqaq6f71f36rM/nXw82/UDKgs1bbAM1OY5qx9QUagqwKtG2oAtPlP9gHoHqgvuz+e74AYFqgroKpA7CKh3orpBsmu0G1hvWyWAOh61s3HYud++mwF1BEomHYpFnzu4dhuN7awLqKNRTmfVom41UF7mNRrRQT0K1W0AKpBa0DkvyfJ5UBEoBagadBMcXQIXVCZquolUL8Bk0wAqE+VMnJNJ2m1j+YdARaBUQLtJelVAsiZwUBEoJwAnoG5z2hWUQGWh3IKQCmA30WGtPEE9FuVsINukxCARogZQUDmo7odO4v62rAuoR6LcIqTzMjhJ/1HWBdSjUWrAU0VrJykifwcqAqUQXWHJWQA6BylAZaGmiXjnoPPkACuoPJTT4U6hezpwgspGOZO0Wtg5yTJQmSgn0eUculFFSeegF6gMlCw2G8kzleh3F3ugMlA7RW21KHQG2O3DEqAegVIBPi08uhuPf38IVBRqnDQ1D8erFwTU+1DVxrNbtE2K4VZyH1QkSsGcQrl8FlQUSk3IXQGoGxQnB5xB5aCcSVMd/lJtqUP4oHJQJ12gQIEC9ev6BuV5H65Jyb3OAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">[享] ifttt 同步 facebook 與 twitter</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <span>2012-02-13</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=[享] ifttt 同步 facebook 與 twitter&url=https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=[享] ifttt 同步 facebook 與 twitter&url=https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/&title=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=faifai site&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=https://loukafai.github.io/2012/02/13/ifttt-facebook-twitter/&text=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAAAAABQV18IAAAB3UlEQVR42u3a22rEMAyE4bz/S7dXhXZraUaGgDP5cxPYzdrfguKD5OvrwOsCBQoUqAXqaq6f71f36rM/nXw82/UDKgs1bbAM1OY5qx9QUagqwKtG2oAtPlP9gHoHqgvuz+e74AYFqgroKpA7CKh3orpBsmu0G1hvWyWAOh61s3HYud++mwF1BEomHYpFnzu4dhuN7awLqKNRTmfVom41UF7mNRrRQT0K1W0AKpBa0DkvyfJ5UBEoBagadBMcXQIXVCZquolUL8Bk0wAqE+VMnJNJ2m1j+YdARaBUQLtJelVAsiZwUBEoJwAnoG5z2hWUQGWh3IKQCmA30WGtPEE9FuVsINukxCARogZQUDmo7odO4v62rAuoR6LcIqTzMjhJ/1HWBdSjUWrAU0VrJykifwcqAqUQXWHJWQA6BylAZaGmiXjnoPPkACuoPJTT4U6hezpwgspGOZO0Wtg5yTJQmSgn0eUculFFSeegF6gMlCw2G8kzleh3F3ugMlA7RW21KHQG2O3DEqAegVIBPi08uhuPf38IVBRqnDQ1D8erFwTU+1DVxrNbtE2K4VZyH1QkSsGcQrl8FlQUSk3IXQGoGxQnB5xB5aCcSVMd/lJtqUP4oHJQJ12gQIEC9ev6BuV5H65Jyb3OAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#null"><span class="post-toc-number">1.</span> <span class="post-toc-text">使用方法：</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        
+<div class='posterous_autopost'><p><div class='p_embed p_image_embed'> <img alt="Media_httpgyazocom6f6_fcbhf" height="300" src="http://getfile1.posterous.com/getfile/files.posterous.com/loukafai/zbIIFCeupadzmBjxarzFyGEcvnghcFHhmcymAxzGamucyrgbhmfnvdnEmqGB/media_httpgyazocom6f6_FcbHF.png.scaled500.png" /> </div> </p>  <p>▲ 分享一個使用 <a href="http://ifttt.com/" target="_blank" rel="noopener">ifttt</a> 同步 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a> 與 <a href="https://twitter.com/" target="_blank" rel="noopener">twitter</a> 的方法</p>  <a name='more'></a>   <blockquote><p>最近正式開始用 <a href="https://twitter.com/" target="_blank" rel="noopener">twitter</a>，想要用 <a href="https://twitter.com/" target="_blank" rel="noopener">twitter</a> 的原因是它在於「純文字訊息」傳播和交流的方式比 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a> 較強，而且高手們都愛用 twitter。</p></blockquote>  <p>雖然不喜歡 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a> 但是可惜偏偏不能完全放棄它，所以辦法就是讓 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a> 與 <a href="https://twitter.com/" target="_blank" rel="noopener">twitter</a> 同步。其實類似的方法是用 <a href="http://ping.fm/" target="_blank" rel="noopener">ping.fm</a> ，但是 <a href="http://ping.fm/" target="_blank" rel="noopener">ping.fm</a> 的使用方法需要登入它們的網頁，而我想要的是<strong>「把我在 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a> 上寫的東西直接同步到 twitter」</strong>，不止是用電腦發的 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a>，連手機也上發的也可以。</p>  <h1>使用方法：</h1>  <p><a href="http://ifttt.com/" target="_blank" rel="noopener">ifttt</a>的工作原理是：「如果這樣&hellip;.就做那樣」，所以我們可以利用這個特性去做 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a> 對 <a href="https://twitter.com/" target="_blank" rel="noopener">twitter</a> 的轉發；告訴 <a href="http://ifttt.com/" target="_blank" rel="noopener">ifttt</a> 如果你在 facebook 寫了一個新的近況或發了一張新的照片就同步到 twitter </p>  <p><div class='p_embed p_image_embed'> <img alt="Media_httpgyazocomfe3_hnkdi" height="582" src="http://getfile7.posterous.com/getfile/files.posterous.com/loukafai/ioxyplduvlJGlanfdfiHwgCifnnvGGmizcEngyqDzEvvBjgbEeyCqutFAuzk/media_httpgyazocomfe3_HnkDi.png.scaled500.png" width="496" /> </div> </p>  <p>▲ 先<a href="https://ifttt.com/join" target="_blank" rel="noopener">去 ifttt 申請一個帳號</a></p>  <p><div class='p_embed p_image_embed'> <img alt="" src="http://gyazo.com/ab53e93aa693f8fdb7dd31a8ac85b52a.png" width=500 /> </div> </p>  <p>▲ 然後點「Create a task」來新增 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a> 與 <a href="https://twitter.com/" target="_blank" rel="noopener">twitter</a> 的同步任務</p>  <p><div class='p_embed p_image_embed'> <a href="http://getfile2.posterous.com/getfile/files.posterous.com/loukafai/tsCophDsBsnquptuJGwaCmmzftAEczgrhDdpfHrnbbusJDfuFedoGiAjCDJf/media_httpgyazocom0bd_eEAlJ.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom0bd_eealj" height="415" src="http://getfile5.posterous.com/getfile/files.posterous.com/loukafai/tsCophDsBsnquptuJGwaCmmzftAEczgrhDdpfHrnbbusJDfuFedoGiAjCDJf/media_httpgyazocom0bd_eEAlJ.png.scaled500.png" width="500" /></a> </div> </p>  <p>▲ 不止 <a href="https://twitter.com/" target="_blank" rel="noopener">twitter</a> 和 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a>，<a href="http://ifttt.com/" target="_blank" rel="noopener">ifttt</a> 還可以同步很多東西像：rss、e-mail、delicious</p>  <p><div class='p_embed p_image_embed'> <img alt="" src="http://gyazo.com/57d92f51d408aa4683fb68e33fd491f2.png" width=500 /> </div> </p>  <p>▲ 然後設定 <a href="http://www.facebook.com" target="_blank" rel="noopener">facebook</a> 的觸發條件[New status message by you]、[New link post by you]、[You upload a new photo] 都需要設</p>  <p><div class='p_embed p_image_embed'> <a href="http://getfile7.posterous.com/getfile/files.posterous.com/loukafai/mGsApHleoFrxeqpjtgtdwojmCbbhvgEbFbjbrihAeaByIaiwjjadbxGHstvo/media_httpgyazocom739_cgAsh.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom739_cgash" height="378" src="http://getfile3.posterous.com/getfile/files.posterous.com/loukafai/mGsApHleoFrxeqpjtgtdwojmCbbhvgEbFbjbrihAeaByIaiwjjadbxGHstvo/media_httpgyazocom739_cgAsh.png.scaled500.png" width="500" /></a> </div> </p>  <p>▲ 設定目標對象是 twitter</p>  <p><div class='p_embed p_image_embed'> <a href="http://getfile4.posterous.com/getfile/files.posterous.com/loukafai/mekCedEhuaoDHpDdeccmvJzrIJyeFmpDDbedoCozjjryzpCwlgbqruswfBfg/media_httpgyazocoma86_bBJFj.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocoma86_bbjfj" height="299" src="http://getfile8.posterous.com/getfile/files.posterous.com/loukafai/mekCedEhuaoDHpDdeccmvJzrIJyeFmpDDbedoCozjjryzpCwlgbqruswfBfg/media_httpgyazocoma86_bBJFj.png.scaled500.png" width="500" /></a> </div> </p>  <p>▲ 目標所執行的對應動作也要設</p>  <p><div class='p_embed p_image_embed'> <a href="http://getfile9.posterous.com/getfile/files.posterous.com/loukafai/bIADcpoHieBardAsiAhrHpuoDgwubInlnlmvtmqIGogmtdibgddbaCrrGlwA/media_httpgyazocom3f8_uyDlJ.png.scaled1000.png" target="_blank" rel="noopener"><img alt="Media_httpgyazocom3f8_uydlj" height="316" src="http://getfile8.posterous.com/getfile/files.posterous.com/loukafai/bIADcpoHieBardAsiAhrHpuoDgwubInlnlmvtmqIGogmtdibgddbaCrrGlwA/media_httpgyazocom3f8_uyDlJ.png.scaled500.png" width="500" /></a> </div> </p>  <p>▲ 嫌麻煩的話，以上3個動作我都已經設好了，可以點以下的連結直接服用</p>  <ol> <li><a href="http://ifttt.com/recipes/20843" target="_blank" rel="noopener">fb[link] to twitter</a></li> <li><a href="http://ifttt.com/recipes/20842" target="_blank" rel="noopener">fb[status] to twitter</a></li> <li><a href="http://ifttt.com/recipes/20838" target="_blank" rel="noopener">fb[img] to twitter</a></li> </ol></div>
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-02-29");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2012-02-13T09:19:00.001Z" itemprop="datePublished">2012-02-13</time>
+
+    , Updated at&nbsp;<time datetime="2020-02-29T02:15:22.591Z" itemprop="dateModified">2020-02-29</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/share/" rel="tag">#&nbsp;share</a>
+
+<a class="post-tags-list-item" href="/tags/%E4%BA%AB/" rel="tag">#&nbsp;享</a>
+
+<a class="post-tags-list-item" href="/tags/twitter/" rel="tag">#&nbsp;twitter</a>
+
+<a class="post-tags-list-item" href="/tags/facebook/" rel="tag">#&nbsp;facebook</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2012/02/16/4gb-ddr3-mbp-13-09-mid-1333-mhz/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[敗] 創見 4GB DDR3 記憶體 mbp 13 09 mid 直接升級 1333 Mhz</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2012/02/10/blog-post_09/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[生活] 我的桌面。開工紅包。上班儀式</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

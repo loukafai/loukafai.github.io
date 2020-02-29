@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="website"><meta property="og:url" content="https://loukafai.github.io/page/24/"><meta property="og:locale" content="en"><meta name="description" content="Loukafai - faifai site">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/page/24/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    "url": "https://loukafai.github.io",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io"
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "",
+    "description": "Loukafai - faifai site"
+}
+</script>
+
+
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIQAAACECAAAAAB0L9x7AAABiElEQVR42u3awRLCIAyE4b7/S+vVUchuKoOL8/dSx7HlO2ASAtcj4LpAgABxBOIqLvmSl9+9P+e8F0QuYjZANWiFcd8LIhsxmlgfDw0+O/fRe0GcjZhBnIkJ4j8RVbIbfQ/iPxCzROMMOpusy7IoiO2IqiD95r6s2gaxFeEscMrJJQrbJatyEFsRbgAqE1Ej2YE4A6ECj5p4l7jsBAYiAqEKF2dRfDeAgchFVEXubHHsTDyFApGP6A4yLF47TVgQkQin0TEDLs2iIGIQVWFTJTQ3wVmFLohYhApMTtFbDV4mMBBxCKfh7mzIVw1ZOTFBRCBmQafVADMSmNx0ARGFcIqWYbCZBCS3yQIiG+EkLqe55jwL4hyEW9gqtNrQBZGN6GzEOYdGq4AG4gxE56CwKlqchXVZ6IKIQagmuwpinYb716eLQGxD3DnQc+eQoN1gBxGPUJss1aLaSmAgjkNUGy1Oo2TZvwPENoQqWNUhIIVrr8pB/BThNEE7EHejBkQm4pcXCBAgohFPzHMZKBtilt4AAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            <div class="container">
+    <div class="main-container">
+        <main>
+            <div class="post-stream-container">
+                <!-- # Post List # -->
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/27/prisoners/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh6.googleusercontent.com/-2GU-HMXnSDc/VE0ch42xTvI/AAAAAAAACyY/A-zvFaUHNmQ/s72-w800-c/p2119799056.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/27/prisoners/" rel="bookmark">[電影] 囚徒 Prisoners～～綁架良心</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 囚徒 Prisoners～～綁架良心   打個分： 劇情對白 ★★★☆☆演員發揮 ★★☆☆☆畫面音效 ★★☆☆☆  由兩大荷里活男星 Hugh Jackman 和 Jake Gyllenhaal 擔演，內容是講一個綁架的故事，卻牽涉出十多年前一陣串的人口蹤事件。 //好看在...... 整部片的氣氛與劇情。對於一個犯罪故事，我認為劇本是相對寫實的，不像一般的犯罪電影，這部《囚徒》在一開始不到 10 分鐘就已經直接切入重點－人口失蹤。在一個美國小鎮要找出兩個失蹤的小女孩，天大地大真的是談何容易，而且線索不多，真的不知道要如何下手，接而...
+    <a href="/2014/10/27/prisoners/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-27</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/20/2-purge-anarchy/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh5.googleusercontent.com/-ZdAVwGAi1YU/VEPImWb15PI/AAAAAAAACxI/yeKYSto37vY/s72-w800-c/p2205028302.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/20/2-purge-anarchy/" rel="bookmark">[電影] 國定殺戮日 2 The Purge: Anarchy～～殺他死</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 國定殺戮日 2 The Purge: Anarchy～～殺他死  打個分： 劇情對白 ★★☆☆☆演員發揮 ★★☆☆☆畫面音效 ★★☆☆☆ 這集比上一集要刺激一些，同時亦加入了許多上一集沒有的元素，包括一連串的追殺戲碼。第一集只有探討當人們在面對危機時是否還會保留信任，是人性的角力；而這一集在保留以上的這些同素同時，加入了很多權力階級對低層的打壓，復仇的代價，道德邊沿和理性的爭扎，劇情豐富了不少。 這一集的成本應該比上一集多很多，戲中有拍出整個城市死寂一片的畫片，場景不再局限在一個房子裡，而是給觀眾看到一座城市。 ...
+    <a href="/2014/10/20/2-purge-anarchy/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-20</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/18/singapore/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh3.googleusercontent.com/-e_ZV-yBlENw/VD_Q1KuMbMI/AAAAAAAACuQ/ceLkWcPZRdQ/s72-w1024-c/photoshake_1413468313603.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/18/singapore/" rel="bookmark">[生活] 宮原眼科茶包。A&F 襯衫。Singapore 咖啡筆</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ 宮原眼科茶包，包裝很精美   宮原眼科是第朋友去台灣玩的時候來問我問題才知道，好像是很有名的店，不過這店在台中，而我對台中不熟，所以不認識也是剛好而已 XD 最後朋友買了一組茶包回來當伴手禮，愛喝茶的我當然要好好品嚐一下。 朋友他這次帶回來的茶是混合茶，就是傳統的茶（鐵觀音、普洱）再加上一些花茶，喝起來有不同的 fu，但我還是覺得價位有點高，不過用來送人會是不錯的禮物（如果對方也愛喝茶的話） 
+    <a href="/2014/10/18/singapore/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-18</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/15/edge-of-tomorrow/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh5.googleusercontent.com/-eKdoCMiITzk/VD6H_9qgTtI/AAAAAAAACt8/NCccd0Lz3xc/s72-w800-c/p2184291209.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/15/edge-of-tomorrow/" rel="bookmark">[電影] 異空戰士 Edge of Tomorrow～～屈機遊戲</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 異空戰士 Edge of Tomorrow～～屈機遊戲   又是一部跟時間有關的戲，2011 年已經有一部《Source Code》相類似的劇情，兩部比較起來的話，我會選《Source Code》，就因為它最後結局帶給我的衝擊更大。話說最近的《X-Men: Days of Future Past》也是一部「回到過去」的戲，看來最近很流行玩這種，只是玩出來的效果好不好又是一另回事。 //緣來緣去.... 這種「回到過去」的戲一般有兩種拍法...
+    <a href="/2014/10/15/edge-of-tomorrow/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-15</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/12/2-22-jump-street/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh5.googleusercontent.com/-4YgD_-OvMBc/VDmaBz0_jXI/AAAAAAAACtE/7ezO92KLbA8/s72-w700-c/p2202036246.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/12/2-22-jump-street/" rel="bookmark">[電影] 龍虎少年隊 2 22 Jump Street～～難兄難弟</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 龍虎少年隊 2 22 Jump Street～～難兄難弟  本來是因為好奇看了第二集，但是發現這片意外的好笑，所以接續再看了第一集，不過第一集就不沒有第二集的精彩搞笑，算是打破了「續集都比較爛」的定律。 這片有點像星爺的「逃學威龍」，看來重返校院當臥底的劇情不論中外都是非常受歡迎。 //好看在.... 笑點十足，低俗但不失稚氣。第二集比較好笑，可能是因為劇本在高中裡面的「可玩性」沒有大學的多，在大學圈子裡可以加入更多開放...
+    <a href="/2014/10/12/2-22-jump-street/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-12</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/10/runner-runner/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh3.googleusercontent.com/-LyWVLWzmKQU/VDaqtyFmsYI/AAAAAAAACsM/5n6u3FUWgD0/s72-w700-c/p2010544596.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/10/runner-runner/" rel="bookmark">[電影] 逆轉王賭 Runner Runner～～要脅利用</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 逆轉王賭 Runner Runner～～要脅利用   個人看完是覺得頗喜歡的電影，但翻查了 imdb 的評分有點低。看來是因為以一部劇情犯罪片來說，這片點子的確是有點弱，許多主角的陰謀詭計都太過平鋪直敘，缺乏結局高潮的驚喜。 //好看在..... 最恐怖的是人心。 本來 Ivan (Ben Affleck 飾) 最後可以脫身，但就是因為被女伴 Rebecca 出賣，聰明一世就是敵不過對手的真愛至上。還有另一個好看的點是戲中看了大...
+    <a href="/2014/10/10/runner-runner/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-10</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/05/enemy-of-state/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh6.googleusercontent.com/-_HmUG-ZRUBQ/VDFg0eiaeqI/AAAAAAAACrs/PMni1pS5a-s/s72-w700-c/p2197176664.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/05/enemy-of-state/" rel="bookmark">[電影] 國家公敵 Enemy of the State～～無孔不入</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 國家公敵 Enemy of the State～～無孔不入  一部 1998 年的電影，雖然已經距離現在 16 年了，但是裡面的劇情竟然與近年的斯諾登事件十分相似，又是荷里活電影成為預言的一個例子。 本片是想要探討先進科技對人權侵犯的影響，我們究竟是要以安全為主還是要保留個人的隱私為重點。在本片中最後是政府輸了，但是現實生活中，我們就是被所謂的安全機關一直監視都不知道，再加上最近的
+    <a href="/2014/10/05/enemy-of-state/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-05</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/04/3/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh6.googleusercontent.com/wJ_YetmETV71WPoFgyPz831SKBOhq3hgsx8CGfR4bn0=s72-w700-c)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/04/3/" rel="bookmark">[日劇] 晝顏～平日午後3點的戀人們～～好心分手</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [日劇] 晝顏～平日午後3點的戀人們～～好心分手   秋天已經來到，看來今年都是看不到像「Summer Nude」這樣充滿夏日氣息的日劇了，乾脆就看看另類一點的題材吧！ 看到這部的標題是「午後3點的戀人」，起初還以為是下班才能去談戀愛的意思，但原來是講一種充滿禁忌的愛－出軌。 好像最近的日劇普遍的都有這樣的問題，就是開始時前半段的發展很精彩，然後到後半段就有點後勁不繼，十分可惜。 講回這部日劇，角色們都是已經結婚的夫妻，講出軌的故事當然是很合理的（咦！？），不過講到底，愛情才是本劇所要...
+    <a href="/2014/10/04/3/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-04</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/10/02/neighbors/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://lh6.googleusercontent.com/-Lp_dJ5EWFkc/VCivCQVl3DI/AAAAAAAACp8/rUKVfdQOSBI/s72-w900-c/p2180010950.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/10/02/neighbors/" rel="bookmark">[電影] 惡鄰纏身 Neighbors～～曾經年輕</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ via 豆瓣 ▲ [電影] 惡鄰纏身 Neighbors～～曾經年輕  又是一部可以好好打發時間的喜劇，看到原來是走清純小生的 Zac Efron 演壞蛋角色有點新意！劇情大膽搞笑，年青人愛搞怪，開 party、大吵大鬧是常事，吸毒、淫亂派對又曾經是大家有想過但又從來不敢做的事，「兄弟會」永遠是搞惡電影的最佳主題。 //好看在...... 大學生與結婚夫妻的生活形成強烈的對比，開始時大家都以為可以和平共處，然後卻因為年輕大學生的不懂自律弄得互相敵對，大家各出奇招想要趕走對方，過程真的抵死過癮。 大家都曾經年輕，但是隨着年紀長大就要面對現實，就是「兄弟會」的會長到了畢業時同樣要面對工作和前途問題，本片就是以另一種方式懷...
+    <a href="/2014/10/02/neighbors/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-10-02</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+                    
+                        <article class="post-entry container px-0 card">
+        <div class="columns col-gapless">
+            
+                <div class="column column-thumbnail col-4 col-lg-12">
+                    <a href="/2014/09/30/meizu-mx4-32gb-black/">
+                        <div class="post-thumbnail lazyload" data-bg="url(https://4.bp.blogspot.com/-D20tU7t0IgM/XD6NynMM73I/AAAAAAAAgec/yvnikuR7hW87AU14sfA6OB3xKFnzqNF8gCLcBGAs/s72-c/1_15190883907_3f9ed88a37_b.jpg)"></div>
+                    </a>
+                </div>
+                <div class="column column-body col-8 col-lg-12">
+                    
+    <h2 class="h5 mb-0 card-header"><a class="card-title" href="/2014/09/30/meizu-mx4-32gb-black/" rel="bookmark">[開箱] 魅族 Meizu MX4 32GB 聯通版簡單使用心得</a></h2>
+
+
+<p class="mb-0 card-body">
+    
+        
+ ▲ [開箱] 魅族 Meizu MX4 32GB 聯通版簡單使用心得  因為拍照漂亮、性價比高選了 MX4 魅族對我來說不是陌生的品牌，其實早在多年前它們是因為模仿蘋果的產品而起家的，它們家的播放器 M6 亦堪稱經典，後來魅族亦有開始推出手機，同樣是以蘋果為「參考」對象，不過當年的 Android 在推出時並不算成熱（我認為），族魅的手機造出來的 Flyme 手機既是 Android 系統但是又想要學蘋果的設計，弄得整個好奇怪，恨鐵不成鋼，所以小弟個人就主要支持蘋果的 iPhone，暫時放棄魅族。 一直到正在用的三星 S3 越來越覺得不夠用，所以一直在找拍照漂亮效能不錯又便宜的手機，沒錯！既然便宜就當然要選中國機，其中
+    <a href="/2014/09/30/meizu-mx4-32gb-black/">Read more</a>
+</p>
+
+
+
+
+    <!-- Date & Category -->
+    <div class="card-footer post-entry-info text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <time>2014-09-30</time>
+        
+        
+    </div>
+
+                </div>
+            
+        </div>
+</article>
+
+                    
+                
+            </div>
+        </main>
+        
+<nav>
+<ul class="pagination">
+    
+        <li class="page-item page-prev">
+            <a href="/page/23/" rel="prev">
+                <span class="page-item-subtitle"><i class="icon icon-back" aria-hidden="true"></i></span>
+                <span class="page-item-title">Previous</span>
+            </a>
+        </li>
+    
+    
+        <li class="page-item page-next">
+            <a href="/page/25/" rel="next">
+                <span class="page-item-title">Next</span>
+                <span class="page-item-subtitle"><i class="icon icon-forward" aria-hidden="true"></i></span>
+            </a>
+        </li>
+    
+</ul>
+</nav>
+
+
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>
