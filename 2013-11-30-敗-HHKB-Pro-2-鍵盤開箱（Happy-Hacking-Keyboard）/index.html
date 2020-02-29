@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard） | faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard） | faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="article"><meta property="og:url" content="https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/"><meta property="og:locale" content="en"><meta name="description" content="▲ HHKB POR 2（Happy Hacking Keyboard）黑無刻鍵盤開箱 這篇是開箱，另外這裏還有一篇使用心得文   小弟的燒鍵盤史作為一名 3C 死阿宅，有一把不錯的鍵盤也是很正常的，其實以前一直有在燒鍵盤，曾經也入手過一把 Cherry G80-3000 黑軸機械式鍵盤，但使用過後發現，我還是嫌它太大把，在當年只宿舍有小小的書桌上使用不太方便，而且到後到發現自己不太愛黑軸那種無段 - Loukafai - faifai site"><meta name="keywords" content="http:&#x2F;&#x2F;schemas.google.com&#x2F;blogger&#x2F;2008&#x2F;kind#post, buy, 敗, keyboard, 3c"><meta property="og:image" content="https://lh5.googleusercontent.com/-P1DqqfF0MRI/UpiSa0-ZKNI/AAAAAAAABqk/NCjxWfG4IRc/w1116-h741-no/DSC_3882_Fotor.jpg"><meta property="og:image" content="https://lh4.googleusercontent.com/urWI1g6iLzofQ_sGUGnQn6vASPJFdH-KbwMruXkRKEA=w1024-h648"><meta property="og:image" content="https://lh6.googleusercontent.com/-PT7GF118W7U/UpiSaqnbFQI/AAAAAAAABqg/ub18EmgBclY/w1116-h741-no/DSC_3883_Fotor.jpg"><meta property="og:image" content="https://lh3.googleusercontent.com/-MUNBICqBqC0/UpiSdU6nBLI/AAAAAAAABqs/gXKxX9Gq2So/w1116-h741-no/DSC_3892_Fotor.jpg"><meta property="article:published_time" content="2013-11-30T08:02:48.000Z"><meta property="article:modified_time" content="2020-02-29T10:01:30.751Z"><meta property="og:updated_time" content="2020-02-29T10:01:30.751Z"><meta property="article:author" content="Loukafai"><meta property="article:tag" content="http:&#x2F;&#x2F;schemas.google.com&#x2F;blogger&#x2F;2008&#x2F;kind#post, buy, 敗, keyboard, 3c"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/",
+    "@type": "BlogPosting",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/"
+    },
+    "headline": "[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard） | faifai site",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2013-11-30T08:02:48.000Z",
+    "dateModified": "2020-02-29T10:01:30.751Z",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "http://schemas.google.com/blogger/2008/kind#post, buy, 敗, keyboard, 3c",
+    "description": "▲ HHKB POR 2（Happy Hacking Keyboard）黑無刻鍵盤開箱 這篇是開箱，另外這裏還有一篇使用心得文   小弟的燒鍵盤史作為一名 3C 死阿宅，有一把不錯的鍵盤也是很正常的，其實以前一直有在燒鍵盤，曾經也入手過一把 Cherry G80-3000 黑軸機械式鍵盤，但使用過後發現，我還是嫌它太大把，在當年只宿舍有小小的書桌上使用不太方便，而且到後到發現自己不太愛黑軸那種無段 - Loukafai - faifai site"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard）" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard）&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard）" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANQAAADUCAAAAADBtVLEAAADrklEQVR42u2bSZLjMAwE/f9PT189HSIqQdkSWpG6eNoLxVQEsRRqXv8eeL2EEkoooYR6HNSruI4+f3/v6N+rz1d/v+/j/fXo/WqfQgk1Cerw0C3e//2d/xYtNnDm93SfQgk1CWq1SHpvdfhJYEhBpLr3EaxQQv0FKLLBlECr9cirUEI9EapKiK/mRe+bCluhhJoMlRZJC6+SbxUcVt+vmsiPVOlCCfVlKHqg7379qJoklFBfgkLCe1FgroJCEiVToZuK59NTD6GE+hJUJczTja+Sb2fwUDWIpNEUSqhJUFUxWTVw3b93hRcCLJRQU6BS8ZgSchVE0mCADPPS75cFrVBC3QRFjBrJ9EEMHbuCDRnsCSXUJKiqCaySMA0A6SGcNWvh6CeUUBdBRYEw3IQk3eph7BTI2wqtUELdBFUFDWqK6gaHTmDYChRCCXURVDrARITpFLk7Yg42fAkl1CCoSvyggzBSlHabyOr+qEkUSqiLoarhVsckT0xWZHNd4zF2kQkl1EVQVGQh5l46bEhFcccAKZRQE6HSwIsYqtJ6VeJOTeRWRSGUUDdBJZNUKng7Q+uOkJKCi1BCTYUiyY8UnUSI6QzMqTEEVRRCCXUhVBL1UxNJk2UKADvFtFBCTYSqikjSAJ4JJESsoesIJdQ0KLJoumHnQaTD3wlGQgk1CYqaqOjBpuapTvKl+xFKqElQ3WFAEjPPCjPVhap0oYQaBkUGAcmA1Q0M6SHH4CSUUIOgOoe2Chidg04K3vSZUEJNg0qHnxgQSWJND4IGLmy4Ekqom6FSEqxMGskASRMsBV8+EKGEGgBFzIPpAXQMJMS4RYTUw30JJdQwKGIY7Ij/aT1SELcGckIJNQyKLEKGBURgSYmUmhe3k69QQn0JqnOwO79JzWQqmFNxfPhboYQaAtUR86mZpNsUpsCFmk+hhBoARQSNUuyAQYECUbMjKmiFEuoGKGpyqoYDnU2QYdq2eUsooQZB7Q7eumIMWbsa1CETo1BCDYCiRg8isFRJemcQjgOIUEINgKKGDSKQUOPVWcMWUmiFEuomKCq+dIZjRPysvpOKa6GEmgy1c6B3RM3d4V6noRRKqClQRLDsDq/Txkkg6JjAhBJqGlSnEewUr7tDAdJMxkAhlFBDoaqDnDaQNkwNV6iIFkqoPwDVScI0kabGkzSFh98VSqhBUB0DCBXyU7DpCKmtQbZQQt0MRYWXJMpgA++L/6f/lHxPq0lCCfVhqCddQgkllFBCPeb6AQAAA18BQwMoAAAAAElFTkSuQmCC" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard）</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <span>2013-11-30</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard）&url=https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=[敗] HHKB Pro 2 鍵盤開箱（Happy Hacking Keyboard）&url=https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/&title=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=faifai site&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=https://loukafai.github.io/2013-11-30-%E6%95%97-HHKB-Pro-2-%E9%8D%B5%E7%9B%A4%E9%96%8B%E7%AE%B1%EF%BC%88Happy-Hacking-Keyboard%EF%BC%89/&text=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANQAAADUCAAAAADBtVLEAAADrklEQVR42u2bSZLjMAwE/f9PT189HSIqQdkSWpG6eNoLxVQEsRRqXv8eeL2EEkoooYR6HNSruI4+f3/v6N+rz1d/v+/j/fXo/WqfQgk1Cerw0C3e//2d/xYtNnDm93SfQgk1CWq1SHpvdfhJYEhBpLr3EaxQQv0FKLLBlECr9cirUEI9EapKiK/mRe+bCluhhJoMlRZJC6+SbxUcVt+vmsiPVOlCCfVlKHqg7379qJoklFBfgkLCe1FgroJCEiVToZuK59NTD6GE+hJUJczTja+Sb2fwUDWIpNEUSqhJUFUxWTVw3b93hRcCLJRQU6BS8ZgSchVE0mCADPPS75cFrVBC3QRFjBrJ9EEMHbuCDRnsCSXUJKiqCaySMA0A6SGcNWvh6CeUUBdBRYEw3IQk3eph7BTI2wqtUELdBFUFDWqK6gaHTmDYChRCCXURVDrARITpFLk7Yg42fAkl1CCoSvyggzBSlHabyOr+qEkUSqiLoarhVsckT0xWZHNd4zF2kQkl1EVQVGQh5l46bEhFcccAKZRQE6HSwIsYqtJ6VeJOTeRWRSGUUDdBJZNUKng7Q+uOkJKCi1BCTYUiyY8UnUSI6QzMqTEEVRRCCXUhVBL1UxNJk2UKADvFtFBCTYSqikjSAJ4JJESsoesIJdQ0KLJoumHnQaTD3wlGQgk1CYqaqOjBpuapTvKl+xFKqElQ3WFAEjPPCjPVhap0oYQaBkUGAcmA1Q0M6SHH4CSUUIOgOoe2Chidg04K3vSZUEJNg0qHnxgQSWJND4IGLmy4Ekqom6FSEqxMGskASRMsBV8+EKGEGgBFzIPpAXQMJMS4RYTUw30JJdQwKGIY7Ij/aT1SELcGckIJNQyKLEKGBURgSYmUmhe3k69QQn0JqnOwO79JzWQqmFNxfPhboYQaAtUR86mZpNsUpsCFmk+hhBoARQSNUuyAQYECUbMjKmiFEuoGKGpyqoYDnU2QYdq2eUsooQZB7Q7eumIMWbsa1CETo1BCDYCiRg8isFRJemcQjgOIUEINgKKGDSKQUOPVWcMWUmiFEuomKCq+dIZjRPysvpOKa6GEmgy1c6B3RM3d4V6noRRKqClQRLDsDq/Txkkg6JjAhBJqGlSnEewUr7tDAdJMxkAhlFBDoaqDnDaQNkwNV6iIFkqoPwDVScI0kabGkzSFh98VSqhBUB0DCBXyU7DpCKmtQbZQQt0MRYWXJMpgA++L/6f/lHxPq0lCCfVhqCddQgkllFBCPeb6AQAAA18BQwMoAAAAAElFTkSuQmCC" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#小弟的燒鍵盤史"><span class="post-toc-number">1.</span> <span class="post-toc-text">小弟的燒鍵盤史</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#再燒鍵盤，「原力」出場"><span class="post-toc-number">2.</span> <span class="post-toc-text">再燒鍵盤，「原力」出場</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#一步到位，終身戒「毒」"><span class="post-toc-number">3.</span> <span class="post-toc-text">一步到位，終身戒「毒」</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#HHKB-PRO-2-黑無刻鍵盤開箱"><span class="post-toc-number">4.</span> <span class="post-toc-text">HHKB PRO 2 黑無刻鍵盤開箱</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#令人難以忘記的手感"><span class="post-toc-number">5.</span> <span class="post-toc-text">令人難以忘記的手感</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#重點推薦好物"><span class="post-toc-number">6.</span> <span class="post-toc-text">重點推薦好物</span></a></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <p><img src="https://lh5.googleusercontent.com/-P1DqqfF0MRI/UpiSa0-ZKNI/AAAAAAAABqk/NCjxWfG4IRc/w1116-h741-no/DSC_3882_Fotor.jpg" alt=""></p>
+<p>▲ HHKB POR 2（Happy Hacking Keyboard）黑無刻鍵盤開箱</p>
+<p>這篇是開箱，另外<a href="http://loukafai.blogspot.com/2013/11/hhkbpro2bk-how-to.html" target="_blank" rel="noopener">這裏還有一篇使用心得文</a><br> <a name='more'></a> </p>
+<h1 id="小弟的燒鍵盤史"><a href="#小弟的燒鍵盤史" class="headerlink" title="小弟的燒鍵盤史"></a>小弟的燒鍵盤史</h1><p>作為一名 3C 死阿宅，有一把不錯的鍵盤也是很正常的，其實以前一直有在燒鍵盤，曾經也入手過一把 <a href="http://www.cherrycorp.com/english/Keyboards/Office/G80_3000_MX/index.htm" target="_blank" rel="noopener">Cherry G80-3000</a> 黑軸機械式鍵盤，但使用過後發現，我還是嫌它太大把，在當年只宿舍有小小的書桌上使用不太方便，而且到後到發現自己不太愛<a href="http://www.techbang.com/posts/1691-column-mechanical-keyboard-keys-such-election-the-basics-of-article" target="_blank" rel="noopener">黑軸</a>那種無段感 (但打字沒聲音確是優點)，常常會打漏字，結果最後迅速在學校的 BBS 裡 po 文賣掉，機械式鍵盤真的超好賣。</p>
+<p>因為大學時期早段一直都在用 lenovo x61 筆電 (後段換了 macbook)，便慢慢就習慣了剪刀腳那種鍵程短、觸發快的手感，後來更愛上了 thinkpad 的剪刀腳。小黑 thinkpad 的鍵盤出過很多，不過價錢都偏貴，之後發現了一把 <a href="http://iqmore.tw/i-rocks-kr-6523-keyboard-review" target="_blank" rel="noopener">i-rocks KR-6523</a>，要說這支也是好料，體積小、輕巧，手感不錯，重點是只要 600 台幣夠便宜，之後這台更加推出了無線版本 i-rocks RF-6520，但那時候沒有無線的需求所以沒有再買。</p>
+<p>從此之後就沒在留意鍵盤的東西。</p>
+<h1 id="再燒鍵盤，「原力」出場"><a href="#再燒鍵盤，「原力」出場" class="headerlink" title="再燒鍵盤，「原力」出場"></a>再燒鍵盤，「原力」出場</h1><p>後來隨電腦遊戲的發展，沈寂一時的機械式鍵盤又再被大家關注，腦場上開始多了專為遊戲而設計的機械式鍵盤，這些遊戲用的鍵盤大部分都以黑軸、紅軸為主流。</p>
+<p>而很久沒有燒鍵盤的我，也開始挑新目標……..</p>
+<p>小弟很喜歡有精緻設計的東西，新鍵盤理所當然要「小巧」，目前市面上小巧的機械式鍵盤有好幾款：</p>
+<ul>
+<li>Filco 80%</li>
+<li>KBT Race</li>
+<li>KBT Pure</li>
+<li>Poker </li>
+</ul>
+<p>以上都是小巧機械式鍵盤的代表，曾經有好幾次想在淘寶網直接點下去的衝動，不過想了又想，既然機械式鍵盤都玩了，那還有沒有更好的選擇？ (敗家魂！！)</p>
+<p>到這時候，便想起 「原力 realforce」</p>
+<p><a href="http://www.topre.co.jp/e/products/comp/realforce_index.html" target="_blank" rel="noopener">Realforce</a> 其實是小弟在剛開始接觸高階鍵盤就有聽過的品牌，在 ptt 的鍵盤版上常被鄉民勸敗作為「攻頂」的選擇。Realforce 的按鍵並不同於機械式鍵盤的「軸」，它是使用<a href="http://www.gamersky.com/hardware/201309/294269.shtml" target="_blank" rel="noopener">「電容式」無觸點設計</a> ，好處是比機械式鍵盤更耐用，至於手感方面就好壞參半，有人說手感超好；亦有人說一般。</p>
+<h1 id="一步到位，終身戒「毒」"><a href="#一步到位，終身戒「毒」" class="headerlink" title="一步到位，終身戒「毒」"></a>一步到位，終身戒「毒」</h1><p>既然決定燒 Realforce，使開始看有什麼選擇，Realforce 104 是標準的 104 全尺寸鍵盤，而且邊框的計設有點寬，對於喜歡輕巧的我就直接跳過，然後下一個選擇就是 Realforce 86，體積雖然有變小一點，但數字鍵盤自己也不常用，再跳過。最後剩下的就是 HHKB 了。</p>
+<p>這支 <a href="http://www.pfu.fujitsu.com/hhkeyboard/lineup.html" target="_blank" rel="noopener">HHKB PRO 2</a> 黑無刻的入手方式是自己用信用卡先在 Amazon 日本下單購買，然後透過轉送公司由日本轉寄到澳門 <a href="http://loukafai.blogspot.com/2013/07/jshopper.html" target="_blank" rel="noopener">(之前寫過一篇心得)</a>。不考慮找代購是因為：一)想要試試轉送的服務、二)不想給代購公司賺手續費、三)轉送相對便宜。</p>
+<h1 id="HHKB-PRO-2-黑無刻鍵盤開箱"><a href="#HHKB-PRO-2-黑無刻鍵盤開箱" class="headerlink" title="HHKB PRO 2 黑無刻鍵盤開箱"></a>HHKB PRO 2 黑無刻鍵盤開箱</h1><p><img src="https://lh4.googleusercontent.com/urWI1g6iLzofQ_sGUGnQn6vASPJFdH-KbwMruXkRKEA=w1024-h648" alt=""></p>
+<p>▲ 簡單的外盒包裝</p>
+<p>全黑的無刻鍵盤，選擇無刻是怕長時間使用下鍵母會掉字，沒有字的鍵盤對於 3c 阿宅在使用上完全不成問題。HHKB PRO 2 相當的小巧可愛，去掉了數字鍵、跳頁鍵、方向鍵，甚至連 F1 到 F12 功能鍵都去掉了。至於要如何操作如此精簡的鍵盤，<a href="http://loukafai.blogspot.com/2013/11/hhkbpro2bk-how-to.html" target="_blank" rel="noopener">這裡有一篇使用心得</a>。</p>
+<p><img src="https://lh6.googleusercontent.com/-PT7GF118W7U/UpiSaqnbFQI/AAAAAAAABqg/ub18EmgBclY/w1116-h741-no/DSC_3883_Fotor.jpg" alt=""></p>
+<p>▲ mini usb 可拆式接線，再加 2 個 usb-hub 分插可供使用</p>
+<p><img src="https://lh3.googleusercontent.com/-MUNBICqBqC0/UpiSdU6nBLI/AAAAAAAABqs/gXKxX9Gq2So/w1116-h741-no/DSC_3892_Fotor.jpg" alt=""></p>
+<p>▲ 為了同時配合 win 與 osx 的使用者，還可以利用微調開關調節鍵盤上一些特殊鍵的功能</p>
+<h1 id="令人難以忘記的手感"><a href="#令人難以忘記的手感" class="headerlink" title="令人難以忘記的手感"></a>令人難以忘記的手感</h1><p>花了那麼多的＄＄，說到底手感如何？值得入手嗎？</p>
+<p>首先，這款 <a href="http://www.pfu.fujitsu.com/hhkeyboard/lineup.html" target="_blank" rel="noopener">HHKB Pro 2</a> 是屬於有段落感的按鍵，使用起來減少了打錯字的機率，其次是按鍵的回饋感十足，<a href="http://www.pfu.fujitsu.com/hhkeyboard/spec.html" target="_blank" rel="noopener">全區 45g 的壓力數</a>不分區。不同於一般便宜簿膜式鍵盤只是軟綿綿無力的手感（男人無力是大忌 XD），每一個鍵母在敲下時都會感到十分穩定，直上直下，一步到位。</p>
+<p>要說唯一缺點是鍵盤的聲音敲起來是「咚咚咚」的聲音，但還是比「青軸」安靜一些，如果想要靜音的話可以選擇更高價的 <a href="http://www.pfu.fujitsu.com/hhkeyboard/type-s/" target="_blank" rel="noopener">HHKB Professional Type-S</a> 系列，可惜目前還沒推出黑無刻版本。</p>
+<h1 id="重點推薦好物"><a href="#重點推薦好物" class="headerlink" title="重點推薦好物"></a>重點推薦好物</h1><p>喜歡打字、或是需要長時間使用鍵盤的朋友，一把好的鍵盤真的可使你找到打字的樂趣，一支小巧可以隨身攜帶的鍵盤，一支手感出俗、無與倫比的鍵盤更是讓工作和生活得心應手。<a href="http://www.pfu.fujitsu.com/hhkeyboard/lineup.html" target="_blank" rel="noopener">HHKB</a> 是很貴沒錯，但是一支好鍵盤可以用上數年甚至數十年，而且是每天使用，所以其實也沒有很貴啦！！</p>
+<p>==================</p>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-02-29");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2013-11-30T08:02:48.000Z" itemprop="datePublished">2013-11-30</time>
+
+    , Updated at&nbsp;<time datetime="2020-02-29T10:01:30.751Z" itemprop="dateModified">2020-02-29</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/http-schemas-google-com-blogger-2008-kind-post/" rel="tag">#&nbsp;http://schemas.google.com/blogger/2008/kind#post</a>
+
+<a class="post-tags-list-item" href="/tags/buy/" rel="tag">#&nbsp;buy</a>
+
+<a class="post-tags-list-item" href="/tags/%E6%95%97/" rel="tag">#&nbsp;敗</a>
+
+<a class="post-tags-list-item" href="/tags/keyboard/" rel="tag">#&nbsp;keyboard</a>
+
+<a class="post-tags-list-item" href="/tags/3c/" rel="tag">#&nbsp;3c</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2013-12-08-%E9%9B%BB%E5%BD%B1-%E8%87%B4%E6%88%91%E5%80%91%E7%B5%82%E5%B0%87%E9%80%9D%E5%8E%BB%E7%9A%84%E9%9D%92%E6%98%A5-So-Young%EF%BD%9E%EF%BD%9E%E6%84%9B%E6%83%85%E4%B8%8D%E6%9C%BD/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[電影] 致我們終將逝去的青春 So Young～～愛情不朽</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2013-11-13-%E4%BA%AB-%E9%97%9C%E6%96%BC%E8%B7%91%E6%AD%A5%EF%BC%8C%E6%88%91%E8%AA%AA%E7%9A%84%E5%85%B6%E5%AF%A6%E6%98%AF%E2%80%A6%E2%80%A6/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[享] 關於跑步，我說的其實是……</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

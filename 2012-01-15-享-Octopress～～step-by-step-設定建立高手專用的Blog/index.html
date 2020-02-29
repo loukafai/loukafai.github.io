@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>[享] Octopress～～step by step 設定建立高手專用的Blog | faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="[享] Octopress～～step by step 設定建立高手專用的Blog | faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="article"><meta property="og:url" content="https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/"><meta property="og:locale" content="en"><meta name="description" content="![](http:&#x2F;&#x2F;gyazo.com&#x2F;f721939b15262d06aa55a0aa9bc145ca.png)  ▲ [Octopress](http:&#x2F;&#x2F;octopress.org&#x2F;docs&#x2F;blogging&#x2F;) 是最近很熱門的 Blog 系統，這是一篇如何在 Ubuntu 上設定的小小步驟分享   Install Git ＆ Ruby &amp;amp; Octopress on Ubuntu  - Loukafai - faifai site"><meta name="keywords" content="http:&#x2F;&#x2F;schemas.google.com&#x2F;blogger&#x2F;2008&#x2F;kind#post, share, 享, blog, octopress, linux"><meta property="article:published_time" content="2012-01-15T13:04:35.000Z"><meta property="article:modified_time" content="2020-02-29T10:01:30.761Z"><meta property="og:updated_time" content="2020-02-29T10:01:30.761Z"><meta property="article:author" content="Loukafai"><meta property="article:tag" content="http:&#x2F;&#x2F;schemas.google.com&#x2F;blogger&#x2F;2008&#x2F;kind#post, share, 享, blog, octopress, linux"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/",
+    "@type": "BlogPosting",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/"
+    },
+    "headline": "[享] Octopress～～step by step 設定建立高手專用的Blog | faifai site",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2012-01-15T13:04:35.000Z",
+    "dateModified": "2020-02-29T10:01:30.761Z",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "http://schemas.google.com/blogger/2008/kind#post, share, 享, blog, octopress, linux",
+    "description": "![](http://gyazo.com/f721939b15262d06aa55a0aa9bc145ca.png)  ▲ [Octopress](http://octopress.org/docs/blogging/) 是最近很熱門的 Blog 系統，這是一篇如何在 Ubuntu 上設定的小小步驟分享   Install Git ＆ Ruby &amp;amp;amp; Octopress on Ubuntu  - Loukafai - faifai site"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=[享] Octopress～～step by step 設定建立高手專用的Blog" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=[享] Octopress～～step by step 設定建立高手專用的Blog&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=[享] Octopress～～step by step 設定建立高手專用的Blog" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOQAAADkCAAAAACtPNdRAAAEKElEQVR42u3c227bQAxFUf3/T7dPAdpAw7M5dhBxvP3Spm0sLQHm8NZcfz7gdYkUKVKkSJEvIq/i9fX33//dv1//96bF16v3q/7s7vvpfYsUORl5+6Fd3GCFW71XGRzubm7xQCv07X2LFDkYuQo43y+8ukAKXKuHcXf9u4BEH7xIkacjyYFOHkj1fqvDn8JFivxU5Op7qhu+wqsbWH488IgU+RBkglSIBE7JfFX40gL9pSpEpMiHITtB4Um//ki3TqTIX0Z2G03lm4KGU7wxmMC/daolUuSDkCTxXV2AHtokSafI1kMSKXIgshp+dprJNOnuJv40+Y/JgEiRQ5DVIgIpTEmCQItt0ggjBbhIkZORaUmomxhU74OCRRgEk4aYSJEnIElTmC76kSXAFKjSslI1vBUp8gRkdwkwBQ3SBOsOb2lyIVLkZCRdEqqwZKmps3xRBSPSfBMpcjIyFabkpukBT5YOybIgWWISKXIqcmeBsFoYogd65/fpesuiQqTIgUgK6jSRdxPunWWM1lRLpMgByJ1idCf4kJtNxTVdKhQpcjKSHq50WWnnQVWNsU6xXlYhIkUOQ6YAQS9Ii+juUhJZeCoTdJEiByHJ4d1pRKeGMznkSQM5LkqIFDkQ2QkanSZVd4kwDYWrYNiqQkSKfDiSJgVVsCFLRDQx7yxaxOUokSIHIskHPC3qVQc4CVApiKTgs2yMiRQ5EJkWCFMyTReWSKJNi4HUkBYpcjpytyFMkvnUfOoMfElhLlLkdCQdjKbhJwkEnQWmzoBnWaCLFDkUufOBTwk+RXUXmlqDKJEiByLJskMVYMiBTprGu4Pgl7c/RIp8KJIEnM6CQnWDqUm203QWKfIkZGc4g5f3wCFPliFS4l4GIZEiD0CmhlH1QGiBnAIQXbZoLUaIFDkESYY03SWizgB2573IMpVIkdOR9EOeBqqrG6DFdEq6yUMSKXI6kiba5JUCDGlG7yQoaKolUuQAJF08Igc9Gbp2G2A7ib5IkdORneZUKpbJckOVMNAHgK4nUuRAJPkQpyUEssRADvpq6WJnOCxS5EQkHaTQhjNJ0AkmPVCRIj8B2QkGu4XzOxOEeK8iRQ5F0uXB1GB+JRkgCUknkRApciqSLgnSRSbSlCaF9e6CYeygixT5cCQZ6pAFBtIAo83nFHzw1yJFDkV2lhHI8LZKoLtDnu6ASaTIk5Ap6KQGUhryVId4GramgdTt94gUORBJAwMqUi/+n9c6iTpOyEWKPARJi+D0Qe8uWpCHnAqJKokXKXIysrPkRy5AEutUGNNkHQcekSIPQHYGQlUwq5KN3UFuXEYWKfJQ5E4DK4FJgd4JcGVzWaTIgUiaoLcvdOUfFk8Kd9IIf1vRLFLkLyPJBUiS3h2yVvhuo7pcIBQpchDy5JdIkSJFihS5+foL5V9lwQhdqpIAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">[享] Octopress～～step by step 設定建立高手專用的Blog</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <span>2012-01-15</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=[享] Octopress～～step by step 設定建立高手專用的Blog&url=https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=[享] Octopress～～step by step 設定建立高手專用的Blog&url=https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/&title=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=faifai site&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=https://loukafai.github.io/2012-01-15-%E4%BA%AB-Octopress%EF%BD%9E%EF%BD%9Estep-by-step-%E8%A8%AD%E5%AE%9A%E5%BB%BA%E7%AB%8B%E9%AB%98%E6%89%8B%E5%B0%88%E7%94%A8%E7%9A%84Blog/&text=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOQAAADkCAAAAACtPNdRAAAEKElEQVR42u3c227bQAxFUf3/T7dPAdpAw7M5dhBxvP3Spm0sLQHm8NZcfz7gdYkUKVKkSJEvIq/i9fX33//dv1//96bF16v3q/7s7vvpfYsUORl5+6Fd3GCFW71XGRzubm7xQCv07X2LFDkYuQo43y+8ukAKXKuHcXf9u4BEH7xIkacjyYFOHkj1fqvDn8JFivxU5Op7qhu+wqsbWH488IgU+RBkglSIBE7JfFX40gL9pSpEpMiHITtB4Um//ki3TqTIX0Z2G03lm4KGU7wxmMC/daolUuSDkCTxXV2AHtokSafI1kMSKXIgshp+dprJNOnuJv40+Y/JgEiRQ5DVIgIpTEmCQItt0ggjBbhIkZORaUmomxhU74OCRRgEk4aYSJEnIElTmC76kSXAFKjSslI1vBUp8gRkdwkwBQ3SBOsOb2lyIVLkZCRdEqqwZKmps3xRBSPSfBMpcjIyFabkpukBT5YOybIgWWISKXIqcmeBsFoYogd65/fpesuiQqTIgUgK6jSRdxPunWWM1lRLpMgByJ1idCf4kJtNxTVdKhQpcjKSHq50WWnnQVWNsU6xXlYhIkUOQ6YAQS9Ii+juUhJZeCoTdJEiByHJ4d1pRKeGMznkSQM5LkqIFDkQ2QkanSZVd4kwDYWrYNiqQkSKfDiSJgVVsCFLRDQx7yxaxOUokSIHIskHPC3qVQc4CVApiKTgs2yMiRQ5EJkWCFMyTReWSKJNi4HUkBYpcjpytyFMkvnUfOoMfElhLlLkdCQdjKbhJwkEnQWmzoBnWaCLFDkUufOBTwk+RXUXmlqDKJEiByLJskMVYMiBTprGu4Pgl7c/RIp8KJIEnM6CQnWDqUm203QWKfIkZGc4g5f3wCFPliFS4l4GIZEiD0CmhlH1QGiBnAIQXbZoLUaIFDkESYY03SWizgB2573IMpVIkdOR9EOeBqqrG6DFdEq6yUMSKXI6kiba5JUCDGlG7yQoaKolUuQAJF08Igc9Gbp2G2A7ib5IkdORneZUKpbJckOVMNAHgK4nUuRAJPkQpyUEssRADvpq6WJnOCxS5EQkHaTQhjNJ0AkmPVCRIj8B2QkGu4XzOxOEeK8iRQ5F0uXB1GB+JRkgCUknkRApciqSLgnSRSbSlCaF9e6CYeygixT5cCQZ6pAFBtIAo83nFHzw1yJFDkV2lhHI8LZKoLtDnu6ASaTIk5Ap6KQGUhryVId4GramgdTt94gUORBJAwMqUi/+n9c6iTpOyEWKPARJi+D0Qe8uWpCHnAqJKokXKXIysrPkRy5AEutUGNNkHQcekSIPQHYGQlUwq5KN3UFuXEYWKfJQ5E4DK4FJgd4JcGVzWaTIgUiaoLcvdOUfFk8Kd9IIf1vRLFLkLyPJBUiS3h2yVvhuo7pcIBQpchDy5JdIkSJFihS5+foL5V9lwQhdqpIAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                            <div id="post-toc"><ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Install-Git-＆-Ruby-amp-Octopress-on-Ubuntu-11-10-Desktop"><span class="post-toc-number">1.</span> <span class="post-toc-text">Install Git ＆ Ruby &amp; Octopress on Ubuntu 11.10 Desktop</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Ubuntu-上安裝所需軟體"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">Ubuntu 上安裝所需軟體</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#設定-GitHub-透過SSH連接"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">設定 GitHub 透過SSH連接</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#生成網誌文件及發佈到Github"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">生成網誌文件及發佈到Github</span></a></li></ol></li></ol></div>
+                        
+                    
+                    <article id="post-content">
+                        <div class="posterous_autopost"><div class="p_embed p_image_embed">![](http://gyazo.com/f721939b15262d06aa55a0aa9bc145ca.png) </div>
+▲ [Octopress](http://octopress.org/docs/blogging/) 是最近很熱門的 Blog 系統，這是一篇如何在 Ubuntu 上設定的小小步驟分享
+
+<p><a name='more'></a></p>
+<h1 id="Install-Git-＆-Ruby-amp-Octopress-on-Ubuntu-11-10-Desktop"><a href="#Install-Git-＆-Ruby-amp-Octopress-on-Ubuntu-11-10-Desktop" class="headerlink" title="Install Git ＆ Ruby &amp; Octopress on Ubuntu 11.10 Desktop"></a>Install Git ＆ Ruby &amp; Octopress on Ubuntu 11.10 Desktop</h1><h2 id="Ubuntu-上安裝所需軟體"><a href="#Ubuntu-上安裝所需軟體" class="headerlink" title="Ubuntu 上安裝所需軟體"></a>Ubuntu 上安裝所需軟體</h2><p>這裡小弟參考了這幾篇：</p>
+<ul>
+<li><a href="http://lyhdev.com/note:octopress" target="_blank" rel="noopener">Octopress: a blogging framework for hackers – 思創軟體</a></li>
+<li><a href="http://blog.lyhdev.com/2011/10/octopress-github-markdown.html" target="_blank" rel="noopener">使用 Octopress + GitHub 免費架設部落格，以 Markdown 語法快速發表文章</a></li>
+<li><a href="http://hychen.wuweig.org/blog/2011/12/04/octopress-source-drafts-publish-management-process/" target="_blank" rel="noopener">Octopress 程式碼與網站內容的管理 – 無為閣</a></li>
+</ul>
+<ol>
+<li>安裝 Git<br>sudo apt-get install curl git-core zlib1g zlib1g-dev libssl-dev libyaml-dev</li>
+<li>安裝  rbenv git clone git://github.com/sstephenson/rbenv.git .rbenv</li>
+<li>增加 ~/.rbenv/bin 到系統的 $PATH<br>echo ‘export PATH=“$HOME/.rbenv/bin:$PATH”’ &gt;&gt; ~/.bash_profile</li>
+<li>增加 rbenv 到 shell to enable shims and autocompletion echo ‘eval “$(rbenv init –)”’ &gt;&gt; ~/.bash_profile</li>
+<li>安裝 rvm<br>bash &lt; &lt;(curl -s <a href="https://rvm.beginrescueend.com/install/rvm" target="_blank" rel="noopener">https://rvm.beginrescueend.com/install/rvm)</a>)</li>
+<li>將 rvm 指令變成 shell function<br>echo ‘[[ -s “$HOME/.rvm/scripts/rvm” ]] &amp;&amp; . “$HOME/.rvm/scripts/rvm” # Load RVM function’ &gt;&gt; ~/.bash_profile</li>
+<li>Restart your shell exec $SHELL</li>
+<li>Logout &amp; Login</li>
+<li>安裝 Ruby 1.9.2, RubyGems<br>rvm install 1.9.2 &amp;&amp; rvm use 1.9.2<br>rvm rubygems latest</li>
+<li>確認版本（ruby 1.9.2p290）<br>ruby —version</li>
+<li>安裝 Octopress<br>git clone git://github.com/imathis/octopress.git octopress<br>cd octopress</li>
+<li>安裝 bundler<br>gem install bundler<br>bundle install</li>
+<li>安裝預設佈景<br>rake install</li>
+</ol>
+<h2 id="設定-GitHub-透過SSH連接"><a href="#設定-GitHub-透過SSH連接" class="headerlink" title="設定 GitHub 透過SSH連接"></a>設定 GitHub 透過SSH連接</h2><p>這裡參考了：</p>
+<ul>
+<li><a href="http://octopress.org/docs/deploying/github/" target="_blank" rel="noopener">Deploying to Github Pages – Octopress</a></li>
+<li><a href="http://help.github.com/mac-set-up-git/" target="_blank" rel="noopener">Help.GitHub – Set Up Git</a></li>
+</ul>
+<ol>
+<li>安裝 ssh<br>sudo apt-get install openssh-server</li>
+<li>進入 ssh 目錄<br>cd ~/.ssh</li>
+<li>產生 SSH key.<br>ssh-keygen -t rsa -C “<a href="mailto:your_email@youremail.com">your_email@youremail.com</a>”</li>
+<li>用 vi 查看 SSH，並貼到 Github –&gt; Account Settings –&gt; SSH Public Keys –&gt; 貼到你的 e-mail 上<br>vi id_rsa.pub</li>
+<li>Test the Key<br>ssh -T <a href="mailto:git@github.com">git@github.com</a></li>
+<li>設定 API Key，Github –&gt; Account Settings –&gt; Account Admin 可找到<br>git config —global github.user username<br>git config —global github.token 0123456789yourf0123456789token</li>
+</ol>
+<h2 id="生成網誌文件及發佈到Github"><a href="#生成網誌文件及發佈到Github" class="headerlink" title="生成網誌文件及發佈到Github"></a>生成網誌文件及發佈到Github</h2><ol>
+<li>進入~/octopress目錄<br>cd octopress</li>
+<li>設定 GitHub Pages<br>rake setup_github_pages<br><a href="mailto:git@github.com">git@github.com</a>:yourname/yourname.github.com.git<br>ps. 如果名字是 sam，需要整句輸入[<a href="mailto:git@github.com">git@github.com</a>:sam/sam.github.com.git]</li>
+<li>Set your username and email<br>git config —global user.name “Firstname Lastname”<br>git config —global user.email “<a href="mailto:your_email@youremail.com">your_email@youremail.com</a>”</li>
+<li>建立網誌文件及發佈到Github<br>rake generate<br>rake deploy</li>
+<li>將 source 加入 git<br>git add .<br>git commit -m ‘initial source commit’<br>git push origin source</li>
+<li>建立新文章<br>rake new_post[“how-to-install-octopress”]</li>
+<li>完成後需要等 GitHub 大概十鐘左右才能生出主頁，如果成功會收到 e-mail 通知</div></li>
+</ol>
+
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-02-29");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2012-01-15T13:04:35.000Z" itemprop="datePublished">2012-01-15</time>
+
+    , Updated at&nbsp;<time datetime="2020-02-29T10:01:30.761Z" itemprop="dateModified">2020-02-29</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/http-schemas-google-com-blogger-2008-kind-post/" rel="tag">#&nbsp;http://schemas.google.com/blogger/2008/kind#post</a>
+
+<a class="post-tags-list-item" href="/tags/share/" rel="tag">#&nbsp;share</a>
+
+<a class="post-tags-list-item" href="/tags/%E4%BA%AB/" rel="tag">#&nbsp;享</a>
+
+<a class="post-tags-list-item" href="/tags/blog/" rel="tag">#&nbsp;blog</a>
+
+<a class="post-tags-list-item" href="/tags/octopress/" rel="tag">#&nbsp;octopress</a>
+
+<a class="post-tags-list-item" href="/tags/linux/" rel="tag">#&nbsp;linux</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2012-01-15-%E7%94%9F%E6%B4%BB-%E5%A3%BD%E5%8C%85%E3%80%82%E6%8B%9B%E8%B2%A1%E5%A0%A1%E3%80%82%E6%B3%A1%E6%B2%B9%E9%87%8E%E7%81%AB/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[生活] 壽包。招財堡。泡油野火</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2012-01-10-%E9%9B%BB%E5%BD%B1-%E8%87%B4%E5%91%BD%E9%81%8A%E6%88%B2%EF%BD%9E%EF%BD%9E%E6%88%91%E4%B9%9F%E6%83%B3%E7%8E%A9/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[電影] 致命遊戲～～我也想玩</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>

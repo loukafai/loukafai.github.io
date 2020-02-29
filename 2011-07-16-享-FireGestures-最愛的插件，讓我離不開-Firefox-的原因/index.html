@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <!--
+        hexo-theme-suka © SukkaW
+        GitHub: https://github.com/SukkaW/hexo-theme-suka
+    -->
+
+    <!-- ### Resource Hint ### -->
+
+    <!-- ## DNS Prefetch ## -->
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+
+<!-- busuanzi -->
+
+    <link rel="dns-prefetch" href="//busuanzi.ibruce.info">
+
+
+<!-- comment -->
+
+
+
+
+
+
+
+<!-- analytics -->
+
+
+
+
+
+
+
+    <!-- ## Preload ## -->
+    
+    <!-- Busuanzi -->
+    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" as="script">
+
+
+
+
+
+
+
+    <!-- ### Meta & Title & Info ### -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+    <meta name="renderer" content="webkit">
+
+    <!-- Title -->
+    <title>[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因 | faifai site</title>
+
+    <!-- Favicons -->
+    <link rel="icon" type="image&#x2F;ico" href="/img/suka-favicon.ico">
+
+    <!-- ### Import File ### -->
+    <link rel="stylesheet" href="/lib/spectre/spectre.min.css"><style>
+    body {
+        background-color: #f8f9fa;
+    }
+
+    a, a:visited {
+        color: #0070ff;
+    }
+
+    a:active, a:focus, a:hover {
+        color: #0070ff;
+        opacity: .75;
+    }
+
+    #post-content a,
+    #post-content a:hover,
+    #post-content a:focus,
+    #post-content a:visited {
+        color: #005eb9;
+        opacity: 1;
+    }
+
+    
+
+    .post-entry .card-body a {
+        color: #0070ff;
+    }
+
+    .avatar {
+        background: #444;
+    }
+
+    .navbar-link,
+    .navbar-link:visited,
+    .timeline .timeline-item .timeline-icon.icon-lg {
+        color: #0070ff;
+    }
+
+    .navbar-link:hover {
+        color: #0070ff;
+        opacity: .8;
+    }
+
+    #search-input .btn,
+    #disqus_click_btn,
+    #disqus-switch-to-direct,
+    #disqus-loadmore-button {
+        background: #727e96;
+        border-color: #727e96;
+        color: #fff;
+    }
+
+    #post-toc a.post-toc-link,
+    #post-toc a.post-toc-link:visited,
+    .share-menu.menu .menu-item>a {
+        color: #727e96;
+    }
+
+    .share-menu.menu .menu-item>a:hover,
+    .share-menu.menu .menu-item>a:focus,
+    .share-menu.menu .menu-item>a:visited {
+        color: #50596c;
+        background: #f8f9fa;
+        opacity: .85;
+    }
+</style><link rel="stylesheet" href="/css/style.min.css">
+
+
+
+
+
+
+
+
+    <!-- Prettify Theme -->
+    
+    <link rel="preload" href="/css/highlight/github.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/highlight/github.min.css"></noscript>
+
+
+
+
+
+<script>
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+!function(t){"use strict";t.loadCSS||(t.loadCSS=function(){});var e=loadCSS.relpreload={};if(e.support=function(){var e;try{e=t.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),e.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},e.poly=function(){if(!e.support())for(var a=t.document.getElementsByTagName("link"),n=0;n<a.length;n++){var o=a[n];"preload"!==o.rel||"style"!==o.getAttribute("as")||o.getAttribute("data-loadcss")||(o.setAttribute("data-loadcss",!0),e.bindMediaToggle(o))}},!e.support()){e.poly();var a=t.setInterval(e.poly,500);t.addEventListener?t.addEventListener("load",function(){e.poly(),t.clearInterval(a)}):t.attachEvent&&t.attachEvent("onload",function(){e.poly(),t.clearInterval(a)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:t.loadCSS=loadCSS}("undefined"!=typeof global?global:this);
+</script>
+
+    <!-- ### Site Verification ### -->
+    
+
+
+    <meta name="mobile-web-app-capable" content="yes"><meta name="application-name" content="faifai site"><meta name="msapplication-starturl" content="https://loukafai.github.io"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="faifai site"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <!-- ### The Open Graph & Twitter Card Protocol ### -->
+    <meta property="og:title" content="[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因 | faifai site"><meta property="og:site_name" content="faifai site"><meta property="og:type" content="article"><meta property="og:url" content="https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/"><meta property="og:locale" content="en"><meta name="description" content="[![Media_httpscreensnapr_azdbx](http:&#x2F;&#x2F;posterous.com&#x2F;getfile&#x2F;files.posterous.com&#x2F;loukafai&#x2F;nbvjyjjIspgzlzzvlyltIunyqHiHspeEdoyjIgAdfejnpnozpDFDgAECynas&#x2F;media_httpscreensnapr_AzDBx.png.scaled500.png)](h - Loukafai - faifai site"><meta name="keywords" content="http:&#x2F;&#x2F;schemas.google.com&#x2F;blogger&#x2F;2008&#x2F;kind#post, share, 享, web, windows, firefox, tool"><meta property="article:published_time" content="2011-07-16T10:27:09.000Z"><meta property="article:modified_time" content="2020-02-29T10:01:30.761Z"><meta property="og:updated_time" content="2020-02-29T10:01:30.761Z"><meta property="article:author" content="Loukafai"><meta property="article:tag" content="http:&#x2F;&#x2F;schemas.google.com&#x2F;blogger&#x2F;2008&#x2F;kind#post, share, 享, web, windows, firefox, tool"><meta name="twitter:card" content="summary">
+
+    
+
+    <!-- ### Canonical link ### -->
+    <link rel="canonical" href="https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/">
+
+    <meta name="generator" content="Hexo 4.2.0">
+
+    <!-- ### Analytics ### -->
+    
+
+
+
+
+
+
+
+    <!-- ### Structured Data ### -->
+    
+
+
+
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "url": "https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/",
+    "@type": "BlogPosting",
+    "logo": "https://loukafai.github.io/img/suka-favicon.ico",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/"
+    },
+    "headline": "[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因 | faifai site",
+    
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://loukafai.github.io/img/suka-favicon.ico"
+    },
+    
+    "datePublished": "2011-07-16T10:27:09.000Z",
+    "dateModified": "2020-02-29T10:01:30.761Z",
+    "author": {
+        "@type": "Person",
+        "name": "Loukafai",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/default_avatar.png"
+        },
+        "description": "Hi, nice to meet you."
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "faifai site",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://loukafai.github.io/img/suka-favicon.ico"
+        }
+    },
+    
+    "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://loukafai.github.io/search?s={search_term_string}",
+        "query-input": "required name=search_term_string"
+    },
+    
+    "keywords": "http://schemas.google.com/blogger/2008/kind#post, share, 享, web, windows, firefox, tool",
+    "description": "[![Media_httpscreensnapr_azdbx](http://posterous.com/getfile/files.posterous.com/loukafai/nbvjyjjIspgzlzzvlyltIunyqHiHspeEdoyjIgAdfejnpnozpDFDgAECynas/media_httpscreensnapr_AzDBx.png.scaled500.png)](h - Loukafai - faifai site"
+}
+</script>
+
+
+
+    <!-- ### Custom Head ### -->
+    
+</head>
+
+    <body>
+            
+
+            <!-- ### Main content ### -->
+            <!-- ## Header ##-->
+<header>
+    <h1 class="header-title text-center"><a href="/">faifai site</a></h1>
+
+    <p class="text-center header-slogan">
+        
+            
+                Hi, nice to meet you.
+            
+        
+    </p>
+
+    <nav class="navbar-section text-center">
+    
+        <a href="/" class="navbar-link">Home</a>
+    
+    
+        <a href="/archives/" class="navbar-link">Archives</a>
+    
+    
+        <a href="/search" class="navbar-link">Search</a>
+    
+    
+    
+        <div class="dropdown dropdown-right">
+    <a class="navbar-link dropdown-toggle" tabindex="0">Share</a>
+    <ul class="menu share-menu">
+
+        <!-- Share Weibo -->
+        
+        <li class="menu-item">
+            <a href="http://service.weibo.com/share/share.php?appkey=&title=faifai site&url=https://loukafai.github.io&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+        </li>
+        
+
+        <!-- Share Twitter -->
+        
+        <li class="menu-item">
+            <a href="https://twitter.com/intent/tweet?text=faifai site&url=https://loukafai.github.io&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+        </li>
+        
+
+        <!-- Share Facebook -->
+        
+        <li class="menu-item">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+        </li>
+        
+
+        <!-- Share Google+ -->
+        
+        <li class="menu-item">
+            <a href="https://plus.google.com/share?url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+        </li>
+        
+
+        <!-- Share LinkedIn -->
+        
+        <li class="menu-item">
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io&title=[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+        </li>
+        
+
+        <!-- Share QQ -->
+        
+        <li class="menu-item">
+            <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+        </li>
+        
+
+        <!-- Share Telegram -->
+        
+        <li class="menu-item">
+            <a href="https://t.me/share/url?url=https://loukafai.github.io&text=[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+        </li>
+        
+
+        <!-- QRCode -->
+        
+        <li class="menu-item">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPQAAAD0CAAAAACJRFQiAAAEl0lEQVR42u2b0W7jQAwD+/8/3Xu9K2xxuC4OiDV5aZHY650NKkgk+/W98PUltNBCCy200B8G/TW8/rnhx/tX117de7du87zp/oZDaKG3QF/+0d8seHdtuubvNacN//z87p6rPUYOoYVeBH314Gnx22IBAKZN3n2WDgFxCC200N/txu82k2DuwK7um/YitNBCd9DTtdN7zVBzBzodhtBCC80a9TS406YkDQvNIU7F7VemLKGF/nDoJMB9ys9fU0OFFvqDoZHxBQYI2liQYSUJkP/FtRRa6A+Fnpr2yZS7g73bGCmWSfCj4oPQQm+GbsR3AnMi7E2fn+7rcl2hhV4ATQMwqKEvwjmk8BADrxEYhRZ6AzQtMMSYa5oYIvxNzycNSqzeQgv9QmhSuBojfRIESBh2CrlO66KDF1roBdBUFGiC66nwTI1GHBrCMIJMeaGFXgCdigNpWprgHQnTNEMFCvIILfQC6BRGT0P8VJDIISRhIQkVtCAKLfQWaLpQY6KlwkOEgaao4RCB0EIvgD4ZLpJAQAMyjShIBMbj6i200C+CbopBEgXahqERI1ORRKaE0EIvgG6Ns1TsmvdSYWwGGvQlCS30EmgSUm3CM0mwI+s/gRda6M3QqfEnZtmpCTeJGKlhSkEh7FoKLfRLoYkATwZ4OiDQwC0dhFDQR2ihl0DTYZ8Yail0c2LYkWtRGE9ooRdBpwKTzL5TcS8Z+cloIAchtNCboEmAlQqHp+9PRS8VyWQWCi30Vmja9DfB2alIppDOSWGMAUChhV4CTYbxJDBQkz4Zh2mYOQnpCS30JuhpUdKUtDDJ+KPhuDSo1FOW0EK/DLoJptFCRoYZUtBOzMBHYr/QQr8AmgRjmrAMKUC0MUoNDB1UhBZ6AzRt2E9EwybMc2LYEaMiKidCC/1CaBKoocJCG4AlQkLT2IxflNBCL4SmYRsaoCEHcFf8piBAe3hCC70Nui1MtBlpCiAx+pKwOD5faKEXQCfzjYbTyCZJGIYUypNDElrojdDE8CZNSzLzSENxMshEsUNooRdApwJDCkYDnwaX01BOGk6EFnoLNG0Y2kLUmIMkBJDCeSgIKLTQS6CbQGwj+rVmQhuKnUJzsZAJLfRLockiRECg4n0jPJCDp4EBoYXeAp2CKqlZIM3DdLDpGa1QMO5DaKEXQKdCRk0zIkBQw4AeQPsFCC30Vmgq0hPhoBUiSKGbiiUW+4UW+sXQ0+9PgjWpYUgNEQnkVYECoYVeAB1Nr3KYaJqTVAiTCNGaeUILvQGaiO4k/E5EghORgQQE0rVCC70NegqUpoaiBSENSyNUPnI4hBb6hdAnTcm0sdRUEMMgDRk0/D4mEYQWehl0K+7RhiUdXBsQeJTsF1roF0Knfwx5GrAhwfbp+Y2BF4cjoYVeAk3F+WT40aI2bfh0aEkCgtBCb4NOQhttUJLg0JpyT42DqIYKLfQyaCqwt6YePeg2PDfeK7TQQqNhnhYyKjTSQycDk9BCb4UmgiANwNCg3GQGEIOhKaJCC70JuhHmWkOdNBqkSLUiRRQRhBb6pdCbXkILLbTQQgv9Ia8/rFB0r2ciNDkAAAAASUVORK5CYII=" alr="QRCode">
+        </li>
+        
+
+    </ul>
+</div>
+    
+    
+</nav>
+</header>
+
+            
+    <!-- ## Post ## -->
+    <div class="post-container">
+    <div id="post-card" class="card">
+        
+        <div class="card-item-container">
+            <div class="card-inner-cell">
+                <!-- # Post Header Info # -->
+                <div class="card-header">
+                    
+    <h1 class="card-title h3 mb-2">[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因</h1>
+
+
+
+
+<div class="post-header-info">
+    <p class="post-header-info-left text-gray">
+        <img class="author-thumb lazyload" data-src="/img/default_avatar.png" src="/img/suka-lazyload.gif" alt="Loukafai's Avatar">
+        <span>2011-07-16</span>
+        
+        
+            <!-- Busuanzi Post Views -->
+<span id="busuanzi_container_page_pv" hidden>
+    <span class="suka-devide-dot"></span>
+    <span></span>
+    <span id="busuanzi_value_page_pv"></span>
+    <span>Views</span>
+</span>
+        
+        
+    </p>
+    <div class="post-header-info-right">
+        
+            <div class="dropdown dropdown-right">
+<a class="dropdown-toggle" tabindex="0">Share the post</a>
+<ul class="menu share-menu">
+    <!-- Share Weibo -->
+    
+    <li class="menu-item">
+        <a href="http://service.weibo.com/share/share.php?appkey=&title=[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因&url=https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/&pic=https://loukafai.github.io/img/suka-favicon.ico&searchPic=false&style=simple" target="_blank" rel="external noopener noreferrer nofollow">Share to Weibo</a>
+    </li>
+    
+
+    <!-- Share Twitter -->
+    
+    <li class="menu-item">
+        <a href="https://twitter.com/intent/tweet?text=[享] FireGestures ~~ 最愛的插件，讓我離不開 Firefox 的原因&url=https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/&via=Loukafai" target="_blank" rel="external noopener noreferrer nofollow">Share to Twitter</a>
+    </li>
+    
+
+    <!-- Share Facebook -->
+    
+    <li class="menu-item">
+        <a href="https://www.facebook.com/sharer/sharer.php?u=https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/" target="_blank" rel="external noopener noreferrer nofollow">Share to Facebook</a>
+    </li>
+    
+
+    <!-- Share Google+ -->
+    
+    <li class="menu-item">
+        <a href="https://plus.google.com/share?url=https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/" target="_blank" rel="external noopener noreferrer nofollow">Share to Google+</a>
+    </li>
+    
+
+    <!-- Share LinkedIn -->
+    
+    <li class="menu-item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/&title=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to LinkedIn</a>
+    </li>
+    
+
+    <!-- Share QQ -->
+    
+    <li class="menu-item">
+        <a href="http://connect.qq.com/widget/shareqq/index.html?site=faifai site&title=faifai site&summary=&pics=https://loukafai.github.io/img/suka-favicon.ico&url=https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/" target="_blank" rel="external noopener noreferrer nofollow"> Share to QQ</a>
+    </li>
+    
+
+    <!-- Share Telegram -->
+    
+    <li class="menu-item">
+        <a href="https://t.me/share/url?url=https://loukafai.github.io/2011-07-16-%E4%BA%AB-FireGestures-%E6%9C%80%E6%84%9B%E7%9A%84%E6%8F%92%E4%BB%B6%EF%BC%8C%E8%AE%93%E6%88%91%E9%9B%A2%E4%B8%8D%E9%96%8B-Firefox-%E7%9A%84%E5%8E%9F%E5%9B%A0/&text=faifai site" target="_blank" rel="external noopener noreferrer nofollow">Share to Telegram</a>
+    </li>
+    
+
+    <!-- QRCode -->
+    
+    <li class="menu-item">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPQAAAD0CAAAAACJRFQiAAAEl0lEQVR42u2b0W7jQAwD+/8/3Xu9K2xxuC4OiDV5aZHY650NKkgk+/W98PUltNBCCy200B8G/TW8/rnhx/tX117de7du87zp/oZDaKG3QF/+0d8seHdtuubvNacN//z87p6rPUYOoYVeBH314Gnx22IBAKZN3n2WDgFxCC200N/txu82k2DuwK7um/YitNBCd9DTtdN7zVBzBzodhtBCC80a9TS406YkDQvNIU7F7VemLKGF/nDoJMB9ys9fU0OFFvqDoZHxBQYI2liQYSUJkP/FtRRa6A+Fnpr2yZS7g73bGCmWSfCj4oPQQm+GbsR3AnMi7E2fn+7rcl2hhV4ATQMwqKEvwjmk8BADrxEYhRZ6AzQtMMSYa5oYIvxNzycNSqzeQgv9QmhSuBojfRIESBh2CrlO66KDF1roBdBUFGiC66nwTI1GHBrCMIJMeaGFXgCdigNpWprgHQnTNEMFCvIILfQC6BRGT0P8VJDIISRhIQkVtCAKLfQWaLpQY6KlwkOEgaao4RCB0EIvgD4ZLpJAQAMyjShIBMbj6i200C+CbopBEgXahqERI1ORRKaE0EIvgG6Ns1TsmvdSYWwGGvQlCS30EmgSUm3CM0mwI+s/gRda6M3QqfEnZtmpCTeJGKlhSkEh7FoKLfRLoYkATwZ4OiDQwC0dhFDQR2ihl0DTYZ8Yail0c2LYkWtRGE9ooRdBpwKTzL5TcS8Z+cloIAchtNCboEmAlQqHp+9PRS8VyWQWCi30Vmja9DfB2alIppDOSWGMAUChhV4CTYbxJDBQkz4Zh2mYOQnpCS30JuhpUdKUtDDJ+KPhuDSo1FOW0EK/DLoJptFCRoYZUtBOzMBHYr/QQr8AmgRjmrAMKUC0MUoNDB1UhBZ6AzRt2E9EwybMc2LYEaMiKidCC/1CaBKoocJCG4AlQkLT2IxflNBCL4SmYRsaoCEHcFf8piBAe3hCC70Nui1MtBlpCiAx+pKwOD5faKEXQCfzjYbTyCZJGIYUypNDElrojdDE8CZNSzLzSENxMshEsUNooRdApwJDCkYDnwaX01BOGk6EFnoLNG0Y2kLUmIMkBJDCeSgIKLTQS6CbQGwj+rVmQhuKnUJzsZAJLfRLockiRECg4n0jPJCDp4EBoYXeAp2CKqlZIM3DdLDpGa1QMO5DaKEXQKdCRk0zIkBQw4AeQPsFCC30Vmgq0hPhoBUiSKGbiiUW+4UW+sXQ0+9PgjWpYUgNEQnkVYECoYVeAB1Nr3KYaJqTVAiTCNGaeUILvQGaiO4k/E5EghORgQQE0rVCC70NegqUpoaiBSENSyNUPnI4hBb6hdAnTcm0sdRUEMMgDRk0/D4mEYQWehl0K+7RhiUdXBsQeJTsF1roF0Knfwx5GrAhwfbp+Y2BF4cjoYVeAk3F+WT40aI2bfh0aEkCgtBCb4NOQhttUJLg0JpyT42DqIYKLfQyaCqwt6YePeg2PDfeK7TQQqNhnhYyKjTSQycDk9BCb4UmgiANwNCg3GQGEIOhKaJCC70JuhHmWkOdNBqkSLUiRRQRhBb6pdCbXkILLbTQQgv9Ia8/rFB0r2ciNDkAAAAASUVORK5CYII=" alt="QRCode">
+    </li>
+    
+
+</ul>
+</div>
+        
+    </div>
+</div>
+                </div>
+                <div class="card-body">
+                    
+                        
+                        
+                    
+                    <article id="post-content">
+                        <div class='posterous_autopost'><div class="posterous_bookmarklet_entry"> <div class='p_embed p_image_embed'> [![Media_httpscreensnapr_azdbx](http://posterous.com/getfile/files.posterous.com/loukafai/nbvjyjjIspgzlzzvlyltIunyqHiHspeEdoyjIgAdfejnpnozpDFDgAECynas/media_httpscreensnapr_AzDBx.png.scaled500.png)](http://posterous.com/getfile/files.posterous.com/loukafai/nbvjyjjIspgzlzzvlyltIunyqHiHspeEdoyjIgAdfejnpnozpDFDgAECynas/media_httpscreensnapr_AzDBx.png.scaled1000.png) </div> <div class="posterous_quote_citation"> 我認為 Firefox 上最好用的插件 [ FireGestures ](http://www.xuldev.org/firegestures/)</div> 
+
+<p>寫一篇關於 Firefox 裡的一款插件 FireGestures 的介紹 滑鼠手勢 滾輪 使用心得 設定 </p>
+<p><a name='more'></a><br><a href="https://addons.mozilla.org/firefox/addon/6366" target="_blank" rel="noopener">可以點我安裝</a> </p>
+<p>FireGestures 真是一款很好用的滑鼠手勢插件，它的設定很多、功能強大，我用到的功能有：滑鼠手勢（按着右鍵然後上下左右移動滑鼠）、滾輪手勢、搖擺手勢、分頁滾輪手勢。因為有它所以我才一直都在用 Firefox 沒有跳到 Chrome。 </p>
+<p>以下分享我一些設定心得： </p>
+<div class='p_embed p_image_embed'> [![Media_httpscreensnapr_lqqcb](http://posterous.com/getfile/files.posterous.com/loukafai/zBJHejjaBdaJGcIqngbuzifrBhsGuCEHqEIlDxHphGAHdBBlAjgmdHqnBJiA/media_httpscreensnapr_lqqCB.png.scaled500.png)](http://posterous.com/getfile/files.posterous.com/loukafai/zBJHejjaBdaJGcIqngbuzifrBhsGuCEHqEIlDxHphGAHdBBlAjgmdHqnBJiA/media_httpscreensnapr_lqqCB.png.scaled1000.png) </div> 
+▲用滑輪＋右鍵 上下滾動來切換分頁；用先按右鍵再按左鍵關閉分頁。 
+超級方便！！！ 
+
+<div class='p_embed p_image_embed'> ![Media_httpscreensnapr_bfyju](http://posterous.com/getfile/files.posterous.com/loukafai/oCJlGtpdwpFjAypsHIlnuiCFAjbeAlCfsADvzaFuzABxIpttvzcsAmaxAoyA/media_httpscreensnapr_Bfyju.png.scaled500.png) </div> 
+▲手勢對應，我只有改「上一頁」和「下一頁」 
+
+<div class='p_embed p_image_embed'> ![Media_httpscreensnapr_fazpr](http://posterous.com/getfile/files.posterous.com/loukafai/HfhDrtEsvhmsuonhDGvCesxslCaBgrBFtoejvDqwgHzoenFouHFvqgmAuars/media_httpscreensnapr_fAzpr.png.scaled500.png) </div> 
+▲跳到頁頂和頁底 
+
+<div class='p_embed p_image_embed'> ![Media_httpscreensnapr_byjgb](http://posterous.com/getfile/files.posterous.com/loukafai/HHbhIEvmAcwwHdkrHmfjzuEHHBAFdarkpcjExvfpIeaAcffczjkEDyewbGgs/media_httpscreensnapr_byjgb.png.scaled500.png) </div> 
+▲按右鍵再向下拉：全螢幕。用來看我最愛的[Mobile01](http://www.mobile01.com/)長長的開箱文(敗家文)或漫畫都很方便。 
+
+<p>本篇同步張貼至 <a href="http://loukafai.blogspot.com" target="_blank" rel="noopener"> &gt;輝&gt;行部落 loukafai.blogspot.com </a></p>
+</div>      
+
+<pre><code>[Posted via email](http://posterous.com)       from [小輝俠&apos;s Posterous](http://loukafai.posterous.com/-firegestures-firefox)      
+&lt;/div&gt;</code></pre>
+                    </article>
+                    
+
+
+    <blockquote id="date-expire-notification" class="post-expired-notify">This article was last updated on <span id="date-expire-num"></span> days ago, and the information described in the article may have changed.</blockquote>
+    <script>
+    (function() {
+        var dateUpdate = Date.parse("2020-02-29");
+        var nowDate = new Date();
+        var a = nowDate.getTime();
+        var b = a - dateUpdate;
+        var daysUpdateExpire = Math.floor(b/(24*3600*1000));
+        if (daysUpdateExpire >= 120) {
+            document.getElementById('date-expire-num').innerHTML = daysUpdateExpire;
+        } else {
+            document.getElementById('date-expire-notification').style.display = 'none';
+        }
+    })();
+    </script>
+
+
+<p class="post-footer-info mb-0 pt-0">Published at&nbsp;<time datetime="2011-07-16T10:27:09.000Z" itemprop="datePublished">2011-07-16</time>
+
+    , Updated at&nbsp;<time datetime="2020-02-29T10:01:30.761Z" itemprop="dateModified">2020-02-29</time>
+
+</p>
+<p class="post-footer-info mb-0 pt-2">
+
+
+
+<span class="post-tags-list mt-2">
+
+<a class="post-tags-list-item" href="/tags/http-schemas-google-com-blogger-2008-kind-post/" rel="tag">#&nbsp;http://schemas.google.com/blogger/2008/kind#post</a>
+
+<a class="post-tags-list-item" href="/tags/share/" rel="tag">#&nbsp;share</a>
+
+<a class="post-tags-list-item" href="/tags/%E4%BA%AB/" rel="tag">#&nbsp;享</a>
+
+<a class="post-tags-list-item" href="/tags/web/" rel="tag">#&nbsp;web</a>
+
+<a class="post-tags-list-item" href="/tags/windows/" rel="tag">#&nbsp;windows</a>
+
+<a class="post-tags-list-item" href="/tags/firefox/" rel="tag">#&nbsp;firefox</a>
+
+<a class="post-tags-list-item" href="/tags/tool/" rel="tag">#&nbsp;tool</a>
+
+</span>
+
+
+</p>
+
+                </div>
+                <div class="post-nav px-2 bg-gray">
+<ul class="pagination">
+    <!-- Prev Nav -->
+    
+        <li class="page-item page-prev">
+            <a href="/2011-07-20-%E7%94%9F%E6%B4%BB-%E5%87%8D%E7%9F%B3%E3%80%82%E6%9F%93%E9%AB%AE%E3%80%82WIN7/" rel="prev">
+                <div class="page-item-title"><i class="icon icon-back" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[生活] 凍石。染髮。WIN7</div>
+            </a>
+        </li>
+    
+
+    <!-- Next Nav -->
+    
+        <li class="page-item page-next">
+            <a href="/2011-07-14-%E7%94%9F%E6%B4%BB-%E5%8D%8A%E5%83%B9%E5%92%96%E5%95%A1%E3%80%82A50%E3%80%82%E8%98%8B%E6%9E%9C%E6%B4%BE/" rel="next">
+                <div class="page-item-title"><i class="icon icon-forward" aria-hidden="true"></i></div>
+                <div class="page-item-subtitle">[生活] 半價咖啡。A50。蘋果派</div>
+            </a>
+        </li>
+    
+</ul>
+</div>
+
+                
+                    <!-- # Comment # -->
+                    
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+            <!-- ### Footer ### -->
+            <footer class="text-center">
+    <!-- footer copyright -->
+    
+        <p class="footer-copyright mb-0">Copyright&nbsp;©&nbsp;<span id="copyright-year"></span>
+            <a class="footer-copyright-a" href="https://loukafai.github.io">faifai site</a>
+        </p>
+
+    <!-- footer custom text -->
+    <p class="footer-text mb-0">
+    
+    </p>
+    <!-- footer develop info -->
+    <p class="footer-develop mb-0">
+        
+    <!-- Busuanzi User Views -->
+    <span id="busuanzi_container_site_uv" hidden>
+        <span></span>
+        <span id="busuanzi_value_site_uv"></span>
+        <span>Viewers</span>
+        
+            <span>|</span>
+        
+    </span>
+
+
+
+
+        
+        Powered by&nbsp;<!--
+         --><a href="https://hexo.io" target="_blank" class="footer-develop-a" rel="external nofollow noopener noreferrer">Hexo</a><span class="footer-develop-divider"></span>Theme&nbsp;-&nbsp;<!--
+         --><a href="https://github.com/SukkaW/hexo-theme-suka" target="_blank" class="footer-develop-a" rel="external noopener">Suka</a>
+    </p>
+</footer>
+
+
+        <!-- ### Import File ### -->
+        <!-- ### Footer JS Import ### -->
+
+<script>
+
+    
+window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 50
+};
+document.getElementById('copyright-year').textContent = new Date().getFullYear();
+console.log('\n %c Suka Theme (hexo-theme-suka) | © SukkaW | Verision 1.3.3 %c https://github.com/SukkaW/hexo-theme-suka \n', 'color: #fff; background: #444; padding:5px 0;', 'background: #bbb; padding:5px 0;');
+
+</script>
+
+<script src="/lib/vanilla-lazyload/lazyload.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/busuanzi@2.3.0/bsz.pure.mini.js" async></script>
+
+
+<!-- Offset -->
+
+
+
+
+<!-- Comment -->
+
+
+<!-- ### Custom Footer ### -->
+
+    </body>
+
+</html>
