@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form id="frm1" action="/action_page.php">
+  First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>Click "Try it" to display the value of each element in the form.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+
+  var x = document.getElementById("frm1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  
+  const regex = / (##) ([^)]*\))/gm;
+
+// Alternative syntax using RegExp constructor
+// const regex = new RegExp(' (##) ([^)]*\\))', 'gm')
+
+//const str = `\\##### #blog [電影] 2021 年 2 月影視清單 文章：編輯 https://www.blogger.com/blog/post/edit/8688310690644295030/8269315415942841448 \\##### <img src="https://blogger.googleusercontent.com/img/a/AVvXsEg_fdDLtytPDO7yvrcwxo1dkPs9oRC_PBCD6UYI8WPUex34UW103mVYgdiERzlQR7052KnJAllXHfIhaM1TceuxFixRgwqKFFZ95Ub3rCp6_ionQvX8XmRrUJtT_SNRxTH3NA5qGVG_aI1ATYCc3-Ka_Zm8FDsSGYM2TwLR_PHiTyQPd2fiXD-5mA5C" /> 2021 年 2 月影視清單，個人觀影後的排名如下： 1. 国土安全 第五季 Homeland Season 5 (2015) 2. 除暴 (2020) 5. 潜伏3 Insidious: Chapter 3 (2015) 3. 狩猎 The Hunt (2020) 4. 爱与怪物 Love and Monsters (2020) <!--more--> ## 国土安全 第五季 Homeland Season 5 (2015) <img src="https://blogger.googleusercontent.com/img/a/AVvXsEjymULJ3UO0tXsiWAKcPnxFSrPicskIFYkE_RYUSluj3ZHE-sozsBoCtEK1UMxerCaUZks30sRAs9hKCrTD6ot0uYqYVgnFnGb19Ct-4PSfcIvHu3GDsk04bgBSMkX4gDCREyRWUzCZRO4PU0kl4Qe6k1YfsmjXf2q8Y86JY2AVW7BgBS_Zzv6IfZHE" /> via 国土安全 第五季 (豆瓣) <https://movie.douban.com/subject/26258113/> 這部人氣美劇，不知不覺追到第五季， 這季是講女主 Carrie 辭去了官職去了私人保安公司做顧問。 既然這部的另一個翻譯是《反恐危機》，所以或多或少也要與 "反恐" 有些關係，在這季臨近結尾時安排一段地鐵放毒氣的戲碼，想必恐怖分子當然要計劃失敗；然後這季最後 Quinn 終於被賜死，老實說這位角色很具魅力，所以有夠讓觀眾們虐心，不過，看第六季的介紹，原來 Quinn 的戲份還未結束...... 好的，就看編劇可以怎樣發揮了。 ## 除暴 (2020) <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhIC_-NblwouOCAGkMefLKw2F9U0O6eHCPWqSRC6OeTozf9BLbovHxH4TCsabwGS1XGurpnfiTQOraB3J_iYgXATxQpRtZqK7skUcQ50Bz-ENVhLaCWe294_pyoqZExMqk1Zz-5J1iNYkfvT-xq6wxo6RoiasC87aRA5GCxS9f5Z8H9GFb2fJmE3lML" /> via 除暴 (豆瓣) <https://movie.douban.com/subject/30373723/> 原本看到電影名和海報不太感興趣，後來在朋友介紹下還是看了，原因是被吴彦祖在銀行金庫內只用一條繩就打開了重重夾萬那段戲吸引到我，是個人喜歡的犯罪推理戲。 翻查資料，原來電影是由真人真事改編，故事背景是在 1991 年至 2000 年之間，當年的資訊科技不發達，所以罪犯穿州過省地作案便大大增加了偵查的困難，不過天網恢恢，疏而不漏，加上中國刑警的堅持不懈，最終還是能夠順利破案的。 ## 狩猎 The Hunt (2020) <imgtext; src="https://blogger.googleusercontent.com/img/a/AVvXsEhtzV_Q9xnndF10pY4Z_X1hOYyWm-hV9cmLHVoRbBy9Mx4tJboJLUVpanED17DTN5Mese6ecmBZGQXvcqV9ZPQ-6pBhwr7hh7a_XvMz4ceE1ae3EawGCSxH2GU6E_W-TuYerICLv1gyL2wDZu0yo2EJxqhGZ1VeA2E9c1yVtdi-3onHP0xgSYAWWXab" /> via 狩猎 (豆瓣) <https://movie.douban.com/subject/30182726/> 看這部就是為了爽度，看著角色們歇斯底里地殺個你死我活就莫名其妙地覺得刺激，個人認為這是《大逃殺》的開放地圖版本，反正殺殺殺就對了，只要生存到最後就是贏家。 ## 爱与怪物 Love and Monsters (2020) <img src="https://blogger.googleusercontent.com/img/a/AVvXsEifrkYRkWFfPVu8yMN6MDi3FGY9BVZcM2YA3qVACl3vbwQHc9cmRtPq3Ng74HDswnRc_i3SL7Z5V5ztYwZWH_t2fo6zZqQGnMe08c_uPTA3gUhz8k3cD84qa-0rJ4hrZYplPFTxcChw_KTsoC9q86qAVQzf6fISpAxEHmcBNait9ambdiSsba2L5a_J" /> via 爱与怪物 (豆瓣) <https://movie.douban.com/subject/21349338> 可以說是一部充滿怪物的公路電影，原本會覺得男主好端端的幹嘛要去冒險送死？但是想一想，如果人一輩子只能獨自生活，沒有愛，沒有人與你分享，那跟咸魚有什麼區別？如果看這部《爱与怪物》會期待有厲害的怪物和驚喜的劇情，想必一定會很失望，畢竟這部一定會被隔壁的《神奇动物在哪里 Fantastic Beasts and Where to Find Them (2016)》比下去，但是衝著「愛」和「信念」這兩個偉大的元素，亦不失為一部可以看看的科幻片。 ## 潜伏3 Insidious: Chapter 3 (2015) <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhCaNkQTSPtrgZ7BAjor1ISh4QC0UPF3Vd4rlqztqxos_C9pdkF_fGNUE7_l1TrVmTp_Zp5Psn6fxY2YdOjn3qKLnvO5aiLGeiD3jw_yh0YmTnVwL3TObke83agvMb05XQjsKrPRPKT2ByAqIx59yohlzK6cz3xQMacsw96s5fqtc9Lbzs_I55GdTTk" /> via 潜伏3 (豆瓣) <https://movie.douban.com/subject/25728008/> Insidious 系列來到了第 3 集，會繼續看的人應該是粉絲，因為喜歡的溫子仁由導演轉為監製，還沒看電影之前心裡就已經打折扣。結果當然是有點讓人失望，是說這集的故事已經是有點新意，只是剛好看電影的當下沒有看恐怖片的心情，所以就覺得不夠驚嚇。 EOF` + text;
+
+const str =text;
+
+let m;
+let i2=0;
+var Soutput="";
+
+while ((m = regex.exec(str)) !== null) {
+    // This is necessary to avoid infinite loops with zero-width matches
+    if (m.index === regex.lastIndex) {
+        regex.lastIndex++;
+    }
+       
+    // The result can be accessed through the `m`-variable.
+    m.forEach((match, groupIndex) => {
+        //console.log(`Found match, group ${groupIndex}: ${match}`);
+          
+        if (groupIndex === 2){    
+        i2 = i2 + 1;
+        console.log(`${i2}. ${match}` );
+        Soutput += i2+"." + match + "<br>";
+         }
+    });
+  
+}
+  
+  
+  document.getElementById("demo").innerHTML = Soutput ;
+}
+</script>
+
+</body>
+</html>
