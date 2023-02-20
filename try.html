@@ -5,12 +5,13 @@
 <form id="frm1" action="/action_page.php">
   movie title: <input type="text" name="fname" value="Donald"><br>
   find img: <input type="text" name="lname" value="Duck"><br><br>
-  <input type="submit" value="Submit">
+  <!--這個原本是範例的按鈕 <input type="submit" value="Submit"> -->
 </form> 
 
 <p>Click "Try it" to display the value of each element in the form.</p>
 
 <button onclick="myFunction()">movie title</button>
+<button onclick="findImg()">find image</button>
 
 <p id="demo"></p>
 
@@ -24,8 +25,9 @@ function myFunction() {
     text += x.elements[i].value + "<br>";
   }
   
-  const regex = / (##) ([^)]*\))/gm;
+  const regex = / (##) ([^)]*\))/gm;  //表達式為 (##) ([^)]*\))
 
+// 使用 https://regex101.com/ 生成的 javascrip reg
 // Alternative syntax using RegExp constructor
 // const regex = new RegExp(' (##) ([^)]*\\))', 'gm')
 
@@ -50,7 +52,7 @@ while ((m = regex.exec(str)) !== null) {
         if (groupIndex === 2){    
         i2 = i2 + 1;
         //console.log(`${i2}. ${match}` );
-        Soutput += i2+"." + match + "<br>";
+        Soutput += i2+". " + match + "<br>";
          }
     });
   
@@ -59,7 +61,47 @@ while ((m = regex.exec(str)) !== null) {
   
   document.getElementById("demo").innerHTML = Soutput ;
 }
+
+function findImg() {
+
+  var x = document.getElementById("frm1");
+  var text = "";
+  var i;
+  for (i = 0; i < x.length ;i++) {
+    text += x.elements[i].value + "<br>";
+  }
+  
+  const regex = /(src=")(\S*)(")/gm;  //表達式為 (src=")(\S*)(")  
+  const str =text;
+
+let m;
+let i2=0;
+var Soutput="";
+
+while ((m = regex.exec(str)) !== null) {
+    // This is necessary to avoid infinite loops with zero-width matches
+    if (m.index === regex.lastIndex) {
+        regex.lastIndex++;
+    }
+       
+    // The result can be accessed through the `m`-variable.
+    m.forEach((match, groupIndex) => {
+        //console.log(`Found match, group ${groupIndex}: ${match}`);          
+        if (groupIndex === 2){    //只取出每個 match 的 group 2 部分，即 img 的 url
+        i2 = i2 + 1;
+        //console.log(`${i2}. ${match}` );
+        Soutput += "![img_" + i2+"](" + match + ")<br>" + "▲ "+ "img_" + i2 +"<br><br>";
+         }
+    });
+  
+} //end while
+    
+  document.getElementById("demo").innerHTML = Soutput ;
+
+}
+
 </script>
 
 </body>
 </html>
+
