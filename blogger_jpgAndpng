@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Find JPG and PNG URLs</title>
+  </head>
+  <body>
+    <input type="text" id="inputText" placeholder="Input text here">
+    <button onclick="findJpgAndPng()">Submit</button>
+    <br>
+    <textarea id="outputTextarea" rows="10" cols="50"></textarea>
+
+    <script>
+      function findJpgAndPng() {
+        var inputText = document.getElementById("inputText").value;
+        var urls = inputText.match(/((https?|ftp):\/\/[^\s/$.?#].[^\s]*)\.(jpg|png)/g);
+        var uniqueUrls = Array.from(new Set(urls));
+        var outputTextarea = document.getElementById("outputTextarea");
+        var count = 1;
+        var outputString = "";
+        
+        uniqueUrls.forEach(function(url) {
+          var urlParts = url.split('/');
+          var nameWithExtension = urlParts[urlParts.length - 1];
+          var name = nameWithExtension.substring(0, nameWithExtension.lastIndexOf('.'));
+          //outputString += "[" + count + "], " + "[" + name + "], " + "[" + url + "]\n";
+          outputString += "![](" + url + ")" + "\n▲[" + count +"] " + name + "▲ \n\n";
+          count++;
+        });
+
+        outputTextarea.value = outputString;
+      }
+    </script>
+  </body>
+</html>
