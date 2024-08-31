@@ -1,0 +1,36 @@
+<!--
+給我 html 結合 javascript 的碼，html 包含1個 input， 2 個 textarea (id名稱是 a及b)  及 1個 submit。
+需求如下：
+textarea id=a 讀取段落，按下 submit 後把 textarea id=a 的內容中有 '##' 開頭的文字找出來，並將文字包括的 ‘##’ 刪除 。將 input 輸入的內容串接找出來的文字，逐一輸出到 textarea id=b
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>將網址與文章的h2結合產生行程markdown內容</title>
+</head>
+<body>
+	<input type="text" id="input"><br>
+	<textarea id="a" rows="10" cols="50"></textarea><br>
+	<textarea id="b" rows="10" cols="50"></textarea><br>
+	<button onclick="findAndOutput()">Submit</button>
+
+	<script>
+		function findAndOutput() {
+			var a = document.getElementById("a").value;
+			var b = document.getElementById("b");
+			var input = document.getElementById("input").value;
+			var lines = a.split('\n');
+
+			for (var i = 0; i < lines.length; i++) {
+				if (lines[i].startsWith("##")) {
+					var text = lines[i].substring(3); // 刪除 '##'
+                    var textWithOutSpace = text.replace(/\s/g, ""); // 刪除該行出現的空格
+                    //修改 b.value += input + text + '\n';
+                    b.value += "["+text+"]("+ input +"#" + textWithOutSpace + ") → ";
+				}
+			}
+		}
+	</script>
+</body>
+</html>
