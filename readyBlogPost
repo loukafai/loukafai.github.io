@@ -1,0 +1,44 @@
+<!---
+給我 html 結合 javascript 的碼，html 包含1個 textarea 及 1個 submit。
+需求如下：
+
+1. textarea 讀取段落，按下 submit 後把 textarea 的內容中有 '##' 開頭的行找出來複制一行並注入 id . 將該行的 '##' 刪掉.
+2. 把內文裡如果包含 2 個 '▲' 字符以上的行刪掉.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>修改markdown內容，加入 a id </title>
+	<meta charset="utf-8">
+	<script>
+		function processText() {
+			var textArea = document.getElementById("inputText");
+			var inputText = textArea.value;
+			var lines = inputText.split("\n");
+			var outputLines = [];
+			for (var i = 0; i < lines.length; i++) {
+				if (lines[i].startsWith("##")) {
+					// 找到以'##'開頭的行，刪掉'##'後複製一行 ,用 text.replace(/\s/g, "")刪除該行出現的空格
+                    var cutSpace = lines[i].substring(3);
+                    cutSpace = cutSpace.replace(/\s/g, "");
+					//修改 outputLines.push("<a id=\"" + lines[i].substring(3)+"></a>");
+                    outputLines.push("<a id=\"" + cutSpace +"\"></a>");
+					outputLines.push(lines[i]);
+				}
+				else if (lines[i].split("▲").length - 1 < 2) {
+					outputLines.push(lines[i]);
+				}
+			}
+			var outputText = outputLines.join("\n");
+			textArea.value = outputText;
+		}
+	</script>
+</head>
+<body>
+	<h2>請輸入文字</h2>
+	<textarea id="inputText"  rows="30" cols="60" ></textarea>
+	<br>
+	<button onclick="processText()">提交</button>
+</body>
+</html>
